@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2 Modul 4: Gesundheit und Körper</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau A2</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 4: Gesundheit und Körper</h1>
+            <p class="text-xl text-gray-600">Über Gesundheit, Krankheiten und Körperpflege sprechen</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Über Ihren Gesundheitszustand zu sprechen</li>
+                    <li>Einen Arzttermin zu vereinbaren</li>
+                    <li>Beschwerden und Symptome zu beschreiben</li>
+                    <li>Über Körperpflege und gesunde Gewohnheiten zu sprechen</li>
+                    <li>Ratschläge zur Gesundheit zu geben und zu verstehen</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Beim Arzt</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Körperteile</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Kopf</p>
+                        <p class="text-gray-600">头</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Auge / die Augen</p>
+                        <p class="text-gray-600">眼睛</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Ohr / die Ohren</p>
+                        <p class="text-gray-600">耳朵</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Nase</p>
+                        <p class="text-gray-600">鼻子</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Mund</p>
+                        <p class="text-gray-600">嘴</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Hals</p>
+                        <p class="text-gray-600">喉咙</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Arm / die Arme</p>
+                        <p class="text-gray-600">手臂</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Hand / die Hände</p>
+                        <p class="text-gray-600">手</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Finger / die Finger</p>
+                        <p class="text-gray-600">手指</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Bauch</p>
+                        <p class="text-gray-600">肚子</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Rücken</p>
+                        <p class="text-gray-600">背部</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Bein / die Beine</p>
+                        <p class="text-gray-600">腿</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Fuß / die Füße</p>
+                        <p class="text-gray-600">脚</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Herz</p>
+                        <p class="text-gray-600">心脏</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Lunge</p>
+                        <p class="text-gray-600">肺</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Krankheiten und Symptome</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Erkältung</p>
+                        <p class="text-gray-600">感冒</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Grippe</p>
+                        <p class="text-gray-600">流感</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Husten</p>
+                        <p class="text-gray-600">咳嗽</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Schnupfen</p>
+                        <p class="text-gray-600">流鼻涕</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Fieber</p>
+                        <p class="text-gray-600">发烧</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kopfschmerzen</p>
+                        <p class="text-gray-600">头痛</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Halsschmerzen</p>
+                        <p class="text-gray-600">喉咙痛</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Bauchschmerzen</p>
+                        <p class="text-gray-600">肚子痛</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Allergie</p>
+                        <p class="text-gray-600">过敏</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich fühle mich nicht wohl.</p>
+                        <p class="text-gray-600">我感觉不舒服。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich bin krank.</p>
+                        <p class="text-gray-600">我生病了。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe Kopfschmerzen/Halsschmerzen/Bauchschmerzen.</p>
+                        <p class="text-gray-600">我头痛/喉咙痛/肚子痛。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe Fieber/Husten/Schnupfen.</p>
+                        <p class="text-gray-600">我发烧/咳嗽/流鼻涕。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich möchte einen Termin vereinbaren.</p>
+                        <p class="text-gray-600">我想预约。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Seit wann haben Sie diese Beschwerden?</p>
+                        <p class="text-gray-600">您这些症状有多久了？</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wo tut es weh?</p>
+                        <p class="text-gray-600">哪里疼？</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich brauche ein Rezept.</p>
+                        <p class="text-gray-600">我需要一个处方。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Modalverben im Präteritum</h3>
+                <p class="mb-4">Im Deutschen werden Modalverben oft im Präteritum verwendet, besonders in der gesprochenen Sprache.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Infinitiv</th>
+                                <th class="py-2 px-4 border-b">ich</th>
+                                <th class="py-2 px-4 border-b">du</th>
+                                <th class="py-2 px-4 border-b">er/sie/es</th>
+                                <th class="py-2 px-4 border-b">wir</th>
+                                <th class="py-2 px-4 border-b">ihr</th>
+                                <th class="py-2 px-4 border-b">sie/Sie</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b font-medium">müssen</td>
+                                <td class="py-2 px-4 border-b">musste</td>
+                                <td class="py-2 px-4 border-b">musstest</td>
+                                <td class="py-2 px-4 border-b">musste</td>
+                                <td class="py-2 px-4 border-b">mussten</td>
+                                <td class="py-2 px-4 border-b">musstet</td>
+                                <td class="py-2 px-4 border-b">mussten</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b font-medium">können</td>
+                                <td class="py-2 px-4 border-b">konnte</td>
+                                <td class="py-2 px-4 border-b">konntest</td>
+                                <td class="py-2 px-4 border-b">konnte</td>
+                                <td class="py-2 px-4 border-b">konnten</td>
+                                <td class="py-2 px-4 border-b">konntet</td>
+                                <td class="py-2 px-4 border-b">konnten</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b font-medium">wollen</td>
+                                <td class="py-2 px-4 border-b">wollte</td>
+                                <td class="py-2 px-4 border-b">wolltest</td>
+                                <td class="py-2 px-4 border-b">wollte</td>
+                                <td class="py-2 px-4 border-b">wollten</td>
+                                <td class="py-2 px-4 border-b">wolltet</td>
+                                <td class="py-2 px-4 border-b">wollten</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b font-medium">sollen</td>
+                                <td class="py-2 px-4 border-b">sollte</td>
+                                <td class="py-2 px-4 border-b">solltest</td>
+                                <td class="py-2 px-4 border-b">sollte</td>
+                                <td class="py-2 px-4 border-b">sollten</td>
+                                <td class="py-2 px-4 border-b">solltet</td>
+                                <td class="py-2 px-4 border-b">sollten</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b font-medium">dürfen</td>
+                                <td class="py-2 px-4 border-b">durfte</td>
+                                <td class="py-2 px-4 border-b">durftest</td>
+                                <td class="py-2 px-4 border-b">durfte</td>
+                                <td class="py-2 px-4 border-b">durften</td>
+                                <td class="py-2 px-4 border-b">durftet</td>
+                                <td class="py-2 px-4 border-b">durften</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b font-medium">mögen</td>
+                                <td class="py-2 px-4 border-b">mochte</td>
+                                <td class="py-2 px-4 border-b">mochtest</td>
+                                <td class="py-2 px-4 border-b">mochte</td>
+                                <td class="py-2 px-4 border-b">mochten</td>
+                                <td class="py-2 px-4 border-b">mochtet</td>
+                                <td class="py-2 px-4 border-b">mochten</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Beispiele:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Ich <span class="font-medium">musste</span> gestern zum Arzt gehen.</li>
+                        <li>Er <span class="font-medium">konnte</span> nicht zur Arbeit kommen, weil er krank war.</li>
+                        <li>Wir <span class="font-medium">wollten</span> einen Termin vereinbaren.</li>
+                        <li>Der Arzt sagte, ich <span class="font-medium">sollte</span> viel Wasser trinken.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel: Einen Arzttermin vereinbaren</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Sprechstundenhilfe:</strong> Praxis Dr. Schmidt, guten Tag!</p>
+                    <p class="mb-2"><strong>Patient:</strong> Guten Tag! Mein Name ist Wang Li. Ich möchte einen Termin vereinbaren.</p>
+                    <p class="mb-2"><strong>Sprechstundenhilfe:</strong> Ja, gerne. Was fehlt Ihnen denn?</p>
+                    <p class="mb-2"><strong>Patient:</strong> Ich habe seit drei Tagen Halsschmerzen und Husten. Und ich glaube, ich habe auch Fieber.</p>
+                    <p class="mb-2"><strong>Sprechstundenhilfe:</strong> Verstehe. Wann können Sie in die Praxis kommen?</p>
+                    <p class="mb-2"><strong>Patient:</strong> Ich kann morgen Vormittag oder übermorgen Nachmittag kommen.</p>
+                    <p class="mb-2"><strong>Sprechstundenhilfe:</strong> Morgen um 10:30 Uhr hätten wir einen Termin frei. Passt Ihnen das?</p>
+                    <p class="mb-2"><strong>Patient:</strong> Ja, das passt gut. Vielen Dank.</p>
+                    <p class="mb-2"><strong>Sprechstundenhilfe:</strong> Gut, dann haben Sie morgen um 10:30 Uhr einen Termin bei Dr. Schmidt. Bringen Sie bitte Ihre Versicherungskarte mit.</p>
+                    <p class="mb-2"><strong>Patient:</strong> Ja, mache ich. Vielen Dank und auf Wiederhören.</p>
+                    <p class="mb-2"><strong>Sprechstundenhilfe:</strong> Auf Wiederhören.</p>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel: Beim Arzt</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Arzt:</strong> Guten Tag, Herr Wang. Was fehlt Ihnen denn?</p>
+                    <p class="mb-2"><strong>Patient:</strong> Guten Tag, Herr Doktor. Ich habe seit drei Tagen Halsschmerzen und Husten. Und ich glaube, ich habe auch Fieber.</p>
+                    <p class="mb-2"><strong>Arzt:</strong> Lassen Sie mich Ihre Temperatur messen. ... Ja, Sie haben leichtes Fieber, 38,2 Grad. Haben Sie auch Kopfschmerzen?</p>
+                    <p class="mb-2"><strong>Patient:</strong> Ja, manchmal. Besonders am Abend.</p>
+                    <p class="mb-2"><strong>Arzt:</strong> Ich schaue mir Ihren Hals an. Machen Sie bitte den Mund weit auf und sagen Sie "Aah".</p>
+                    <p class="mb-2"><strong>Patient:</strong> Aah...</p>
+                    <p class="mb-2"><strong>Arzt:</strong> Ihr Hals ist rot und entzündet. Sie haben eine Erkältung. Ich verschreibe Ihnen ein Medikament gegen die Halsschmerzen und den Husten.</p>
+                    <p class="mb-2"><strong>Patient:</strong> Muss ich im Bett bleiben?</p>
+                    <p class="mb-2"><strong>Arzt:</strong> Ja, Sie sollten sich zwei bis drei Tage ausruhen. Trinken Sie viel Wasser oder Tee mit Honig. Das hilft bei Halsschmerzen. Und nehmen Sie das Medikament dreimal täglich nach den Mahlzeiten.</p>
+                    <p class="mb-2"><strong>Patient:</strong> Wie lange dauert es, bis ich wieder gesund bin?</p>
+                    <p class="mb-2"><strong>Arzt:</strong> Bei einer Erkältung dauert es normalerweise etwa eine Woche. Wenn es nach fünf Tagen nicht besser ist oder wenn das Fieber steigt, kommen Sie bitte wieder.</p>
+                    <p class="mb-2"><strong>Patient:</strong> Vielen Dank, Herr Doktor.</p>
+                    <p class="mb-2"><strong>Arzt:</strong> Gute Besserung, Herr Wang.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Rollenspiel beim Arzt</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Arbeiten Sie mit einem Partner</li>
+                        <li>Eine Person ist Arzt/Ärztin, die andere ist Patient/Patientin</li>
+                        <li>Der Patient/Die Patientin hat ein gesundheitliches Problem und beschreibt die Symptome</li>
+                        <li>Der Arzt/Die Ärztin stellt Fragen, untersucht den Patienten und gibt Ratschläge</li>
+                        <li>Verwenden Sie die gelernten Ausdrücke und Modalverben im Präteritum</li>
+                    </ol>
+                    <p class="mt-4 font-medium">Mögliche Situationen:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Erkältung mit Fieber und Husten</li>
+                        <li>Kopfschmerzen und Schwindel</li>
+                        <li>Allergie mit Hautausschlag</li>
+                        <li>Sportverletzung (z.B. verstauchter Knöchel)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über gesunde Gewohnheiten sprechen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Gesunde Lebensweise</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">gesund</p>
+                        <p class="text-gray-600">健康的</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">ungesund</p>
+                        <p class="text-gray-600">不健康的</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Ernährung</p>
+                        <p class="text-gray-600">饮食</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Bewegung</p>
+                        <p class="text-gray-600">运动</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Sport</p>
+                        <p class="text-gray-600">体育运动</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Training</p>
+                        <p class="text-gray-600">训练</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Schlaf</p>
+                        <p class="text-gray-600">睡眠</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Entspannung</p>
+                        <p class="text-gray-600">放松</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Fitnessstudio</p>
+                        <p class="text-gray-600">健身房</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich achte auf meine Gesundheit.</p>
+                        <p class="text-gray-600">我注重我的健康。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich ernähre mich gesund.</p>
+                        <p class="text-gray-600">我吃得健康。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich treibe regelmäßig Sport.</p>
+                        <p class="text-gray-600">我定期锻炼。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich gehe ins Fitnessstudio.</p>
+                        <p class="text-gray-600">我去健身房。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich schlafe genug/zu wenig.</p>
+                        <p class="text-gray-600">我睡得足够/太少。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich versuche, Stress zu vermeiden.</p>
+                        <p class="text-gray-600">我尽量避免压力。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Man sollte viel Wasser trinken.</p>
+                        <p class="text-gray-600">应该多喝水。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Es ist wichtig, sich gesund zu ernähren.</p>
+                        <p class="text-gray-600">健康饮食很重要。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Ratschläge mit sollte</h3>
+                <p class="mb-4">Um Ratschläge zu geben, verwendet man oft das Modalverb "sollte" im Konjunktiv II.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Person</th>
+                                <th class="py-2 px-4 border-b">sollte + Infinitiv</th>
+                                <th class="py-2 px-4 border-b">Beispiel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">ich</td>
+                                <td class="py-2 px-4 border-b">sollte</td>
+                                <td class="py-2 px-4 border-b">Ich sollte mehr Sport treiben.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">du</td>
+                                <td class="py-2 px-4 border-b">solltest</td>
+                                <td class="py-2 px-4 border-b">Du solltest zum Arzt gehen.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">er/sie/es</td>
+                                <td class="py-2 px-4 border-b">sollte</td>
+                                <td class="py-2 px-4 border-b">Er sollte weniger arbeiten.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">wir</td>
+                                <td class="py-2 px-4 border-b">sollten</td>
+                                <td class="py-2 px-4 border-b">Wir sollten gesünder essen.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">ihr</td>
+                                <td class="py-2 px-4 border-b">solltet</td>
+                                <td class="py-2 px-4 border-b">Ihr solltet mehr schlafen.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">sie/Sie</td>
+                                <td class="py-2 px-4 border-b">sollten</td>
+                                <td class="py-2 px-4 border-b">Sie sollten sich ausruhen.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Alternative Ausdrücke für Ratschläge:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Es wäre gut, wenn du mehr Sport treiben würdest.</li>
+                        <li>Es ist empfehlenswert, regelmäßig zum Arzt zu gehen.</li>
+                        <li>Es ist wichtig, genug zu schlafen.</li>
+                        <li>Ich empfehle dir, weniger Zucker zu essen.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel: Über gesunde Gewohnheiten</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Anna:</strong> Du siehst so fit aus, Chen! Machst du viel Sport?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ja, ich gehe dreimal pro Woche ins Fitnessstudio. Und ich jogge auch oft im Park.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Wow, das ist toll! Ich sollte auch mehr Sport treiben, aber ich habe oft keine Zeit.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Du könntest mit kleinen Übungen zu Hause anfangen. Das braucht nicht viel Zeit.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Das ist eine gute Idee. Achtest du auch auf deine Ernährung?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ja, ich versuche, gesund zu essen. Ich esse viel Obst und Gemüse und wenig Fast Food.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ich esse leider zu viel Süßigkeiten. Ich sollte das ändern.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Du könntest Süßigkeiten durch Obst ersetzen. Äpfel oder Beeren sind auch süß und viel gesünder.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Hast du noch andere Tipps für einen gesunden Lebensstil?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich denke, genug Schlaf ist sehr wichtig. Ich versuche, jeden Tag acht Stunden zu schlafen. Und ich trinke viel Wasser, mindestens zwei Liter pro Tag.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Das sind gute Tipps. Ich sollte wirklich mehr auf meine Gesundheit achten.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Gesundheitstipps geben</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Arbeiten Sie in Gruppen von 3-4 Personen</li>
+                        <li>Jede Person beschreibt ein gesundheitliches Problem oder eine ungesunde Gewohnheit</li>
+                        <li>Die anderen geben Ratschläge, was die Person tun sollte</li>
+                        <li>Verwenden Sie "sollte" und andere Ausdrücke für Ratschläge</li>
+                    </ol>
+                    <p class="mt-4 font-medium">Beispiel:</p>
+                    <p class="mb-2"><strong>Person A:</strong> Ich habe oft Rückenschmerzen, besonders wenn ich lange am Schreibtisch sitze.</p>
+                    <p class="mb-2"><strong>Person B:</strong> Du solltest regelmäßig Pausen machen und dich bewegen.</p>
+                    <p class="mb-2"><strong>Person C:</strong> Es wäre gut, wenn du Rückenübungen machen würdest. Ich kann dir einige zeigen.</p>
+                    <p class="mb-2"><strong>Person D:</strong> Ich empfehle dir, einen ergonomischen Stuhl zu kaufen. Das hat mir sehr geholfen.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über Körperpflege sprechen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Körperpflege</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Körperpflege</p>
+                        <p class="text-gray-600">身体护理</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Dusche / duschen</p>
+                        <p class="text-gray-600">淋浴 / 洗澡</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Bad / baden</p>
+                        <p class="text-gray-600">浴缸 / 洗澡</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Seife</p>
+                        <p class="text-gray-600">肥皂</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Shampoo</p>
+                        <p class="text-gray-600">洗发水</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Zahnbürste</p>
+                        <p class="text-gray-600">牙刷</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Zahnpasta</p>
+                        <p class="text-gray-600">牙膏</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Deo / der Deodorant</p>
+                        <p class="text-gray-600">除臭剂</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Creme</p>
+                        <p class="text-gray-600">乳霜</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Kamm / die Bürste</p>
+                        <p class="text-gray-600">梳子 / 刷子</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Parfüm</p>
+                        <p class="text-gray-600">香水</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Handtuch</p>
+                        <p class="text-gray-600">毛巾</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich dusche jeden Morgen/Abend.</p>
+                        <p class="text-gray-600">我每天早上/晚上洗澡。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich putze mir die Zähne zweimal täglich.</p>
+                        <p class="text-gray-600">我每天刷两次牙。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich wasche mir die Haare jeden zweiten Tag.</p>
+                        <p class="text-gray-600">我每两天洗一次头发。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich benutze Deo/Parfüm.</p>
+                        <p class="text-gray-600">我使用除臭剂/香水。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich creme meine Haut ein.</p>
+                        <p class="text-gray-600">我给皮肤涂乳霜。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich rasiere mich jeden Tag/alle zwei Tage.</p>
+                        <p class="text-gray-600">我每天/每两天刮胡子。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Reflexive Verben</h3>
+                <p class="mb-4">Viele Verben im Bereich Körperpflege sind reflexiv. Das bedeutet, dass die Handlung auf die handelnde Person zurückwirkt.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Person</th>
+                                <th class="py-2 px-4 border-b">Reflexivpronomen (Akkusativ)</th>
+                                <th class="py-2 px-4 border-b">Beispiel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">ich</td>
+                                <td class="py-2 px-4 border-b">mich</td>
+                                <td class="py-2 px-4 border-b">Ich dusche mich.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">du</td>
+                                <td class="py-2 px-4 border-b">dich</td>
+                                <td class="py-2 px-4 border-b">Du wäschst dich.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">er/sie/es</td>
+                                <td class="py-2 px-4 border-b">sich</td>
+                                <td class="py-2 px-4 border-b">Er rasiert sich.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">wir</td>
+                                <td class="py-2 px-4 border-b">uns</td>
+                                <td class="py-2 px-4 border-b">Wir kämmen uns.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">ihr</td>
+                                <td class="py-2 px-4 border-b">euch</td>
+                                <td class="py-2 px-4 border-b">Ihr cremt euch ein.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">sie/Sie</td>
+                                <td class="py-2 px-4 border-b">sich</td>
+                                <td class="py-2 px-4 border-b">Sie schminken sich.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Häufige reflexive Verben für Körperpflege:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>sich waschen (to wash oneself)</li>
+                        <li>sich duschen (to shower)</li>
+                        <li>sich baden (to bathe)</li>
+                        <li>sich rasieren (to shave)</li>
+                        <li>sich kämmen (to comb one's hair)</li>
+                        <li>sich schminken (to put on makeup)</li>
+                        <li>sich eincremen (to apply cream)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel: Über Körperpflege</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Anna:</strong> Chen, welche Produkte benutzt du für deine Körperpflege?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich benutze ein mildes Shampoo für meine Haare und eine Seife ohne Parfüm für meinen Körper.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Duschst du morgens oder abends?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich dusche meistens abends vor dem Schlafengehen. Und du?</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ich dusche lieber morgens. Das macht mich wach. Benutzt du eine spezielle Creme für dein Gesicht?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ja, ich benutze eine Feuchtigkeitscreme für mein Gesicht. Meine Haut ist manchmal sehr trocken, besonders im Winter.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ich auch. Ich creme mich jeden Abend ein. Wie oft wäschst du dir die Haare?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich wasche mir die Haare jeden zweiten Tag. Wenn ich Sport mache, dann natürlich öfter.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Benutzt du Parfüm?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ja, aber nicht zu viel. Ich mag leichte, frische Düfte. Und du?</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ich benutze manchmal Parfüm, aber meistens nur Deo. Ich finde, zu viel Parfüm kann störend sein.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Meine Körperpflegeroutine</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Beschreiben Sie Ihre tägliche Körperpflegeroutine</li>
+                        <li>Erwähnen Sie mindestens 5 verschiedene Aktivitäten</li>
+                        <li>Verwenden Sie reflexive Verben korrekt</li>
+                        <li>Nennen Sie auch die Produkte, die Sie verwenden</li>
+                    </ol>
+                    <p class="mt-4 font-medium">Beispiel:</p>
+                    <p class="mb-2">Jeden Morgen stehe ich um 7 Uhr auf. Zuerst putze ich mir die Zähne mit einer elektrischen Zahnbürste und Zahnpasta mit Minzgeschmack. Dann dusche ich mich mit einem Duschgel, das nach Zitrone riecht. Nach der Dusche trockne ich mich mit einem großen Handtuch ab. Danach creme ich mein Gesicht mit einer Feuchtigkeitscreme ein. Ich kämme mir die Haare und föhne sie. Zum Schluss benutze ich ein Deo und manchmal auch ein leichtes Parfüm. Abends wasche ich mir das Gesicht mit einem speziellen Reinigungsgel und putze mir noch einmal die Zähne.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Zusammenfassung und Übungen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wichtiger Wortschatz</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Gesundheit</p>
+                        <p class="text-gray-600">健康</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Krankheit</p>
+                        <p class="text-gray-600">疾病</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Arzt / die Ärztin</p>
+                        <p class="text-gray-600">医生</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Termin</p>
+                        <p class="text-gray-600">预约</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Medikament</p>
+                        <p class="text-gray-600">药物</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Körperpflege</p>
+                        <p class="text-gray-600">身体护理</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Gesundheitsinterview</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Arbeiten Sie mit einem Partner</li>
+                        <li>Stellen Sie Ihrem Partner Fragen zu seinen/ihren Gesundheitsgewohnheiten</li>
+                        <li>Notieren Sie die Antworten</li>
+                        <li>Präsentieren Sie die Antworten Ihres Partners vor der Gruppe</li>
+                    </ol>
+                    <p class="mt-4 font-medium">Mögliche Fragen:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Wie oft gehst du zum Arzt?</li>
+                        <li>Was machst du, wenn du krank bist?</li>
+                        <li>Treibst du regelmäßig Sport?</li>
+                        <li>Wie ernährst du dich?</li>
+                        <li>Wie viele Stunden schläfst du pro Nacht?</li>
+                        <li>Wie ist deine Körperpflegeroutine?</li>
+                        <li>Was machst du, um gesund zu bleiben?</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Hausaufgaben</h3>
+                <div class="bg-blue-50 p-4 rounded-md border border-blue-200">
+                    <p class="font-medium mb-2">Für die nächste Stunde:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Schreiben Sie einen Text (100-120 Wörter) über Ihre Gesundheitsgewohnheiten</li>
+                        <li>Bereiten Sie einen kurzen Vortrag (2-3 Minuten) über ein Gesundheitsthema vor (z.B. gesunde Ernährung, Sport, Stressbewältigung)</li>
+                        <li>Lernen Sie den Wortschatz zu Körperteilen, Krankheiten und Körperpflege</li>
+                        <li>Üben Sie die Modalverben im Präteritum und die reflexiven Verben</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Deutsch Lernen</h3>
+                    <p class="text-gray-300">Umfassende Lernmaterialien für chinesische Studenten zur Vorbereitung auf das deutsche Ausbildungssystem.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-white">Startseite</a></li>
+                        <li><a href="../curriculum.html" class="text-gray-300 hover:text-white">Lehrplan</a></li>
+                        <li><a href="../interview.html" class="text-gray-300 hover:text-white">Interview-Fragen</a></li>
+                        <li><a href="../mock-interviews.html" class="text-gray-300 hover:text-white">Mock-Interviews</a></li>
+                        <li><a href="../blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+                    <p class="text-gray-300">Bei Fragen oder Anregungen kontaktieren Sie uns bitte.</p>
+                    <p class="text-gray-300 mt-2">Email: info@deutschlernen.com</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300">&copy; 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

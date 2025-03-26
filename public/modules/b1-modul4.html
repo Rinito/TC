@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B1 Modul 4: Technik und Digitalisierung</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau B1</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 4: Technik und Digitalisierung</h1>
+            <p class="text-xl text-gray-600">Über moderne Technologien, digitale Medien und deren Einfluss auf unser Leben sprechen</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Über moderne Technologien und digitale Geräte zu sprechen</li>
+                    <li>Ihre Meinung zu digitalen Medien und sozialen Netzwerken auszudrücken</li>
+                    <li>Vor- und Nachteile der Digitalisierung zu diskutieren</li>
+                    <li>Technische Probleme zu beschreiben und um Hilfe zu bitten</li>
+                    <li>Über die Zukunft der Technologie zu spekulieren</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über digitale Geräte und Technologien sprechen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Digitale Geräte</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Smartphone</p>
+                        <p class="text-gray-600">智能手机</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Laptop / der Computer</p>
+                        <p class="text-gray-600">笔记本电脑 / 电脑</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Tablet</p>
+                        <p class="text-gray-600">平板电脑</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Smartwatch</p>
+                        <p class="text-gray-600">智能手表</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der E-Book-Reader</p>
+                        <p class="text-gray-600">电子书阅读器</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kopfhörer</p>
+                        <p class="text-gray-600">耳机</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Drucker</p>
+                        <p class="text-gray-600">打印机</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der USB-Stick</p>
+                        <p class="text-gray-600">U盘</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Festplatte</p>
+                        <p class="text-gray-600">硬盘</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Internet und digitale Dienste</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Internet</p>
+                        <p class="text-gray-600">互联网</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das WLAN</p>
+                        <p class="text-gray-600">无线网络</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die App / die Anwendung</p>
+                        <p class="text-gray-600">应用程序</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Website / die Webseite</p>
+                        <p class="text-gray-600">网站</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Suchmaschine</p>
+                        <p class="text-gray-600">搜索引擎</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Browser</p>
+                        <p class="text-gray-600">浏览器</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die E-Mail</p>
+                        <p class="text-gray-600">电子邮件</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Download / der Upload</p>
+                        <p class="text-gray-600">下载 / 上传</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Cloud</p>
+                        <p class="text-gray-600">云存储</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich benutze täglich mein Smartphone.</p>
+                        <p class="text-gray-600">我每天使用我的智能手机。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich surfe oft im Internet.</p>
+                        <p class="text-gray-600">我经常上网。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe eine schnelle/langsame Internetverbindung.</p>
+                        <p class="text-gray-600">我有快速/慢速的互联网连接。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich lade Apps/Musik/Filme herunter.</p>
+                        <p class="text-gray-600">我下载应用程序/音乐/电影。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich speichere meine Daten in der Cloud.</p>
+                        <p class="text-gray-600">我将我的数据存储在云中。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich aktualisiere regelmäßig meine Software.</p>
+                        <p class="text-gray-600">我定期更新我的软件。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Mein Gerät funktioniert nicht richtig.</p>
+                        <p class="text-gray-600">我的设备不能正常工作。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich muss mein Passwort zurücksetzen.</p>
+                        <p class="text-gray-600">我需要重置我的密码。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Passiv Präsens</h3>
+                <p class="mb-4">Das Passiv wird oft verwendet, wenn der Handelnde unwichtig ist oder nicht genannt werden soll. Es wird mit dem Hilfsverb "werden" und dem Partizip II gebildet.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Aktiv</th>
+                                <th class="py-2 px-4 border-b">Passiv</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Man benutzt das Smartphone täglich.</td>
+                                <td class="py-2 px-4 border-b">Das Smartphone <span class="font-medium">wird</span> täglich <span class="font-medium">benutzt</span>.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Die Firma entwickelt neue Apps.</td>
+                                <td class="py-2 px-4 border-b">Neue Apps <span class="font-medium">werden</span> (von der Firma) <span class="font-medium">entwickelt</span>.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Viele Menschen nutzen soziale Medien.</td>
+                                <td class="py-2 px-4 border-b">Soziale Medien <span class="font-medium">werden</span> von vielen Menschen <span class="font-medium">genutzt</span>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Bildung des Passivs:</p>
+                    <p class="mt-2">werden (konjugiert) + Partizip II</p>
+                    <div class="overflow-x-auto mt-2">
+                        <table class="min-w-full bg-white border">
+                            <thead>
+                                <tr>
+                                    <th class="py-2 px-4 border-b">Person</th>
+                                    <th class="py-2 px-4 border-b">werden + Partizip II</th>
+                                    <th class="py-2 px-4 border-b">Beispiel</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="py-2 px-4 border-b">ich</td>
+                                    <td class="py-2 px-4 border-b">werde</td>
+                                    <td class="py-2 px-4 border-b">Ich werde gefragt.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 px-4 border-b">du</td>
+                                    <td class="py-2 px-4 border-b">wirst</td>
+                                    <td class="py-2 px-4 border-b">Du wirst informiert.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 px-4 border-b">er/sie/es</td>
+                                    <td class="py-2 px-4 border-b">wird</td>
+                                    <td class="py-2 px-4 border-b">Das Gerät wird repariert.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 px-4 border-b">wir</td>
+                                    <td class="py-2 px-4 border-b">werden</td>
+                                    <td class="py-2 px-4 border-b">Wir werden benachrichtigt.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 px-4 border-b">ihr</td>
+                                    <td class="py-2 px-4 border-b">werdet</td>
+                                    <td class="py-2 px-4 border-b">Ihr werdet registriert.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 px-4 border-b">sie/Sie</td>
+                                    <td class="py-2 px-4 border-b">werden</td>
+                                    <td class="py-2 px-4 border-b">Die Daten werden gespeichert.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel: Über digitale Geräte</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Anna:</strong> Welche digitalen Geräte benutzt du täglich, Chen?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich benutze hauptsächlich mein Smartphone und meinen Laptop. Mein Smartphone habe ich immer dabei, um Nachrichten zu schreiben, zu telefonieren und im Internet zu surfen.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Wofür benutzt du deinen Laptop?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich benutze meinen Laptop für die Arbeit und zum Studieren. Ich schreibe Texte, erstelle Präsentationen und recherchiere im Internet. Und du? Welche Geräte benutzt du?</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ich benutze auch mein Smartphone und meinen Laptop. Außerdem habe ich eine Smartwatch, die ich beim Sport trage. Sie misst meine Herzfrequenz und zählt meine Schritte.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Das ist praktisch! Benutzt du auch einen E-Book-Reader?</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ja, ich lese gerne E-Books auf meinem Reader. Das ist sehr praktisch, besonders auf Reisen. Ich kann viele Bücher mitnehmen, ohne zusätzliches Gewicht.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Wie oft aktualisierst du deine Geräte und Software?</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ich aktualisiere meine Software regelmäßig, wenn Updates verfügbar sind. Meine Geräte wechsle ich nur, wenn sie nicht mehr richtig funktionieren oder zu alt sind. Und du?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ähnlich. Ich installiere Updates sofort, aber ich kaufe nicht jedes Jahr ein neues Smartphone. Das ist zu teuer und nicht umweltfreundlich.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Da hast du Recht. Viele elektronische Geräte werden zu schnell weggeworfen.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Meine digitalen Geräte</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Beschreiben Sie die digitalen Geräte, die Sie besitzen und benutzen</li>
+                        <li>Erklären Sie, wofür Sie jedes Gerät verwenden</li>
+                        <li>Verwenden Sie das Passiv, wo es sinnvoll ist</li>
+                        <li>Sprechen Sie über folgende Punkte:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Welche Geräte Sie besitzen</li>
+                            <li>Wie oft Sie diese Geräte benutzen</li>
+                            <li>Wofür Sie die Geräte hauptsächlich verwenden</li>
+                            <li>Welche Apps oder Programme Sie am häufigsten nutzen</li>
+                            <li>Wie wichtig diese Geräte für Ihren Alltag sind</li>
+                        </ul>
+                        <li>Sprechen Sie mindestens 2 Minuten</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über soziale Medien diskutieren</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Soziale Medien</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das soziale Netzwerk</p>
+                        <p class="text-gray-600">社交网络</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Profil</p>
+                        <p class="text-gray-600">个人资料</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Beitrag / der Post</p>
+                        <p class="text-gray-600">帖子</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Kommentar</p>
+                        <p class="text-gray-600">评论</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Foto / das Bild</p>
+                        <p class="text-gray-600">照片 / 图片</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Video</p>
+                        <p class="text-gray-600">视频</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Follower</p>
+                        <p class="text-gray-600">关注者</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">liken / gefällt mir</p>
+                        <p class="text-gray-600">点赞 / 喜欢</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">teilen / sharen</p>
+                        <p class="text-gray-600">分享</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Vor- und Nachteile</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h4 class="font-medium mb-2 text-green-600">Vorteile</h4>
+                        <div class="space-y-2">
+                            <div class="border rounded-md p-3">
+                                <p class="font-medium">der Vorteil</p>
+                                <p class="text-gray-600">优点</p>
+                            </div>
+                            <div class="border rounded-md p-3">
+                                <p class="font-medium">praktisch</p>
+                                <p class="text-gray-600">实用的</p>
+                            </div>
+                            <div class="border rounded-md p-3">
+                                <p class="font-medium">nützlich</p>
+                                <p class="text-gray-600">有用的</p>
+                            </div>
+                            <div class="border rounded-md p-3">
+                                <p class="font-medium">hilfreich</p>
+                                <p class="text-gray-600">有帮助的</p>
+                            </div>
+                            <div class="border rounded-md p-3">
+                                <p class="font-medium">effizient</p>
+                                <p class="text-gray-600">高效的</p>
+                            </div>
+                            <div class="border rounded-md p-3">
+                                <p class="font-medium">zeitsparend</p>
+                                <p class="text-gray-600">节省时间的</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-medium mb-2 text-red-600">Nachteile</h4>
+                        <div class="space-y-2">
+                            <div class="border rounded-md p-3">
+                                <p class="font-medium">der Nachteil</p>
+                                <p class="text-gray-600">缺点</p>
+                            </div>
+                            <div class="border rounded-md p-3">
+                                <p class="font-medium">gefährlich</p>
+                                <p class="text-gray-600">危险的</p>
+                            </div>
+                            <div class="border rounded-md p-3">
+                                <p class="font-medium">problematisch</p>
+                                <p class="text-gray-600">有问题的</p>
+                            </div>
+                            <div class="border rounded-md p-3">
+                                <p class="font-medium">zeitraubend</p>
+                                <p class="text-gray-600">耗时的</p>
+                            </div>
+                            <div class="border rounded-md p-3">
+                                <p class="font-medium">süchtig machend</p>
+                                <p class="text-gray-600">令人上瘾的</p>
+                            </div>
+                            <div class="border rounded-md p-3">
+                                <p class="font-medium">unsicher</p>
+                                <p class="text-gray-600">不安全的</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke für Diskussionen</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Meiner Meinung nach...</p>
+                        <p class="text-gray-600">在我看来...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich denke/glaube/finde, dass...</p>
+                        <p class="text-gray-600">我认为/相信/觉得...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Einerseits..., andererseits...</p>
+                        <p class="text-gray-600">一方面...，另一方面...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ein Vorteil/Nachteil ist...</p>
+                        <p class="text-gray-600">一个优点/缺点是...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich stimme zu/nicht zu.</p>
+                        <p class="text-gray-600">我同意/不同意。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Das sehe ich anders.</p>
+                        <p class="text-gray-600">我有不同的看法。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich bin dafür/dagegen.</p>
+                        <p class="text-gray-600">我支持/反对。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Zusammenfassend kann man sagen...</p>
+                        <p class="text-gray-600">总的来说...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Nebensätze mit dass</h3>
+                <p class="mb-4">Nebensätze mit "dass" werden oft verwendet, um Meinungen, Gedanken oder Überzeugungen auszudrücken.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Hauptsatz</th>
+                                <th class="py-2 px-4 border-b">Nebensatz mit "dass"</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Ich denke,</td>
+                                <td class="py-2 px-4 border-b"><span class="font-medium">dass</span> soziale Medien nützlich sein können.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Er glaubt,</td>
+                                <td class="py-2 px-4 border-b"><span class="font-medium">dass</span> zu viel Zeit online nicht gut ist.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Wir meinen,</td>
+                                <td class="py-2 px-4 border-b"><span class="font-medium">dass</span> man vorsichtig mit persönlichen Daten sein sollte.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Wichtig:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>In Nebensätzen mit "dass" steht das Verb am Ende des Satzes.</li>
+                        <li>Verben, die oft mit "dass"-Sätzen verwendet werden: denken, glauben, meinen, finden, sagen, behaupten, vermuten, hoffen, wünschen.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel: Diskussion über soziale Medien</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Anna:</strong> Benutzt du soziale Medien, Chen?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ja, ich benutze Instagram und WeChat. Und du?</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ich bin auf Instagram, Facebook und Twitter. Was denkst du über soziale Medien? Findest du sie nützlich?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich denke, dass soziale Medien sowohl Vor- als auch Nachteile haben. Einerseits sind sie praktisch, um mit Freunden und Familie in Kontakt zu bleiben, besonders wenn man weit weg ist. Andererseits können sie auch viel Zeit kosten.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Da stimme ich zu. Ich glaube, dass viele Menschen zu viel Zeit mit sozialen Medien verbringen. Manchmal checke ich Instagram, ohne es zu merken, und dann ist eine Stunde vergangen.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ja, das kenne ich auch. Ein weiterer Nachteil ist, dass man oft nur die Highlights im Leben anderer Menschen sieht. Das kann Druck erzeugen und unglücklich machen.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Das sehe ich auch so. Viele Bilder werden bearbeitet und zeigen nicht die Realität. Aber ich finde auch, dass soziale Medien hilfreich sein können, um neue Ideen zu bekommen oder sich über Themen zu informieren.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Stimmt. Ich folge einigen Bildungskanälen und lerne viel daraus. Außerdem kann man über soziale Medien leicht neue Leute mit ähnlichen Interessen kennenlernen.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Was denkst du über Datenschutz in sozialen Medien?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Das ist ein wichtiges Thema. Ich glaube, dass viele Nutzer nicht wissen, wie ihre Daten verwendet werden. Ich bin vorsichtig mit den Informationen, die ich online teile.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ich auch. Zusammenfassend kann man sagen, dass soziale Medien nützlich sein können, wenn man sie bewusst und in Maßen nutzt.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Diskussion über soziale Medien</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Arbeiten Sie in Gruppen von 3-4 Personen</li>
+                        <li>Diskutieren Sie über folgende Fragen:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Welche sozialen Medien benutzen Sie und wofür?</li>
+                            <li>Was sind die Vor- und Nachteile sozialer Medien?</li>
+                            <li>Wie beeinflussen soziale Medien unser tägliches Leben?</li>
+                            <li>Sollte es mehr Regulierung für soziale Medien geben?</li>
+                            <li>Wie wird die Zukunft sozialer Medien aussehen?</li>
+                        </ul>
+                        <li>Verwenden Sie die gelernten Ausdrücke für Diskussionen</li>
+                        <li>Benutzen Sie Nebensätze mit "dass"</li>
+                        <li>Jede Person sollte ihre Meinung äußern und auf die anderen reagieren</li>
+                        <li>Die Diskussion sollte mindestens 10 Minuten dauern</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über technische Probleme sprechen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Technische Probleme</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Problem</p>
+                        <p class="text-gray-600">问题</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Fehler</p>
+                        <p class="text-gray-600">错误</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">abstürzen</p>
+                        <p class="text-gray-600">崩溃</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">hängen / einfrieren</p>
+                        <p class="text-gray-600">卡住 / 冻结</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">langsam sein</p>
+                        <p class="text-gray-600">很慢</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">nicht funktionieren</p>
+                        <p class="text-gray-600">不工作</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Virus</p>
+                        <p class="text-gray-600">病毒</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Fehlermeldung</p>
+                        <p class="text-gray-600">错误信息</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Bildschirm</p>
+                        <p class="text-gray-600">屏幕</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Lösungen</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">neu starten</p>
+                        <p class="text-gray-600">重新启动</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">aktualisieren / updaten</p>
+                        <p class="text-gray-600">更新</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">installieren / deinstallieren</p>
+                        <p class="text-gray-600">安装 / 卸载</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">reparieren</p>
+                        <p class="text-gray-600">修理</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">zurücksetzen</p>
+                        <p class="text-gray-600">重置</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">sichern / ein Backup machen</p>
+                        <p class="text-gray-600">备份</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Kundendienst / der Support</p>
+                        <p class="text-gray-600">客户服务 / 技术支持</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Anleitung</p>
+                        <p class="text-gray-600">说明书</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Lösung</p>
+                        <p class="text-gray-600">解决方案</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe ein Problem mit...</p>
+                        <p class="text-gray-600">我的...有问题。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Mein Computer/Smartphone funktioniert nicht richtig.</p>
+                        <p class="text-gray-600">我的电脑/智能手机不能正常工作。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die App/Das Programm stürzt immer ab.</p>
+                        <p class="text-gray-600">应用程序/程序总是崩溃。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Der Bildschirm ist eingefroren.</p>
+                        <p class="text-gray-600">屏幕卡住了。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Können Sie mir helfen?</p>
+                        <p class="text-gray-600">您能帮我吗？</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Was soll ich tun?</p>
+                        <p class="text-gray-600">我该怎么办？</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Haben Sie einen Vorschlag?</p>
+                        <p class="text-gray-600">您有什么建议吗？</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe alles versucht.</p>
+                        <p class="text-gray-600">我已经尝试了所有方法。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Imperativ (Befehlsform)</h3>
+                <p class="mb-4">Der Imperativ wird verwendet, um Anweisungen oder Befehle zu geben. Er ist besonders nützlich, wenn man technische Anleitungen gibt.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Person</th>
+                                <th class="py-2 px-4 border-b">Bildung</th>
+                                <th class="py-2 px-4 border-b">Beispiel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">du</td>
+                                <td class="py-2 px-4 border-b">Verbstamm (+ e bei Bedarf)</td>
+                                <td class="py-2 px-4 border-b">Start<span class="font-medium">e</span> den Computer neu!</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">ihr</td>
+                                <td class="py-2 px-4 border-b">Verbstamm + t</td>
+                                <td class="py-2 px-4 border-b">Installier<span class="font-medium">t</span> das Update!</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Sie (höflich)</td>
+                                <td class="py-2 px-4 border-b">Verb + en Sie</td>
+                                <td class="py-2 px-4 border-b">Schließ<span class="font-medium">en Sie</span> alle Programme!</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Beispiele für technische Anweisungen:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Starte den Computer neu!</li>
+                        <li>Installiere das Update!</li>
+                        <li>Schließe alle Programme!</li>
+                        <li>Mache ein Backup deiner Daten!</li>
+                        <li>Setze das Gerät auf Werkseinstellungen zurück!</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel: Technische Probleme</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Chen:</strong> Hallo, ich habe ein Problem mit meinem Laptop. Er ist sehr langsam und manchmal stürzt er ab.</p>
+                    <p class="mb-2"><strong>Techniker:</strong> Seit wann haben Sie dieses Problem?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Seit etwa einer Woche. Vorher hat alles gut funktioniert.</p>
+                    <p class="mb-2"><strong>Techniker:</strong> Haben Sie in letzter Zeit neue Programme installiert?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ja, ich habe einige neue Apps installiert. Könnte das das Problem sein?</p>
+                    <p class="mb-2"><strong>Techniker:</strong> Möglicherweise. Lassen Sie uns zuerst einige einfache Lösungen versuchen. Starten Sie Ihren Laptop neu.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Das habe ich schon mehrmals gemacht, aber es hat nicht geholfen.</p>
+                    <p class="mb-2"><strong>Techniker:</strong> Okay, dann überprüfen wir, ob alle Updates installiert sind. Öffnen Sie die Einstellungen und gehen Sie zu "Update und Sicherheit".</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich sehe, dass einige Updates verfügbar sind. Soll ich sie installieren?</p>
+                    <p class="mb-2"><strong>Techniker:</strong> Ja, installieren Sie alle verfügbaren Updates. Das kann einige Zeit dauern. Danach starten Sie den Laptop neu.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Okay, ich werde das tun. Und wenn das nicht hilft?</p>
+                    <p class="mb-2"><strong>Techniker:</strong> Wenn das Problem weiterhin besteht, deinstallieren Sie die neuen Apps, die Sie kürzlich installiert haben. Wenn auch das nicht hilft, rufen Sie uns wieder an. Möglicherweise müssen wir dann einen Virenscan durchführen.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Vielen Dank für Ihre Hilfe. Ich versuche es und melde mich wieder, wenn es nicht funktioniert.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Rollenspiel - Technischer Support</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Arbeiten Sie mit einem Partner</li>
+                        <li>Eine Person hat ein technisches Problem, die andere ist Techniker/in</li>
+                        <li>Die Person mit dem Problem beschreibt das Problem und bittet um Hilfe</li>
+                        <li>Der/Die Techniker/in stellt Fragen und gibt Anweisungen (mit Imperativ)</li>
+                        <li>Wechseln Sie die Rollen und wiederholen Sie die Übung mit einem anderen Problem</li>
+                    </ol>
+                    <p class="mt-4 font-medium">Mögliche Probleme:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Smartphone stürzt ständig ab</li>
+                        <li>Computer ist sehr langsam</li>
+                        <li>WLAN-Verbindung funktioniert nicht</li>
+                        <li>E-Mails können nicht gesendet werden</li>
+                        <li>Drucker druckt nicht</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Zusammenfassung und Übungen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wichtiger Wortschatz</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Technologie</p>
+                        <p class="text-gray-600">技术</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">digital</p>
+                        <p class="text-gray-600">数字的</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Internet</p>
+                        <p class="text-gray-600">互联网</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das soziale Netzwerk</p>
+                        <p class="text-gray-600">社交网络</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Problem</p>
+                        <p class="text-gray-600">问题</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Lösung</p>
+                        <p class="text-gray-600">解决方案</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Präsentation über Technologie</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Bereiten Sie eine kurze Präsentation (3-4 Minuten) zu einem der folgenden Themen vor:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Meine Lieblingstechnologie und wie sie mein Leben verändert hat</li>
+                            <li>Die Vor- und Nachteile sozialer Medien</li>
+                            <li>Wie Technologie die Bildung/Arbeit/Kommunikation verändert hat</li>
+                            <li>Die Zukunft der Technologie</li>
+                        </ul>
+                        <li>Verwenden Sie das Passiv, Nebensätze mit "dass" und den gelernten Wortschatz</li>
+                        <li>Bereiten Sie Notizen vor, aber lesen Sie nicht ab</li>
+                        <li>Präsentieren Sie vor der Gruppe und beantworten Sie Fragen</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Hausaufgaben</h3>
+                <div class="bg-blue-50 p-4 rounded-md border border-blue-200">
+                    <p class="font-medium mb-2">Für die nächste Stunde:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Schreiben Sie einen Text (150-180 Wörter) über Ihre Erfahrungen mit Technologie und digitalen Medien</li>
+                        <li>Verwenden Sie das Passiv, Nebensätze mit "dass" und den Imperativ</li>
+                        <li>Lernen Sie den Wortschatz zu digitalen Geräten, sozialen Medien und technischen Problemen</li>
+                        <li>Bereiten Sie sich auf eine Diskussion über die Zukunft der Technologie vor</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Deutsch Lernen</h3>
+                    <p class="text-gray-300">Umfassende Lernmaterialien für chinesische Studenten zur Vorbereitung auf das deutsche Ausbildungssystem.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-white">Startseite</a></li>
+                        <li><a href="../curriculum.html" class="text-gray-300 hover:text-white">Lehrplan</a></li>
+                        <li><a href="../interview.html" class="text-gray-300 hover:text-white">Interview-Fragen</a></li>
+                        <li><a href="../mock-interviews.html" class="text-gray-300 hover:text-white">Mock-Interviews</a></li>
+                        <li><a href="../blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+                    <p class="text-gray-300">Bei Fragen oder Anregungen kontaktieren Sie uns bitte.</p>
+                    <p class="text-gray-300 mt-2">Email: info@deutschlernen.com</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300">&copy; 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

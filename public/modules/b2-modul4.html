@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2 Modul 4: Wissenschaft und Forschung</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau B2</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 4: Wissenschaft und Forschung</h1>
+            <p class="text-xl text-gray-600">Über wissenschaftliche Themen diskutieren und Forschungsergebnisse präsentieren</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Über wissenschaftliche Themen und Entwicklungen zu diskutieren</li>
+                    <li>Forschungsergebnisse zu präsentieren und zu erklären</li>
+                    <li>Komplexe Sachverhalte verständlich darzustellen</li>
+                    <li>Fachbegriffe aus verschiedenen wissenschaftlichen Bereichen zu verwenden</li>
+                    <li>Ihre Meinung zu ethischen Fragen in der Wissenschaft zu äußern</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über wissenschaftliche Themen diskutieren</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Wissenschaftliche Disziplinen</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Naturwissenschaft</p>
+                        <p class="text-gray-600">自然科学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Geisteswissenschaft</p>
+                        <p class="text-gray-600">人文科学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Sozialwissenschaft</p>
+                        <p class="text-gray-600">社会科学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Physik</p>
+                        <p class="text-gray-600">物理学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Chemie</p>
+                        <p class="text-gray-600">化学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Biologie</p>
+                        <p class="text-gray-600">生物学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Medizin</p>
+                        <p class="text-gray-600">医学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Psychologie</p>
+                        <p class="text-gray-600">心理学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Informatik</p>
+                        <p class="text-gray-600">计算机科学</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Forschung und Wissenschaft</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Forschung</p>
+                        <p class="text-gray-600">研究</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Experiment</p>
+                        <p class="text-gray-600">实验</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Hypothese</p>
+                        <p class="text-gray-600">假设</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Theorie</p>
+                        <p class="text-gray-600">理论</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Studie</p>
+                        <p class="text-gray-600">研究</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Daten (Pl.)</p>
+                        <p class="text-gray-600">数据</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Analyse</p>
+                        <p class="text-gray-600">分析</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Ergebnisse (Pl.)</p>
+                        <p class="text-gray-600">结果</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Entdeckung</p>
+                        <p class="text-gray-600">发现</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Studie zeigt, dass...</p>
+                        <p class="text-gray-600">研究表明...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Ergebnisse deuten darauf hin, dass...</p>
+                        <p class="text-gray-600">结果表明...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wissenschaftler haben herausgefunden, dass...</p>
+                        <p class="text-gray-600">科学家发现...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Diese Theorie basiert auf der Annahme, dass...</p>
+                        <p class="text-gray-600">这个理论基于这样的假设...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Daten belegen eindeutig, dass...</p>
+                        <p class="text-gray-600">数据清楚地表明...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Es gibt verschiedene Ansätze zu diesem Problem.</p>
+                        <p class="text-gray-600">对这个问题有不同的方法。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich interessiere mich besonders für den Bereich...</p>
+                        <p class="text-gray-600">我对...领域特别感兴趣。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Diese Entdeckung könnte weitreichende Folgen haben.</p>
+                        <p class="text-gray-600">这一发现可能会产生深远的影响。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Passiv mit Modalverben</h3>
+                <p class="mb-4">Das Passiv mit Modalverben wird häufig in wissenschaftlichen Texten und Diskussionen verwendet, um Notwendigkeiten, Möglichkeiten oder Verbote auszudrücken, ohne den Handelnden zu nennen.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Modalverb</th>
+                                <th class="py-2 px-4 border-b">Passiv mit Modalverb</th>
+                                <th class="py-2 px-4 border-b">Beispiel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">müssen</td>
+                                <td class="py-2 px-4 border-b">muss + Partizip II + werden</td>
+                                <td class="py-2 px-4 border-b">Die Daten <span class="font-medium">müssen sorgfältig analysiert werden</span>.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">können</td>
+                                <td class="py-2 px-4 border-b">kann + Partizip II + werden</td>
+                                <td class="py-2 px-4 border-b">Diese Theorie <span class="font-medium">kann durch Experimente bestätigt werden</span>.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">sollen</td>
+                                <td class="py-2 px-4 border-b">soll + Partizip II + werden</td>
+                                <td class="py-2 px-4 border-b">Die Ergebnisse <span class="font-medium">sollen nächste Woche veröffentlicht werden</span>.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">dürfen</td>
+                                <td class="py-2 px-4 border-b">darf + Partizip II + werden</td>
+                                <td class="py-2 px-4 border-b">Bestimmte Experimente <span class="font-medium">dürfen nicht durchgeführt werden</span>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Hinweis:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Im Passiv mit Modalverben steht das konjugierte Modalverb an Position 2 im Satz.</li>
+                        <li>Das Partizip II des Hauptverbs steht am Ende des Satzes.</li>
+                        <li>"werden" steht in seiner Infinitivform vor dem Partizip II.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel: Über wissenschaftliche Entwicklungen</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Professor Schmidt:</strong> Guten Tag, Herr Li. Ich habe gehört, Sie interessieren sich für die neuesten Entwicklungen in der Quantenphysik?</p>
+                    <p class="mb-2"><strong>Herr Li:</strong> Ja, das stimmt, Professor Schmidt. Ich finde dieses Gebiet faszinierend. Besonders die Quantencomputer haben meine Aufmerksamkeit geweckt.</p>
+                    <p class="mb-2"><strong>Professor Schmidt:</strong> Ein spannendes Thema! Wissen Sie, dass erst letzte Woche eine bahnbrechende Studie veröffentlicht wurde?</p>
+                    <p class="mb-2"><strong>Herr Li:</strong> Nein, das wusste ich nicht. Worum geht es in dieser Studie?</p>
+                    <p class="mb-2"><strong>Professor Schmidt:</strong> Wissenschaftler haben einen Quantencomputer entwickelt, der bestimmte Berechnungen millionenfach schneller durchführen kann als herkömmliche Computer. Die Ergebnisse deuten darauf hin, dass wir kurz vor einem Durchbruch in diesem Bereich stehen.</p>
+                    <p class="mb-2"><strong>Herr Li:</strong> Das klingt beeindruckend! Welche praktischen Anwendungen könnte diese Technologie haben?</p>
+                    <p class="mb-2"><strong>Professor Schmidt:</strong> Die Anwendungsmöglichkeiten sind vielfältig. Mit Quantencomputern können komplexe Simulationen durchgeführt werden, die für die Medikamentenentwicklung oder Klimamodelle wichtig sind. Auch in der Kryptographie können sie eingesetzt werden.</p>
+                    <p class="mb-2"><strong>Herr Li:</strong> Ich habe gelesen, dass Quantencomputer auch bestehende Verschlüsselungsmethoden knacken könnten. Stimmt das?</p>
+                    <p class="mb-2"><strong>Professor Schmidt:</strong> Ja, das ist ein wichtiger Punkt. Viele aktuelle Verschlüsselungsmethoden müssen überdacht werden. Es muss eine neue, quantensichere Kryptographie entwickelt werden.</p>
+                    <p class="mb-2"><strong>Herr Li:</strong> Das wirft natürlich auch ethische Fragen auf. Wie kann sichergestellt werden, dass diese Technologie verantwortungsvoll eingesetzt wird?</p>
+                    <p class="mb-2"><strong>Professor Schmidt:</strong> Eine sehr gute Frage. Die ethischen Aspekte dürfen nicht vernachlässigt werden. Es sollten internationale Standards und Richtlinien festgelegt werden. Die Forschung in diesem Bereich muss transparent sein, und die möglichen Auswirkungen müssen sorgfältig analysiert werden.</p>
+                    <p class="mb-2"><strong>Herr Li:</strong> Ich denke, es ist wichtig, dass nicht nur Experten, sondern auch die Öffentlichkeit in diese Diskussion einbezogen wird.</p>
+                    <p class="mb-2"><strong>Professor Schmidt:</strong> Da stimme ich Ihnen vollkommen zu. Wissenschaftliche Erkenntnisse sollten allgemein verständlich kommuniziert werden, damit alle an der Debatte teilnehmen können.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Wissenschaftliche Diskussion</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Bilden Sie Gruppen von 3-4 Personen</li>
+                        <li>Wählen Sie eines der folgenden wissenschaftlichen Themen:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Künstliche Intelligenz und ihre Auswirkungen auf die Gesellschaft</li>
+                            <li>Genforschung und ethische Grenzen</li>
+                            <li>Klimawandel und wissenschaftliche Erkenntnisse</li>
+                            <li>Digitalisierung im Gesundheitswesen</li>
+                        </ul>
+                        <li>Diskutieren Sie folgende Aspekte:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Aktuelle Forschungsergebnisse in diesem Bereich</li>
+                            <li>Mögliche Anwendungen und Auswirkungen</li>
+                            <li>Ethische Fragen und Bedenken</li>
+                            <li>Notwendige Regulierungen oder Richtlinien</li>
+                        </ul>
+                        <li>Verwenden Sie das Passiv mit Modalverben und den Fachwortschatz</li>
+                        <li>Bereiten Sie eine kurze Zusammenfassung Ihrer Diskussion vor und präsentieren Sie diese der Klasse</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Forschungsergebnisse präsentieren</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Präsentation und Vortrag</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Präsentation</p>
+                        <p class="text-gray-600">演讲</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Vortrag</p>
+                        <p class="text-gray-600">报告</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Einleitung</p>
+                        <p class="text-gray-600">引言</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Hauptteil</p>
+                        <p class="text-gray-600">主体部分</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Fazit</p>
+                        <p class="text-gray-600">结论</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Folie</p>
+                        <p class="text-gray-600">幻灯片</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Grafik</p>
+                        <p class="text-gray-600">图表</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Statistik</p>
+                        <p class="text-gray-600">统计数据</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Frage-und-Antwort-Runde</p>
+                        <p class="text-gray-600">问答环节</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Visuelle Darstellung</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Diagramm</p>
+                        <p class="text-gray-600">图表</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Balkendiagramm</p>
+                        <p class="text-gray-600">条形图</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Kreisdiagramm</p>
+                        <p class="text-gray-600">饼图</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kurve</p>
+                        <p class="text-gray-600">曲线</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Tabelle</p>
+                        <p class="text-gray-600">表格</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Achse</p>
+                        <p class="text-gray-600">轴</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Prozentsatz</p>
+                        <p class="text-gray-600">百分比</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Anstieg</p>
+                        <p class="text-gray-600">增长</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Rückgang</p>
+                        <p class="text-gray-600">下降</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke für Präsentationen</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich möchte Ihnen heute die Ergebnisse unserer Studie vorstellen.</p>
+                        <p class="text-gray-600">今天我想向您介绍我们研究的结果。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Zunächst werde ich einen Überblick über die Methodik geben.</p>
+                        <p class="text-gray-600">首先，我将概述研究方法。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wie Sie auf dieser Grafik sehen können, ...</p>
+                        <p class="text-gray-600">正如您在这张图表上看到的...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Daten zeigen einen deutlichen Anstieg/Rückgang.</p>
+                        <p class="text-gray-600">数据显示明显的增长/下降。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Besonders interessant ist die Tatsache, dass...</p>
+                        <p class="text-gray-600">特别有趣的是...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Zusammenfassend lässt sich sagen, dass...</p>
+                        <p class="text-gray-600">总而言之...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Haben Sie Fragen zu meiner Präsentation?</p>
+                        <p class="text-gray-600">您对我的演讲有问题吗？</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Vielen Dank für Ihre Aufmerksamkeit.</p>
+                        <p class="text-gray-600">感谢您的关注。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Indirekte Rede</h3>
+                <p class="mb-4">Die indirekte Rede wird verwendet, um die Aussagen oder Meinungen anderer wiederzugeben, ohne sie direkt zu zitieren. Sie ist besonders nützlich bei der Präsentation von Forschungsergebnissen.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Direkte Rede</th>
+                                <th class="py-2 px-4 border-b">Indirekte Rede</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Der Forscher sagt: "Die Ergebnisse sind eindeutig."</td>
+                                <td class="py-2 px-4 border-b">Der Forscher sagt, dass die Ergebnisse eindeutig <span class="font-medium">seien</span>.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Sie erklärt: "Wir haben eine neue Methode entwickelt."</td>
+                                <td class="py-2 px-4 border-b">Sie erklärt, dass sie eine neue Methode entwickelt <span class="font-medium">hätten</span>.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Er behauptet: "Diese Theorie wird die Wissenschaft revolutionieren."</td>
+                                <td class="py-2 px-4 border-b">Er behauptet, dass diese Theorie die Wissenschaft revolutionieren <span class="font-medium">werde</span>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Konjunktiv I in der indirekten Rede:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>In der indirekten Rede wird oft der Konjunktiv I verwendet.</li>
+                        <li>Wenn der Konjunktiv I mit dem Indikativ identisch ist, wird der Konjunktiv II verwendet.</li>
+                        <li>Die indirekte Rede wird oft mit "dass" eingeleitet, kann aber auch ohne "dass" stehen.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Beispiel: Präsentation von Forschungsergebnissen</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Frau Wang:</strong> Guten Tag, sehr geehrte Damen und Herren. Ich möchte Ihnen heute die Ergebnisse unserer Studie zum Thema "Auswirkungen der Digitalisierung auf das Lernverhalten von Studierenden" vorstellen.</p>
+                    <p class="mb-2">Zunächst werde ich einen Überblick über unsere Forschungsmethodik geben. Für diese Studie wurden 500 Studierende aus verschiedenen Fachbereichen befragt. Die Umfrage wurde online durchgeführt und umfasste sowohl geschlossene als auch offene Fragen.</p>
+                    <p class="mb-2">Wie Sie auf dieser Grafik sehen können, nutzen 85% der Befragten digitale Lernplattformen. Das Balkendiagramm zeigt die Verteilung nach Fachbereichen. Besonders in den naturwissenschaftlichen Fächern ist die Nutzung sehr hoch.</p>
+                    <p class="mb-2">Interessanterweise haben wir festgestellt, dass die Nutzung digitaler Medien nicht automatisch zu besseren Lernergebnissen führt. Die Daten zeigen, dass die Qualität der digitalen Angebote entscheidend ist. Schlecht konzipierte Plattformen können sogar zu einer Verschlechterung der Lernergebnisse führen.</p>
+                    <p class="mb-2">Ein weiteres wichtiges Ergebnis ist der Zusammenhang zwischen der Nutzung sozialer Medien und der Konzentrationsfähigkeit. Wie das Kreisdiagramm zeigt, berichten 62% der Studierenden, dass sie durch Benachrichtigungen auf ihren Smartphones häufig abgelenkt werden.</p>
+                    <p class="mb-2">Experten auf diesem Gebiet betonen, dass digitale Kompetenzen gezielt gefördert werden müssten. Professor Schmidt von der Universität Berlin sagt, dass die Hochschulen ihre Lehrkonzepte überdenken sollten. Er behauptet, dass eine Kombination aus traditionellen und digitalen Lehrmethoden am effektivsten sei.</p>
+                    <p class="mb-2">Zusammenfassend lässt sich sagen, dass die Digitalisierung sowohl Chancen als auch Herausforderungen für das Lernen bietet. Unsere Empfehlungen sind:</p>
+                    <ul class="list-disc pl-5 mt-1 mb-2">
+                        <li>Digitale Lernplattformen müssen benutzerfreundlich und didaktisch sinnvoll gestaltet werden.</li>
+                        <li>Studierende sollten im Umgang mit digitalen Ablenkungen geschult werden.</li>
+                        <li>Eine Kombination aus digitalen und analogen Lernmethoden sollte angestrebt werden.</li>
+                    </ul>
+                    <p class="mb-2">Vielen Dank für Ihre Aufmerksamkeit. Ich stehe nun für Fragen zur Verfügung.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Forschungspräsentation</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Bereiten Sie eine kurze Präsentation (5-7 Minuten) zu einem wissenschaftlichen Thema Ihrer Wahl vor</li>
+                        <li>Ihre Präsentation sollte folgende Elemente enthalten:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Eine klare Einleitung mit Vorstellung des Themas</li>
+                            <li>Beschreibung der Methodik oder des Forschungsansatzes</li>
+                            <li>Präsentation von Ergebnissen oder Erkenntnissen (mit fiktiven oder realen Daten)</li>
+                            <li>Beschreibung mindestens einer Grafik oder Statistik</li>
+                            <li>Wiedergabe von Expertenmeinungen in indirekter Rede</li>
+                            <li>Ein klares Fazit mit Schlussfolgerungen</li>
+                        </ul>
+                        <li>Verwenden Sie den Fachwortschatz und die grammatischen Strukturen aus diesem Modul</li>
+                        <li>Halten Sie Ihre Präsentation vor der Gruppe und beantworten Sie Fragen</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über ethische Fragen in der Wissenschaft diskutieren</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Ethik und Moral</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Ethik</p>
+                        <p class="text-gray-600">伦理学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Moral</p>
+                        <p class="text-gray-600">道德</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Dilemma</p>
+                        <p class="text-gray-600">两难境地</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Verantwortung</p>
+                        <p class="text-gray-600">责任</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Grenze</p>
+                        <p class="text-gray-600">界限</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Risiko</p>
+                        <p class="text-gray-600">风险</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Missbrauch</p>
+                        <p class="text-gray-600">滥用</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Richtlinie</p>
+                        <p class="text-gray-600">指导方针</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Regulierung</p>
+                        <p class="text-gray-600">监管</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Ethische Debatten in der Wissenschaft</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Genforschung</p>
+                        <p class="text-gray-600">基因研究</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Stammzellenforschung</p>
+                        <p class="text-gray-600">干细胞研究</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die künstliche Intelligenz</p>
+                        <p class="text-gray-600">人工智能</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Datenschutz</p>
+                        <p class="text-gray-600">数据保护</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Privatsphäre</p>
+                        <p class="text-gray-600">隐私</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Tierversuche</p>
+                        <p class="text-gray-600">动物实验</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Überwachung</p>
+                        <p class="text-gray-600">监控</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Manipulation</p>
+                        <p class="text-gray-600">操纵</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Transparenz</p>
+                        <p class="text-gray-600">透明度</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke für ethische Diskussionen</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich bin der Meinung, dass...</p>
+                        <p class="text-gray-600">我认为...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Aus ethischer Sicht ist es problematisch, wenn...</p>
+                        <p class="text-gray-600">从伦理角度来看，如果...是有问题的。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Man muss abwägen zwischen... und...</p>
+                        <p class="text-gray-600">必须权衡...和...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Vorteile überwiegen die Nachteile.</p>
+                        <p class="text-gray-600">优点大于缺点。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Es stellt sich die Frage, ob...</p>
+                        <p class="text-gray-600">问题是是否...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wir müssen klare Grenzen setzen.</p>
+                        <p class="text-gray-600">我们必须设定明确的界限。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Es besteht die Gefahr, dass...</p>
+                        <p class="text-gray-600">存在...的危险。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich stimme dir zu, aber...</p>
+                        <p class="text-gray-600">我同意你的观点，但是...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Zweiteilige Konnektoren</h3>
+                <p class="mb-4">Zweiteilige Konnektoren sind nützlich, um komplexe Argumente zu strukturieren und verschiedene Aspekte miteinander zu verbinden.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Konnektor</th>
+                                <th class="py-2 px-4 border-b">Bedeutung</th>
+                                <th class="py-2 px-4 border-b">Beispiel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">einerseits... andererseits</td>
+                                <td class="py-2 px-4 border-b">auf der einen Seite... auf der anderen Seite</td>
+                                <td class="py-2 px-4 border-b"><span class="font-medium">Einerseits</span> bietet die Genforschung neue Heilungsmöglichkeiten, <span class="font-medium">andererseits</span> birgt sie auch Risiken.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">zwar... aber</td>
+                                <td class="py-2 px-4 border-b">obwohl... trotzdem</td>
+                                <td class="py-2 px-4 border-b">Die Technologie ist <span class="font-medium">zwar</span> fortschrittlich, <span class="font-medium">aber</span> sie wirft ethische Fragen auf.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">nicht nur... sondern auch</td>
+                                <td class="py-2 px-4 border-b">zusätzlich zu</td>
+                                <td class="py-2 px-4 border-b">KI kann <span class="font-medium">nicht nur</span> Arbeitsplätze ersetzen, <span class="font-medium">sondern auch</span> neue schaffen.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">weder... noch</td>
+                                <td class="py-2 px-4 border-b">keines von beiden</td>
+                                <td class="py-2 px-4 border-b">Diese Methode ist <span class="font-medium">weder</span> ethisch vertretbar <span class="font-medium">noch</span> wissenschaftlich fundiert.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">sowohl... als auch</td>
+                                <td class="py-2 px-4 border-b">beide</td>
+                                <td class="py-2 px-4 border-b">Wir müssen <span class="font-medium">sowohl</span> die Chancen <span class="font-medium">als auch</span> die Risiken berücksichtigen.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">je... desto</td>
+                                <td class="py-2 px-4 border-b">Proportionalität</td>
+                                <td class="py-2 px-4 border-b"><span class="font-medium">Je</span> mehr wir forschen, <span class="font-medium">desto</span> mehr ethische Fragen entstehen.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Hinweis:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Bei "zwar... aber" steht "zwar" im Hauptsatz und "aber" leitet einen neuen Hauptsatz ein.</li>
+                        <li>Bei "je... desto" steht das Verb direkt nach "je" und "desto".</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel: Ethische Debatte über KI</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Dr. Müller:</strong> Heute möchte ich mit Ihnen über die ethischen Aspekte der künstlichen Intelligenz sprechen. Was denken Sie, Frau Zhang?</p>
+                    <p class="mb-2"><strong>Frau Zhang:</strong> Ich bin der Meinung, dass KI sowohl Chancen als auch Risiken birgt. Einerseits kann sie uns bei vielen Aufgaben unterstützen und die Effizienz steigern, andererseits besteht die Gefahr, dass sie missbraucht wird oder außer Kontrolle gerät.</p>
+                    <p class="mb-2"><strong>Dr. Müller:</strong> Ein wichtiger Punkt. Welche ethischen Bedenken haben Sie konkret?</p>
+                    <p class="mb-2"><strong>Frau Zhang:</strong> Zunächst einmal der Datenschutz. KI-Systeme benötigen enorme Mengen an Daten, und es stellt sich die Frage, ob die Privatsphäre der Menschen ausreichend geschützt wird. Außerdem gibt es das Problem der Transparenz. Viele KI-Algorithmen sind so komplex, dass selbst ihre Entwickler nicht genau verstehen, wie sie zu bestimmten Entscheidungen kommen.</p>
+                    <p class="mb-2"><strong>Dr. Müller:</strong> Das stimmt. Man spricht hier vom "Black-Box-Problem". Wir müssen abwägen zwischen der Leistungsfähigkeit der KI und der Nachvollziehbarkeit ihrer Entscheidungen.</p>
+                    <p class="mb-2"><strong>Frau Zhang:</strong> Genau. Ein weiteres Dilemma betrifft die Arbeitsplätze. KI kann zwar viele Routineaufgaben übernehmen und so Menschen von monotoner Arbeit befreien, aber sie könnte auch zahlreiche Arbeitsplätze überflüssig machen.</p>
+                    <p class="mb-2"><strong>Dr. Müller:</strong> Das ist ein wichtiger Aspekt. Je mehr die KI-Technologie voranschreitet, desto mehr müssen wir uns mit diesen sozialen Fragen auseinandersetzen. Was denken Sie über die Regulierung von KI?</p>
+                    <p class="mb-2"><strong>Frau Zhang:</strong> Ich denke, wir brauchen klare Richtlinien und Regulierungen. Die Entwicklung von KI darf nicht nur von wirtschaftlichen Interessen getrieben sein. Wir müssen sicherstellen, dass ethische Grundsätze eingehalten werden.</p>
+                    <p class="mb-2"><strong>Dr. Müller:</strong> Ich stimme Ihnen zu, aber die Umsetzung ist nicht einfach. KI entwickelt sich so schnell, dass Gesetze oft hinterherhinken. Außerdem ist es schwierig, internationale Standards zu etablieren, da verschiedene Länder unterschiedliche Werte und Prioritäten haben.</p>
+                    <p class="mb-2"><strong>Frau Zhang:</strong> Das ist wahr. Dennoch sollten wir versuchen, einen globalen Konsens zu finden. KI ist weder gut noch schlecht an sich – es kommt darauf an, wie wir sie einsetzen. Wir tragen die Verantwortung dafür, dass sie zum Wohle der Menschheit genutzt wird.</p>
+                    <p class="mb-2"><strong>Dr. Müller:</strong> Ein sehr wichtiger Gedanke. Die Technologie selbst ist neutral, aber ihre Anwendung erfordert ethische Überlegungen. Wir müssen nicht nur fragen, was wir mit KI tun können, sondern auch, was wir tun sollten.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Ethische Debatte</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Bilden Sie zwei Gruppen für eine Debatte</li>
+                        <li>Wählen Sie eines der folgenden ethischen Themen:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Sollte Genmanipulation an menschlichen Embryonen erlaubt sein?</li>
+                            <li>Sollten selbstfahrende Autos in Unfallsituationen programmiert werden, bestimmte Leben zu priorisieren?</li>
+                            <li>Sollten Daten von Patienten ohne explizite Zustimmung für die medizinische Forschung verwendet werden dürfen?</li>
+                            <li>Sollten soziale Medien für die psychischen Auswirkungen ihrer Plattformen verantwortlich gemacht werden?</li>
+                        </ul>
+                        <li>Eine Gruppe argumentiert für die Position, die andere dagegen</li>
+                        <li>Jede Gruppe hat 10 Minuten Zeit, Argumente zu sammeln</li>
+                        <li>Führen Sie dann eine strukturierte Debatte (20-30 Minuten):</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Eröffnungsstatements (je 2 Minuten)</li>
+                            <li>Hauptdiskussion mit Austausch von Argumenten</li>
+                            <li>Abschlussstatements (je 2 Minuten)</li>
+                        </ul>
+                        <li>Verwenden Sie zweiteilige Konnektoren und den Fachwortschatz aus diesem Modul</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Zusammenfassung und Übungen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wichtiger Wortschatz</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Wissenschaft</p>
+                        <p class="text-gray-600">科学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Forschung</p>
+                        <p class="text-gray-600">研究</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Präsentation</p>
+                        <p class="text-gray-600">演讲</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Ethik</p>
+                        <p class="text-gray-600">伦理学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Experiment</p>
+                        <p class="text-gray-600">实验</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Ergebnisse</p>
+                        <p class="text-gray-600">结果</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Wissenschaftliches Symposium</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Organisieren Sie ein kleines wissenschaftliches Symposium in der Klasse</li>
+                        <li>Jeder Teilnehmer wählt ein wissenschaftliches Thema und bereitet eine kurze Präsentation vor (3-5 Minuten)</li>
+                        <li>Nach jeder Präsentation gibt es eine Fragerunde und Diskussion (5 Minuten)</li>
+                        <li>Verwenden Sie alle in diesem Modul gelernten sprachlichen Mittel:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Passiv mit Modalverben</li>
+                            <li>Indirekte Rede</li>
+                            <li>Zweiteilige Konnektoren</li>
+                            <li>Fachvokabular</li>
+                        </ul>
+                        <li>Bewerten Sie sich gegenseitig nach folgenden Kriterien:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Klarheit der Präsentation</li>
+                            <li>Verwendung von Fachsprache</li>
+                            <li>Grammatikalische Korrektheit</li>
+                            <li>Überzeugungskraft der Argumentation</li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Hausaufgaben</h3>
+                <div class="bg-blue-50 p-4 rounded-md border border-blue-200">
+                    <p class="font-medium mb-2">Für die nächste Stunde:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Schreiben Sie einen Aufsatz (250-300 Wörter) zu einem der folgenden Themen:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Die ethischen Grenzen der Wissenschaft</li>
+                            <li>Wissenschaftliche Entwicklungen, die unser Leben verändert haben</li>
+                            <li>Die Rolle der Wissenschaft in der modernen Gesellschaft</li>
+                        </ul>
+                        <li>Verwenden Sie mindestens:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Drei Passivkonstruktionen mit Modalverben</li>
+                            <li>Drei Beispiele indirekter Rede</li>
+                            <li>Vier zweiteilige Konnektoren</li>
+                            <li>Mindestens 15 Fachbegriffe aus diesem Modul</li>
+                        </ul>
+                        <li>Bereiten Sie sich auf eine Diskussion über aktuelle wissenschaftliche Kontroversen vor</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Deutsch Lernen</h3>
+                    <p class="text-gray-300">Umfassende Lernmaterialien für chinesische Studenten zur Vorbereitung auf das deutsche Ausbildungssystem.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-white">Startseite</a></li>
+                        <li><a href="../curriculum.html" class="text-gray-300 hover:text-white">Lehrplan</a></li>
+                        <li><a href="../interview.html" class="text-gray-300 hover:text-white">Interview-Fragen</a></li>
+                        <li><a href="../mock-interviews.html" class="text-gray-300 hover:text-white">Mock-Interviews</a></li>
+                        <li><a href="../blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+                    <p class="text-gray-300">Bei Fragen oder Anregungen kontaktieren Sie uns bitte.</p>
+                    <p class="text-gray-300 mt-2">Email: info@deutschlernen.com</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300">&copy; 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

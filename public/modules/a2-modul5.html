@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2 Modul 5: Bildung und Lernen</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau A2</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 5: Bildung und Lernen</h1>
+            <p class="text-xl text-gray-600">Über Schule, Ausbildung und Lernmethoden sprechen</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Über Ihre Schulzeit und Ausbildung zu sprechen</li>
+                    <li>Über Lernmethoden und -strategien zu diskutieren</li>
+                    <li>Ihre Meinung zum Bildungssystem auszudrücken</li>
+                    <li>Über Ihre Erfahrungen mit dem Sprachenlernen zu berichten</li>
+                    <li>Über Ihre Zukunftspläne bezüglich Bildung zu sprechen</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über Schule und Ausbildung sprechen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Bildungseinrichtungen</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Kindergarten</p>
+                        <p class="text-gray-600">幼儿园</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Grundschule</p>
+                        <p class="text-gray-600">小学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Mittelschule</p>
+                        <p class="text-gray-600">中学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Gymnasium</p>
+                        <p class="text-gray-600">高级中学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Berufsschule</p>
+                        <p class="text-gray-600">职业学校</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Universität</p>
+                        <p class="text-gray-600">大学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Hochschule</p>
+                        <p class="text-gray-600">高等院校</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Sprachschule</p>
+                        <p class="text-gray-600">语言学校</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Ausbildung</p>
+                        <p class="text-gray-600">职业培训</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Schulfächer</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Mathematik</p>
+                        <p class="text-gray-600">数学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Deutsch</p>
+                        <p class="text-gray-600">德语</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Englisch</p>
+                        <p class="text-gray-600">英语</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Geschichte</p>
+                        <p class="text-gray-600">历史</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Biologie</p>
+                        <p class="text-gray-600">生物学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Physik</p>
+                        <p class="text-gray-600">物理</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Chemie</p>
+                        <p class="text-gray-600">化学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Sport</p>
+                        <p class="text-gray-600">体育</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Musik</p>
+                        <p class="text-gray-600">音乐</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Kunst</p>
+                        <p class="text-gray-600">艺术</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Informatik</p>
+                        <p class="text-gray-600">信息技术</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Geografie</p>
+                        <p class="text-gray-600">地理</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich bin zur Schule gegangen in...</p>
+                        <p class="text-gray-600">我在...上学</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe ... Jahre die Schule besucht.</p>
+                        <p class="text-gray-600">我上了...年学</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Mein Lieblingsfach war...</p>
+                        <p class="text-gray-600">我最喜欢的科目是...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich war gut/schlecht in...</p>
+                        <p class="text-gray-600">我...很好/不好</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe einen Abschluss in...</p>
+                        <p class="text-gray-600">我有...学位</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe ... studiert.</p>
+                        <p class="text-gray-600">我学习了...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe eine Ausbildung als ... gemacht.</p>
+                        <p class="text-gray-600">我接受了...的职业培训</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich möchte ... werden.</p>
+                        <p class="text-gray-600">我想成为...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Präteritum der regelmäßigen und unregelmäßigen Verben</h3>
+                <p class="mb-4">Das Präteritum (auch: Imperfekt) wird oft verwendet, um über vergangene Ereignisse zu berichten, besonders in schriftlichen Texten und formellen Gesprächen.</p>
+                
+                <h4 class="font-medium mb-2">Regelmäßige Verben im Präteritum:</h4>
+                <p class="mb-4">Bei regelmäßigen Verben wird -te an den Verbstamm angehängt.</p>
+                <div class="overflow-x-auto mb-6">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Infinitiv</th>
+                                <th class="py-2 px-4 border-b">ich</th>
+                                <th class="py-2 px-4 border-b">du</th>
+                                <th class="py-2 px-4 border-b">er/sie/es</th>
+                                <th class="py-2 px-4 border-b">wir</th>
+                                <th class="py-2 px-4 border-b">ihr</th>
+                                <th class="py-2 px-4 border-b">sie/Sie</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b font-medium">lernen</td>
+                                <td class="py-2 px-4 border-b">lernte</td>
+                                <td class="py-2 px-4 border-b">lerntest</td>
+                                <td class="py-2 px-4 border-b">lernte</td>
+                                <td class="py-2 px-4 border-b">lernten</td>
+                                <td class="py-2 px-4 border-b">lerntet</td>
+                                <td class="py-2 px-4 border-b">lernten</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b font-medium">spielen</td>
+                                <td class="py-2 px-4 border-b">spielte</td>
+                                <td class="py-2 px-4 border-b">spieltest</td>
+                                <td class="py-2 px-4 border-b">spielte</td>
+                                <td class="py-2 px-4 border-b">spielten</td>
+                                <td class="py-2 px-4 border-b">spieltet</td>
+                                <td class="py-2 px-4 border-b">spielten</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h4 class="font-medium mb-2">Unregelmäßige Verben im Präteritum:</h4>
+                <p class="mb-4">Bei unregelmäßigen Verben ändert sich der Stammvokal.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Infinitiv</th>
+                                <th class="py-2 px-4 border-b">ich</th>
+                                <th class="py-2 px-4 border-b">du</th>
+                                <th class="py-2 px-4 border-b">er/sie/es</th>
+                                <th class="py-2 px-4 border-b">wir</th>
+                                <th class="py-2 px-4 border-b">ihr</th>
+                                <th class="py-2 px-4 border-b">sie/Sie</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b font-medium">gehen</td>
+                                <td class="py-2 px-4 border-b">ging</td>
+                                <td class="py-2 px-4 border-b">gingst</td>
+                                <td class="py-2 px-4 border-b">ging</td>
+                                <td class="py-2 px-4 border-b">gingen</td>
+                                <td class="py-2 px-4 border-b">gingt</td>
+                                <td class="py-2 px-4 border-b">gingen</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b font-medium">sein</td>
+                                <td class="py-2 px-4 border-b">war</td>
+                                <td class="py-2 px-4 border-b">warst</td>
+                                <td class="py-2 px-4 border-b">war</td>
+                                <td class="py-2 px-4 border-b">waren</td>
+                                <td class="py-2 px-4 border-b">wart</td>
+                                <td class="py-2 px-4 border-b">waren</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b font-medium">haben</td>
+                                <td class="py-2 px-4 border-b">hatte</td>
+                                <td class="py-2 px-4 border-b">hattest</td>
+                                <td class="py-2 px-4 border-b">hatte</td>
+                                <td class="py-2 px-4 border-b">hatten</td>
+                                <td class="py-2 px-4 border-b">hattet</td>
+                                <td class="py-2 px-4 border-b">hatten</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Beispiele:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Ich <span class="font-medium">lernte</span> in der Schule Englisch und Französisch.</li>
+                        <li>Er <span class="font-medium">ging</span> sechs Jahre lang auf das Gymnasium.</li>
+                        <li>Wir <span class="font-medium">hatten</span> jeden Tag sechs Stunden Unterricht.</li>
+                        <li>Meine Lehrerin <span class="font-medium">war</span> sehr streng, aber auch sehr gut.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel: Über die Schulzeit</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Anna:</strong> Wie war deine Schulzeit in China, Chen?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich ging in Shanghai zur Schule. Die Schule begann um 7:30 Uhr und endete um 16:00 Uhr. Wir hatten sehr viel Unterricht.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Das ist aber lang! Welche Fächer hattest du?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Wir lernten Chinesisch, Mathematik, Englisch, Physik, Chemie, Biologie, Geschichte, Geografie und Sport.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Wow, das sind viele Fächer! Was war dein Lieblingsfach?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich mochte Mathematik am liebsten. Ich war immer gut in Mathe. Und du? Wie war deine Schulzeit?</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ich besuchte eine Grundschule in Berlin und danach ein Gymnasium. Mein Lieblingsfach war Deutsch. Ich las sehr gerne Bücher und schrieb Aufsätze.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Hattest du auch Fremdsprachen in der Schule?</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ja, ich lernte Englisch und Französisch. Englisch gefiel mir gut, aber Französisch fand ich schwierig.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Wie waren deine Lehrer?</p>
+                    <p class="mb-2"><strong>Anna:</strong> Die meisten waren nett. Meine Deutschlehrerin war besonders gut. Sie motivierte uns immer und machte den Unterricht interessant.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Das ist wichtig. Ich hatte einen sehr strengen Mathematiklehrer, aber er erklärte alles sehr gut. Deshalb mochte ich Mathe so gern.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Meine Schulzeit</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Erzählen Sie über Ihre Schulzeit</li>
+                        <li>Verwenden Sie das Präteritum</li>
+                        <li>Sprechen Sie über folgende Punkte:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Wo und wie lange Sie zur Schule gingen</li>
+                            <li>Welche Fächer Sie hatten</li>
+                            <li>Was Ihr Lieblingsfach war und warum</li>
+                            <li>Wie Ihre Lehrer waren</li>
+                            <li>Was Sie in den Pausen machten</li>
+                            <li>Ob Sie gerne zur Schule gingen</li>
+                        </ul>
+                        <li>Sprechen Sie mindestens 2-3 Minuten</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über Lernmethoden sprechen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Lernen und Studieren</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">lernen</p>
+                        <p class="text-gray-600">学习</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">studieren</p>
+                        <p class="text-gray-600">学习（大学）</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">üben</p>
+                        <p class="text-gray-600">练习</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">wiederholen</p>
+                        <p class="text-gray-600">复习</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">verstehen</p>
+                        <p class="text-gray-600">理解</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">sich merken</p>
+                        <p class="text-gray-600">记住</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">vergessen</p>
+                        <p class="text-gray-600">忘记</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Prüfung</p>
+                        <p class="text-gray-600">考试</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Hausaufgabe</p>
+                        <p class="text-gray-600">家庭作业</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Notiz</p>
+                        <p class="text-gray-600">笔记</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Lehrbuch</p>
+                        <p class="text-gray-600">教科书</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Wörterbuch</p>
+                        <p class="text-gray-600">词典</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich lerne am besten, wenn ich...</p>
+                        <p class="text-gray-600">当我...时，我学得最好</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Meine Lernmethode ist...</p>
+                        <p class="text-gray-600">我的学习方法是...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich mache mir Notizen.</p>
+                        <p class="text-gray-600">我做笔记。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich lerne mit Karteikarten.</p>
+                        <p class="text-gray-600">我用卡片学习。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich lerne in der Gruppe/allein.</p>
+                        <p class="text-gray-600">我在小组中/独自学习。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich wiederhole regelmäßig.</p>
+                        <p class="text-gray-600">我定期复习。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich benutze Apps zum Lernen.</p>
+                        <p class="text-gray-600">我使用应用程序学习。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich schaue Videos/höre Podcasts.</p>
+                        <p class="text-gray-600">我看视频/听播客。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Konjunktionen weil, denn, deshalb</h3>
+                <p class="mb-4">Diese Konjunktionen werden verwendet, um Gründe und Folgen auszudrücken.</p>
+                
+                <div class="overflow-x-auto mb-6">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Konjunktion</th>
+                                <th class="py-2 px-4 border-b">Bedeutung</th>
+                                <th class="py-2 px-4 border-b">Satzstellung</th>
+                                <th class="py-2 px-4 border-b">Beispiel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b font-medium">weil</td>
+                                <td class="py-2 px-4 border-b">because</td>
+                                <td class="py-2 px-4 border-b">Nebensatz (Verb am Ende)</td>
+                                <td class="py-2 px-4 border-b">Ich lerne Deutsch, <span class="font-medium">weil</span> ich in Deutschland studieren möchte.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b font-medium">denn</td>
+                                <td class="py-2 px-4 border-b">because, for</td>
+                                <td class="py-2 px-4 border-b">Hauptsatz (normale Wortstellung)</td>
+                                <td class="py-2 px-4 border-b">Ich lerne Deutsch, <span class="font-medium">denn</span> ich möchte in Deutschland studieren.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b font-medium">deshalb</td>
+                                <td class="py-2 px-4 border-b">therefore</td>
+                                <td class="py-2 px-4 border-b">Hauptsatz (Verb an Position 2)</td>
+                                <td class="py-2 px-4 border-b">Ich möchte in Deutschland studieren, <span class="font-medium">deshalb</span> lerne ich Deutsch.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="mt-4">
+                    <p class="font-medium">Weitere Beispiele:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Ich mache mir Notizen, <span class="font-medium">weil</span> ich mir so Dinge besser merken kann.</li>
+                        <li>Ich lerne gerne in der Gruppe, <span class="font-medium">denn</span> das macht mehr Spaß.</li>
+                        <li>Ich verstehe die Grammatik nicht gut, <span class="font-medium">deshalb</span> brauche ich mehr Übungen.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel: Über Lernmethoden</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Anna:</strong> Wie lernst du am besten Deutsch, Chen?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich lerne am besten, wenn ich viel spreche und höre. Ich schaue oft deutsche Videos und höre Podcasts.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Das ist eine gute Methode. Machst du auch Notizen?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ja, ich mache mir immer Notizen, weil ich mir so neue Wörter besser merken kann. Und ich benutze Karteikarten für den Wortschatz.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Lernst du lieber allein oder in der Gruppe?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich lerne Grammatik und Wortschatz lieber allein, denn da brauche ich Ruhe. Aber ich übe das Sprechen gerne in der Gruppe.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Wie oft lernst du Deutsch?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich lerne jeden Tag mindestens eine Stunde Deutsch. Regelmäßiges Lernen ist wichtig, deshalb mache ich jeden Tag etwas.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Das stimmt. Benutzt du auch Apps zum Lernen?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ja, ich benutze verschiedene Apps. Sie sind praktisch, weil ich damit überall lernen kann. Und du? Wie lernst du Fremdsprachen?</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ich lerne am besten durch Lesen und Schreiben. Ich lese viele Bücher und schreibe Texte. Außerdem spreche ich gerne mit Muttersprachlern, denn so verbessere ich meine Aussprache.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Meine Lernmethoden</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Beschreiben Sie Ihre Lernmethoden für Deutsch oder andere Fächer</li>
+                        <li>Verwenden Sie die Konjunktionen weil, denn und deshalb</li>
+                        <li>Sprechen Sie über folgende Punkte:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Wie Sie am besten lernen</li>
+                            <li>Welche Hilfsmittel Sie benutzen</li>
+                            <li>Ob Sie lieber allein oder in der Gruppe lernen</li>
+                            <li>Wie oft und wie lange Sie lernen</li>
+                            <li>Was Ihnen beim Lernen hilft</li>
+                            <li>Was Ihre Schwierigkeiten beim Lernen sind</li>
+                        </ul>
+                        <li>Sprechen Sie mindestens 2 Minuten</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über Sprachenlernen sprechen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Sprachkenntnisse</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Muttersprache</p>
+                        <p class="text-gray-600">母语</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Fremdsprache</p>
+                        <p class="text-gray-600">外语</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Sprachkenntnisse</p>
+                        <p class="text-gray-600">语言能力</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">fließend sprechen</p>
+                        <p class="text-gray-600">流利地说</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Grundkenntnisse</p>
+                        <p class="text-gray-600">基础知识</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Sprachniveau</p>
+                        <p class="text-gray-600">语言水平</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Wortschatz</p>
+                        <p class="text-gray-600">词汇</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Grammatik</p>
+                        <p class="text-gray-600">语法</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Aussprache</p>
+                        <p class="text-gray-600">发音</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Meine Muttersprache ist...</p>
+                        <p class="text-gray-600">我的母语是...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich spreche ... (fließend/gut/ein bisschen).</p>
+                        <p class="text-gray-600">我（流利地/好地/一点）说...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich lerne Deutsch seit...</p>
+                        <p class="text-gray-600">我学德语已经...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe Niveau A1/A2/B1/B2/C1/C2.</p>
+                        <p class="text-gray-600">我的水平是A1/A2/B1/B2/C1/C2。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich finde ... leicht/schwer.</p>
+                        <p class="text-gray-600">我觉得...容易/难。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich möchte mein ... verbessern.</p>
+                        <p class="text-gray-600">我想提高我的...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich mache Fortschritte.</p>
+                        <p class="text-gray-600">我在进步。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe Schwierigkeiten mit...</p>
+                        <p class="text-gray-600">我在...方面有困难。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel: Über Sprachenlernen</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Anna:</strong> Welche Sprachen sprichst du, Chen?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Meine Muttersprache ist Chinesisch. Außerdem spreche ich Englisch ziemlich gut und jetzt lerne ich Deutsch.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Wie lange lernst du schon Deutsch?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich lerne Deutsch seit einem Jahr. Ich habe in China einen Deutschkurs besucht und jetzt lerne ich hier in Deutschland weiter.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Welches Sprachniveau hast du?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich habe Niveau A2 und möchte bald die B1-Prüfung machen.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Was findest du am schwierigsten beim Deutschlernen?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Die Grammatik finde ich ziemlich schwer, besonders die Artikel und die Adjektivendungen. Aber die Aussprache ist auch nicht leicht.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ja, Deutsch hat eine komplizierte Grammatik. Was machst du, um dein Deutsch zu verbessern?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich versuche, jeden Tag Deutsch zu sprechen. Ich habe eine deutsche Tandempartnerin und wir treffen uns zweimal pro Woche. Außerdem schaue ich deutsche Filme mit Untertiteln.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Das sind gute Methoden. Machst du Fortschritte?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ja, ich denke schon. Mein Wortschatz wird größer und ich verstehe immer mehr. Aber ich muss noch viel üben, besonders das Sprechen.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Warum lernst du eigentlich Deutsch?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich möchte in Deutschland studieren und später vielleicht hier arbeiten. Deshalb ist es wichtig, dass ich gut Deutsch spreche.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Meine Erfahrungen mit dem Sprachenlernen</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Arbeiten Sie mit einem Partner</li>
+                        <li>Interviewen Sie sich gegenseitig über Ihre Erfahrungen mit dem Sprachenlernen</li>
+                        <li>Stellen Sie Fragen zu folgenden Punkten:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Welche Sprachen die Person spricht</li>
+                            <li>Wie lange sie schon Deutsch lernt</li>
+                            <li>Welches Sprachniveau sie hat</li>
+                            <li>Was sie am schwierigsten findet</li>
+                            <li>Was sie tut, um ihr Deutsch zu verbessern</li>
+                            <li>Warum sie Deutsch lernt</li>
+                        </ul>
+                        <li>Machen Sie Notizen und präsentieren Sie die Antworten Ihres Partners vor der Gruppe</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Zusammenfassung und Übungen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wichtiger Wortschatz</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Bildung</p>
+                        <p class="text-gray-600">教育</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Schule</p>
+                        <p class="text-gray-600">学校</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">lernen</p>
+                        <p class="text-gray-600">学习</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Sprache</p>
+                        <p class="text-gray-600">语言</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Methode</p>
+                        <p class="text-gray-600">方法</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Prüfung</p>
+                        <p class="text-gray-600">考试</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Präsentation über Bildung</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Bereiten Sie eine kurze Präsentation (3-4 Minuten) zu einem der folgenden Themen vor:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Das Bildungssystem in Ihrem Heimatland</li>
+                            <li>Unterschiede zwischen dem deutschen und dem chinesischen Bildungssystem</li>
+                            <li>Ihre Erfahrungen mit dem Sprachenlernen</li>
+                            <li>Tipps zum erfolgreichen Lernen</li>
+                        </ul>
+                        <li>Verwenden Sie das Präteritum und die Konjunktionen weil, denn und deshalb</li>
+                        <li>Bereiten Sie Notizen vor, aber lesen Sie nicht ab</li>
+                        <li>Präsentieren Sie vor der Gruppe und beantworten Sie Fragen</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Hausaufgaben</h3>
+                <div class="bg-blue-50 p-4 rounded-md border border-blue-200">
+                    <p class="font-medium mb-2">Für die nächste Stunde:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Schreiben Sie einen Text (120-150 Wörter) über Ihre Schulzeit oder Ihre Erfahrungen mit dem Sprachenlernen</li>
+                        <li>Verwenden Sie das Präteritum und die Konjunktionen weil, denn und deshalb</li>
+                        <li>Lernen Sie den Wortschatz zu Bildung und Lernen</li>
+                        <li>Üben Sie die Präteritumformen der wichtigsten regelmäßigen und unregelmäßigen Verben</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Deutsch Lernen</h3>
+                    <p class="text-gray-300">Umfassende Lernmaterialien für chinesische Studenten zur Vorbereitung auf das deutsche Ausbildungssystem.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-white">Startseite</a></li>
+                        <li><a href="../curriculum.html" class="text-gray-300 hover:text-white">Lehrplan</a></li>
+                        <li><a href="../interview.html" class="text-gray-300 hover:text-white">Interview-Fragen</a></li>
+                        <li><a href="../mock-interviews.html" class="text-gray-300 hover:text-white">Mock-Interviews</a></li>
+                        <li><a href="../blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+                    <p class="text-gray-300">Bei Fragen oder Anregungen kontaktieren Sie uns bitte.</p>
+                    <p class="text-gray-300 mt-2">Email: info@deutschlernen.com</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300">&copy; 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
