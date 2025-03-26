@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B1 Modul 2: Medien und Kommunikation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-yellow-100 text-yellow-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau B1</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 2: Medien und Kommunikation</h1>
+            <p class="text-xl text-gray-600">Lernen Sie, über Medien zu sprechen und Ihre Meinung auszudrücken</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Über Mediennutzung zu diskutieren</li>
+                    <li>Nachrichten zu verstehen und wiederzugeben</li>
+                    <li>Meinungen auszudrücken und zu begründen</li>
+                    <li>Grammatik: Relativsätze, Konjunktionen, Adjektivdeklination</li>
+                    <li>Komplexere Diskussionen zu führen</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über Mediennutzung diskutieren</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Medien</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Fernsehen</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Radio</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Zeitung</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Internet</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die sozialen Medien</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Podcast</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Blog</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die App</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Streaming-Dienst</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich nutze ... regelmäßig/selten/nie.</p>
+                        <p class="text-gray-600">Ich nutze soziale Medien regelmäßig.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich informiere mich über ...</p>
+                        <p class="text-gray-600">Ich informiere mich über aktuelle Nachrichten im Internet.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich verbringe ... Stunden pro Tag/Woche mit ...</p>
+                        <p class="text-gray-600">Ich verbringe etwa zwei Stunden pro Tag mit sozialen Medien.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich bevorzuge ... gegenüber ...</p>
+                        <p class="text-gray-600">Ich bevorzuge Online-Zeitungen gegenüber gedruckten Zeitungen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Vorteile/Nachteile von ... sind ...</p>
+                        <p class="text-gray-600">Die Vorteile von sozialen Medien sind die schnelle Kommunikation und der Austausch mit Freunden.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Meiner Meinung nach ist/sind ...</p>
+                        <p class="text-gray-600">Meiner Meinung nach sind traditionelle Medien immer noch wichtig.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Relativsätze</h3>
+                <p class="mb-4">Relativsätze werden verwendet, um zusätzliche Informationen über ein Nomen zu geben.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Relativpronomen</th>
+                                <th class="py-2 px-4 border-b">Maskulin</th>
+                                <th class="py-2 px-4 border-b">Feminin</th>
+                                <th class="py-2 px-4 border-b">Neutral</th>
+                                <th class="py-2 px-4 border-b">Plural</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Nominativ</td>
+                                <td class="py-2 px-4 border-b">der</td>
+                                <td class="py-2 px-4 border-b">die</td>
+                                <td class="py-2 px-4 border-b">das</td>
+                                <td class="py-2 px-4 border-b">die</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Akkusativ</td>
+                                <td class="py-2 px-4 border-b">den</td>
+                                <td class="py-2 px-4 border-b">die</td>
+                                <td class="py-2 px-4 border-b">das</td>
+                                <td class="py-2 px-4 border-b">die</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Dativ</td>
+                                <td class="py-2 px-4 border-b">dem</td>
+                                <td class="py-2 px-4 border-b">der</td>
+                                <td class="py-2 px-4 border-b">dem</td>
+                                <td class="py-2 px-4 border-b">denen</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="mb-2"><strong>Beispiele:</strong></p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Das ist die App, <strong>die</strong> ich täglich nutze. (Nominativ)</li>
+                        <li>Das ist der Artikel, <strong>den</strong> ich gestern gelesen habe. (Akkusativ)</li>
+                        <li>Das ist die Zeitung, <strong>der</strong> ich vertraue. (Dativ)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Tobias:</strong> Hallo Mei! Wie informierst du dich über aktuelle Nachrichten?</p>
+                    <p class="mb-2"><strong>Mei:</strong> Hallo Tobias! Ich lese meistens Nachrichten online. Ich habe eine App, die mir die wichtigsten Nachrichten des Tages zeigt.</p>
+                    <p class="mb-2"><strong>Tobias:</strong> Interessant! Ich schaue abends oft die Nachrichten im Fernsehen. Nutzt du auch soziale Medien für Nachrichten?</p>
+                    <p class="mb-2"><strong>Mei:</strong> Ja, manchmal. Aber ich bin vorsichtig mit Informationen, die ich in sozialen Medien finde. Nicht alles ist zuverlässig.</p>
+                    <p class="mb-2"><strong>Tobias:</strong> Da hast du Recht. Wie viel Zeit verbringst du täglich mit Medien?</p>
+                    <p class="mb-2"><strong>Mei:</strong> Ich verbringe etwa drei Stunden pro Tag mit verschiedenen Medien. Morgens lese ich Nachrichten, tagsüber nutze ich soziale Medien und abends schaue ich manchmal Serien auf Streaming-Diensten.</p>
+                    <p class="mb-2"><strong>Tobias:</strong> Das ist ähnlich wie bei mir. Was ist deine Meinung zu traditionellen Medien wie Zeitungen und Radio?</p>
+                    <p class="mb-2"><strong>Mei:</strong> Meiner Meinung nach sind traditionelle Medien immer noch wichtig. Sie bieten oft qualitativ hochwertige Informationen, denen man vertrauen kann. Aber ich finde digitale Medien praktischer im Alltag.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Meine Mediennutzung</h3>
+                <p class="mb-4">Beschreiben Sie Ihre Mediennutzung und diskutieren Sie über Vor- und Nachteile verschiedener Medien.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Notieren Sie, welche Medien Sie regelmäßig nutzen</li>
+                        <li>Beschreiben Sie, wie viel Zeit Sie mit verschiedenen Medien verbringen</li>
+                        <li>Diskutieren Sie Vor- und Nachteile verschiedener Medienformen</li>
+                        <li>Verwenden Sie Relativsätze, um Ihre Aussagen zu präzisieren</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Nachrichten verstehen und wiedergeben</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Nachrichtenthemen</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Politik</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Wirtschaft</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Gesellschaft</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Umwelt</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Sport</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kultur</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Wissenschaft</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Technologie</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Gesundheit</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Laut der Nachricht ...</p>
+                        <p class="text-gray-600">Laut der Nachricht gibt es neue Umweltschutzmaßnahmen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Es wurde berichtet, dass ...</p>
+                        <p class="text-gray-600">Es wurde berichtet, dass die Wirtschaft wächst.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Hauptpunkte sind ...</p>
+                        <p class="text-gray-600">Die Hauptpunkte sind die neuen Gesetze und ihre Auswirkungen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Nachricht handelt von ...</p>
+                        <p class="text-gray-600">Die Nachricht handelt von den Wahlergebnissen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Zusammenfassend kann man sagen, dass ...</p>
+                        <p class="text-gray-600">Zusammenfassend kann man sagen, dass die Situation sich verbessert hat.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe gelesen/gehört/gesehen, dass ...</p>
+                        <p class="text-gray-600">Ich habe gelesen, dass ein neues Gesetz verabschiedet wurde.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Indirekte Rede</h3>
+                <p class="mb-4">Die indirekte Rede wird verwendet, um die Aussagen anderer Personen wiederzugeben.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Direkte Rede</th>
+                                <th class="py-2 px-4 border-b">Indirekte Rede</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">"Die Wirtschaft wächst."</td>
+                                <td class="py-2 px-4 border-b">Er sagt, dass die Wirtschaft wächst.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">"Ich habe die Nachrichten gesehen."</td>
+                                <td class="py-2 px-4 border-b">Sie sagt, dass sie die Nachrichten gesehen hat.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">"Wir werden morgen demonstrieren."</td>
+                                <td class="py-2 px-4 border-b">Sie sagen, dass sie morgen demonstrieren werden.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Nachrichtenwiedergabe</h3>
+                <p class="mb-4">Üben Sie, Nachrichten zu verstehen und wiederzugeben.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Lesen oder hören Sie eine aktuelle Nachricht</li>
+                        <li>Notieren Sie die wichtigsten Informationen</li>
+                        <li>Geben Sie die Nachricht mit eigenen Worten wieder</li>
+                        <li>Verwenden Sie die indirekte Rede und die gelernten Ausdrücke</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Meinungen ausdrücken und begründen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich bin der Meinung, dass ...</p>
+                        <p class="text-gray-600">Ich bin der Meinung, dass soziale Medien sowohl Vor- als auch Nachteile haben.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Meiner Ansicht nach ...</p>
+                        <p class="text-gray-600">Meiner Ansicht nach sollten wir kritischer mit Informationen umgehen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich denke/glaube/finde, dass ...</p>
+                        <p class="text-gray-600">Ich denke, dass traditionelle Medien immer noch wichtig sind.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Einerseits ..., andererseits ...</p>
+                        <p class="text-gray-600">Einerseits bieten soziale Medien schnelle Informationen, andererseits sind sie nicht immer zuverlässig.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich stimme zu/nicht zu, weil ...</p>
+                        <p class="text-gray-600">Ich stimme zu, weil die Fakten dies bestätigen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Der Grund dafür ist ...</p>
+                        <p class="text-gray-600">Der Grund dafür ist die zunehmende Digitalisierung.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Konjunktionen</h3>
+                <p class="mb-4">Konjunktionen verbinden Sätze und drücken logische Beziehungen aus.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Konjunktion</th>
+                                <th class="py-2 px-4 border-b">Bedeutung</th>
+                                <th class="py-2 px-4 border-b">Beispiel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">weil</td>
+                                <td class="py-2 px-4 border-b">Grund</td>
+                                <td class="py-2 px-4 border-b">Ich lese Nachrichten online, weil es schneller ist.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">obwohl</td>
+                                <td class="py-2 px-4 border-b">Gegensatz</td>
+                                <td class="py-2 px-4 border-b">Ich lese die Zeitung, obwohl ich die Nachrichten schon online gesehen habe.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">damit</td>
+                                <td class="py-2 px-4 border-b">Zweck</td>
+                                <td class="py-2 px-4 border-b">Ich informiere mich regelmäßig, damit ich mitreden kann.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">wenn</td>
+                                <td class="py-2 px-4 border-b">Bedingung</td>
+                                <td class="py-2 px-4 border-b">Wenn ich Zeit habe, schaue ich die Nachrichten.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Lehrer:</strong> Heute diskutieren wir über die Rolle der sozialen Medien in der Gesellschaft. Was ist eure Meinung dazu?</p>
+                    <p class="mb-2"><strong>Hui:</strong> Ich bin der Meinung, dass soziale Medien sowohl Vor- als auch Nachteile haben. Einerseits ermöglichen sie eine schnelle Kommunikation und den Austausch von Informationen, andererseits können sie auch zur Verbreitung von Falschinformationen beitragen.</p>
+                    <p class="mb-2"><strong>Lehrer:</strong> Interessanter Standpunkt. Kannst du das näher erläutern?</p>
+                    <p class="mb-2"><strong>Hui:</strong> Natürlich. Ich denke, dass soziale Medien sehr nützlich sind, weil sie uns helfen, mit Freunden und Familie in Kontakt zu bleiben, besonders wenn wir weit voneinander entfernt leben. Außerdem können wir schnell auf aktuelle Ereignisse reagieren. Der Grund für meine Bedenken ist jedoch, dass nicht alle Informationen überprüft werden, bevor sie geteilt werden.</p>
+                    <p class="mb-2"><strong>Lehrer:</strong> Danke für deine Erklärung. Hat jemand eine andere Meinung?</p>
+                    <p class="mb-2"><strong>Thomas:</strong> Ich stimme Hui teilweise zu, aber ich glaube, dass die Vorteile die Nachteile überwiegen. Meiner Ansicht nach haben soziale Medien die Art und Weise, wie wir kommunizieren, revolutioniert. Obwohl es Probleme mit Falschinformationen gibt, können wir lernen, kritischer mit Informationen umzugehen.</p>
+                    <p class="mb-2"><strong>Hui:</strong> Das ist ein guter Punkt. Ich denke auch, dass Medienkompetenz wichtig ist, damit wir die Vorteile der sozialen Medien nutzen können, ohne den Nachteilen zum Opfer zu fallen.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Diskussion</h3>
+                <p class="mb-4">Üben Sie, Ihre Meinung zu einem aktuellen Thema auszudrücken und zu begründen.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Wählen Sie ein aktuelles Thema (z.B. Digitalisierung, Umweltschutz, soziale Medien)</li>
+                        <li>Notieren Sie Ihre Meinung und Argumente dafür</li>
+                        <li>Diskutieren Sie mit einem Partner oder in einer Gruppe</li>
+                        <li>Verwenden Sie die gelernten Ausdrücke und Konjunktionen</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Zusammenfassung und Übungen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wichtiger Wortschatz</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Medien</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Nachricht, -en</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Meinung, -en</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Information, -en</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kommunikation</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Diskussion, -en</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Hausaufgaben</h3>
+                <div class="bg-blue-50 p-4 rounded-md border border-blue-200">
+                    <p class="font-medium mb-2">Für die nächste Stunde:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Schreiben Sie einen Text über Ihre Mediennutzung (10-12 Sätze)</li>
+                        <li>Lesen Sie einen Nachrichtenartikel und fassen Sie ihn zusammen</li>
+                        <li>Bereiten Sie eine kurze Präsentation zu einem aktuellen Thema vor, in der Sie Ihre Meinung ausdrücken und begründen</li>
+                        <li>Üben Sie die Relativsätze und Konjunktionen in verschiedenen Kontexten</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Deutsch Lernen</h3>
+                    <p class="text-gray-300">Umfassende Lernmaterialien für chinesische Studenten zur Vorbereitung auf das deutsche Ausbildungssystem.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-white">Startseite</a></li>
+                        <li><a href="../curriculum.html" class="text-gray-300 hover:text-white">Lehrplan</a></li>
+                        <li><a href="../interview.html" class="text-gray-300 hover:text-white">Interview-Fragen</a></li>
+                        <li><a href="../mock-interviews.html" class="text-gray-300 hover:text-white">Mock-Interviews</a></li>
+                        <li><a href="../blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+                    <p class="text-gray-300">Bei Fragen oder Anregungen kontaktieren Sie uns bitte.</p>
+                    <p class="text-gray-300 mt-2">Email: info@deutschlernen.com</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300">&copy; 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview-Fragen für Ausbildungsbewerber</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="curriculum.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="interview.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="interview.html" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="interview-zh.html" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="curriculum.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="interview.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="interview.html" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="interview-zh.html" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-blue-600 mb-4">Interview-Fragen für Ausbildungsbewerber</h1>
+            <p class="text-xl text-gray-600">Bereiten Sie sich optimal auf Ihr Vorstellungsgespräch vor</p>
+        </div>
+
+        <div class="mb-8">
+            <div class="flex justify-center space-x-4 mb-8">
+                <a href="#persoenlich" class="px-4 py-2 bg-blue-100 text-blue-800 rounded-md hover:bg-blue-200 transition">Persönliche Fragen</a>
+                <a href="#bildung" class="px-4 py-2 bg-green-100 text-green-800 rounded-md hover:bg-green-200 transition">Bildung & Qualifikation</a>
+                <a href="#motivation" class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-md hover:bg-yellow-200 transition">Motivation & Interesse</a>
+                <a href="#faehigkeiten" class="px-4 py-2 bg-purple-100 text-purple-800 rounded-md hover:bg-purple-200 transition">Fähigkeiten & Stärken</a>
+                <a href="#zukunft" class="px-4 py-2 bg-red-100 text-red-800 rounded-md hover:bg-red-200 transition">Zukunftspläne</a>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Tipps für das Vorstellungsgespräch</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">Vor dem Gespräch</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Informieren Sie sich gründlich über das Unternehmen und die Ausbildung</li>
+                        <li>Bereiten Sie Antworten auf häufige Fragen vor</li>
+                        <li>Üben Sie das Gespräch mit Freunden oder Familie</li>
+                        <li>Planen Sie Ihre Anreise und kommen Sie 10-15 Minuten früher</li>
+                        <li>Wählen Sie angemessene Kleidung (eher zu formell als zu casual)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">Während des Gesprächs</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Begrüßen Sie alle Gesprächspartner mit Handschlag und Blickkontakt</li>
+                        <li>Sprechen Sie klar und deutlich, nicht zu schnell</li>
+                        <li>Zeigen Sie Interesse durch aktives Zuhören und Nachfragen</li>
+                        <li>Bleiben Sie authentisch und ehrlich</li>
+                        <li>Stellen Sie am Ende eigene Fragen zum Unternehmen oder zur Ausbildung</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Persönliche Fragen -->
+        <div id="persoenlich" class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-blue-600 mb-6">Persönliche Fragen</h2>
+            
+            <div class="space-y-6">
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Erzählen Sie etwas über sich.</h3>
+                    <div class="interview-answer">
+                        <p>Diese offene Frage ist oft die erste im Gespräch. Konzentrieren Sie sich auf relevante Informationen zu Ihrer Person, Ihrem Bildungsweg und Ihren Interessen, die zur angestrebten Ausbildung passen.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Ich heiße [Name] und bin [Alter] Jahre alt. Ich habe in [Ort] die Schule besucht und meinen [Abschluss] mit guten Noten in [relevante Fächer] abgeschlossen. In meiner Freizeit beschäftige ich mich gerne mit [relevante Hobbys]. Durch [Praktikum/Nebenjob/Interesse] habe ich bereits erste Erfahrungen im Bereich [Branche] gesammelt und möchte nun eine Ausbildung in diesem Bereich beginnen."</p>
+                    </div>
+                </div>
+
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Was sind Ihre Stärken?</h3>
+                    <div class="interview-answer">
+                        <p>Nennen Sie 2-3 Stärken, die für die Ausbildung relevant sind, und belegen Sie diese mit konkreten Beispielen.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Zu meinen Stärken gehört meine Zuverlässigkeit. In der Schule habe ich stets pünktlich meine Aufgaben erledigt und war selten krank. Außerdem bin ich sehr teamfähig, was ich bei Gruppenprojekten in der Schule unter Beweis stellen konnte. Eine weitere Stärke ist meine schnelle Auffassungsgabe, die mir hilft, neue Aufgaben rasch zu verstehen und umzusetzen."</p>
+                    </div>
+                </div>
+
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Was sind Ihre Schwächen?</h3>
+                    <div class="interview-answer">
+                        <p>Nennen Sie eine echte, aber nicht kritische Schwäche und erklären Sie, wie Sie daran arbeiten, sie zu verbessern.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Manchmal bin ich ungeduldig, wenn ich eine Aufgabe schnell erledigen möchte. Ich habe jedoch gelernt, mir mehr Zeit zu nehmen und sorgfältiger zu arbeiten, um Fehler zu vermeiden. Ich führe jetzt Checklisten, um sicherzustellen, dass ich alle Schritte korrekt ausführe."</p>
+                    </div>
+                </div>
+
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Wie würden Ihre Freunde oder Lehrer Sie beschreiben?</h3>
+                    <div class="interview-answer">
+                        <p>Diese Frage zielt auf Ihre Selbstwahrnehmung und Ihr Verhältnis zu anderen ab. Nennen Sie positive Eigenschaften, die andere an Ihnen schätzen.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Meine Freunde würden mich als hilfsbereit und zuverlässig beschreiben. Wenn jemand Unterstützung braucht, bin ich immer zur Stelle. Meine Lehrer haben oft meine Gewissenhaftigkeit und mein Engagement gelobt. Sie schätzten, dass ich immer gut vorbereitet war und aktiv am Unterricht teilgenommen habe."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bildung & Qualifikation -->
+        <div id="bildung" class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-green-600 mb-6">Bildung & Qualifikation</h2>
+            
+            <div class="space-y-6">
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Warum haben Sie sich für diesen Schulabschluss entschieden?</h3>
+                    <div class="interview-answer">
+                        <p>Erklären Sie Ihre Bildungsentscheidungen und wie sie zu Ihrem Karriereweg passen.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Ich habe mich für den Realschulabschluss entschieden, weil er mir eine gute Grundlage für eine praktische Ausbildung bietet. Die Fächer Mathematik und Technik haben mir besonders gut gefallen, da sie direkt mit meinem Berufswunsch als [Beruf] zusammenhängen."</p>
+                    </div>
+                </div>
+
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Welche Schulfächer haben Ihnen am meisten Spaß gemacht und warum?</h3>
+                    <div class="interview-answer">
+                        <p>Nennen Sie Fächer, die mit der angestrebten Ausbildung in Verbindung stehen, und erklären Sie, warum sie Ihnen gefallen haben.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Besonders viel Spaß hatte ich in Mathematik und Informatik. Ich mag logisches Denken und das Lösen von Problemen. Diese Fähigkeiten sind auch für den Beruf des Fachinformatikers wichtig. Auch Englisch hat mir gefallen, da es in der IT-Branche sehr nützlich ist."</p>
+                    </div>
+                </div>
+
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Haben Sie bereits Praktika oder Nebenjobs gemacht? Was haben Sie dabei gelernt?</h3>
+                    <div class="interview-answer">
+                        <p>Beschreiben Sie Ihre praktischen Erfahrungen und die dabei erworbenen Fähigkeiten, die für die Ausbildung relevant sind.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Ich habe ein zweiwöchiges Praktikum bei [Unternehmen] im Bereich [Abteilung] absolviert. Dort konnte ich erste Einblicke in den Berufsalltag gewinnen und habe gelernt, wie wichtig Teamarbeit und Kommunikation sind. Außerdem habe ich als Aushilfe in einem Supermarkt gearbeitet, wo ich den Umgang mit Kunden und Verantwortungsbewusstsein gelernt habe."</p>
+                    </div>
+                </div>
+
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Welche zusätzlichen Qualifikationen oder Kenntnisse bringen Sie mit?</h3>
+                    <div class="interview-answer">
+                        <p>Nennen Sie relevante Fähigkeiten, Sprachkenntnisse, EDV-Kenntnisse oder andere Qualifikationen, die Sie von anderen Bewerbern abheben.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Ich habe gute Englischkenntnisse und kann mich fließend verständigen. Außerdem beherrsche ich die gängigen Office-Programme wie Word, Excel und PowerPoint. In meiner Freizeit habe ich mir selbst HTML und CSS beigebracht und eine kleine Website erstellt. Zudem habe ich einen Erste-Hilfe-Kurs absolviert."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Motivation & Interesse -->
+        <div id="motivation" class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-yellow-600 mb-6">Motivation & Interesse</h2>
+            
+            <div class="space-y-6">
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Warum haben Sie sich für diesen Ausbildungsberuf entschieden?</h3>
+                    <div class="interview-answer">
+                        <p>Erklären Sie Ihre Motivation für den gewählten Beruf und zeigen Sie, dass Sie sich mit dem Berufsbild auseinandergesetzt haben.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Ich habe mich für die Ausbildung zum Mechatroniker entschieden, weil mich die Kombination aus Mechanik und Elektronik fasziniert. Schon in der Schule habe ich gerne an technischen Projekten gearbeitet und mich für die Funktionsweise von Maschinen interessiert. Die Vielseitigkeit des Berufs und die Möglichkeit, sowohl praktisch als auch theoretisch zu arbeiten, entsprechen genau meinen Interessen und Fähigkeiten."</p>
+                    </div>
+                </div>
+
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Warum haben Sie sich bei unserem Unternehmen beworben?</h3>
+                    <div class="interview-answer">
+                        <p>Zeigen Sie, dass Sie sich über das Unternehmen informiert haben und erklären Sie, warum es zu Ihnen passt.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Ich habe mich bei Ihrem Unternehmen beworben, weil Sie als innovativer Betrieb bekannt sind und einen guten Ruf als Ausbildungsbetrieb haben. Auf Ihrer Website habe ich gesehen, dass Sie großen Wert auf Qualität und Nachhaltigkeit legen, was mir persönlich auch wichtig ist. Außerdem hat mich beeindruckt, dass Sie Ihren Auszubildenden vielfältige Einsatzbereiche bieten und sie gezielt fördern."</p>
+                    </div>
+                </div>
+
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Was wissen Sie über unseren Betrieb und unsere Produkte/Dienstleistungen?</h3>
+                    <div class="interview-answer">
+                        <p>Demonstrieren Sie Ihr Wissen über das Unternehmen und zeigen Sie Ihr Interesse.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Ihr Unternehmen wurde [Jahr] gegründet und ist spezialisiert auf [Produkte/Dienstleistungen]. Sie beschäftigen etwa [Anzahl] Mitarbeiter und sind in [Märkten/Regionen] tätig. Besonders bekannt sind Sie für [bekannte Produkte/Leistungen]. Ich habe gelesen, dass Sie kürzlich [aktuelle Entwicklung, z.B. neue Produkte, Auszeichnungen] und großen Wert auf [Unternehmenswerte, z.B. Nachhaltigkeit, Innovation] legen."</p>
+                    </div>
+                </div>
+
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Was erwarten Sie von Ihrer Ausbildung?</h3>
+                    <div class="interview-answer">
+                        <p>Beschreiben Sie Ihre Erwartungen an die Ausbildung und was Sie lernen möchten.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Von meiner Ausbildung erwarte ich, dass ich umfassende praktische und theoretische Kenntnisse in [Berufsfeld] erwerbe. Ich möchte alle Bereiche des Berufs kennenlernen und verschiedene Abteilungen durchlaufen, um ein ganzheitliches Verständnis zu entwickeln. Besonders wichtig ist mir, dass ich selbstständig arbeiten lerne und Verantwortung übernehmen kann. Ich hoffe auch, meine Teamfähigkeit weiterzuentwickeln und von erfahrenen Kollegen zu lernen."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fähigkeiten & Stärken -->
+        <div id="faehigkeiten" class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-purple-600 mb-6">Fähigkeiten & Stärken</h2>
+            
+            <div class="space-y-6">
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Welche Fähigkeiten bringen Sie für diese Ausbildung mit?</h3>
+                    <div class="interview-answer">
+                        <p>Nennen Sie berufsspezifische Fähigkeiten und Eigenschaften, die für die Ausbildung wichtig sind.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Für die Ausbildung zur Kauffrau für Büromanagement bringe ich gute organisatorische Fähigkeiten mit, die ich bereits bei der Planung von Schulveranstaltungen unter Beweis stellen konnte. Ich arbeite strukturiert und genau, was für die Büroarbeit wichtig ist. Zudem verfüge ich über gute Computerkenntnisse, insbesondere in MS Office, und kann schnell und fehlerfrei tippen. Meine Kommunikationsfähigkeit hilft mir im Umgang mit Kunden und Kollegen."</p>
+                    </div>
+                </div>
+
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Wie gehen Sie mit Stress und Druck um?</h3>
+                    <div class="interview-answer">
+                        <p>Beschreiben Sie Ihre Strategien zur Stressbewältigung und zeigen Sie, dass Sie auch unter Druck gute Leistungen erbringen können.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Ich bleibe auch unter Druck ruhig und konzentriert. In stressigen Situationen hilft mir eine gute Planung und Priorisierung der Aufgaben. Während der Prüfungsphase in der Schule habe ich gelernt, mir realistische Ziele zu setzen und meine Zeit effektiv einzuteilen. Wenn nötig, hole ich mir rechtzeitig Unterstützung. Nach stressigen Phasen sorge ich für ausreichend Erholung, zum Beispiel durch Sport oder Zeit mit Freunden."</p>
+                    </div>
+                </div>
+
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Wie arbeiten Sie im Team?</h3>
+                    <div class="interview-answer">
+                        <p>Beschreiben Sie Ihre Teamfähigkeit und geben Sie Beispiele für erfolgreiche Teamarbeit.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Ich arbeite gerne im Team und schätze den Austausch mit anderen. In der Schule habe ich oft an Gruppenprojekten teilgenommen und dabei gelernt, Aufgaben fair zu verteilen und Kompromisse zu finden. Ich kann sowohl führen als auch folgen, je nachdem, was die Situation erfordert. Besonders wichtig finde ich offene Kommunikation und gegenseitigen Respekt. Bei einem Schulprojekt zum Thema Umweltschutz habe ich beispielsweise die Koordination übernommen und dafür gesorgt, dass alle Teammitglieder ihre Stärken einbringen konnten."</p>
+                    </div>
+                </div>
+
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Wie gehen Sie mit Kritik um?</h3>
+                    <div class="interview-answer">
+                        <p>Zeigen Sie, dass Sie konstruktive Kritik annehmen und daraus lernen können.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Ich sehe Kritik als Chance, mich weiterzuentwickeln. Wenn ich Feedback erhalte, höre ich aufmerksam zu und versuche, die Perspektive des anderen zu verstehen. Ich frage nach, wenn etwas unklar ist, und überlege, wie ich mich verbessern kann. Bei meinem letzten Praktikum erhielt ich zum Beispiel die Rückmeldung, dass meine Dokumentation zu knapp war. Ich habe daraufhin mehr Details aufgenommen und regelmäßig nachgefragt, ob die Informationen ausreichend sind. Am Ende wurde meine Dokumentation als sehr gut bewertet."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Zukunftspläne -->
+        <div id="zukunft" class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-red-600 mb-6">Zukunftspläne</h2>
+            
+            <div class="space-y-6">
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Wo sehen Sie sich in fünf Jahren?</h3>
+                    <div class="interview-answer">
+                        <p>Beschreiben Sie realistische berufliche Ziele, die zeigen, dass Sie langfristig in dem Bereich arbeiten möchten.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "In fünf Jahren sehe ich mich als qualifizierte Fachkraft in Ihrem Unternehmen. Nach erfolgreichem Abschluss meiner Ausbildung möchte ich zunächst Berufserfahrung sammeln und mein Wissen vertiefen. Ich könnte mir vorstellen, mich in Richtung [spezifischer Bereich] weiterzuentwickeln und vielleicht eine Weiterbildung zum [weiterführende Qualifikation] zu absolvieren. Langfristig strebe ich an, mehr Verantwortung zu übernehmen und mich kontinuierlich weiterzubilden, um mit den Entwicklungen in der Branche Schritt zu halten."</p>
+                    </div>
+                </div>
+
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Welche Weiterbildungsmöglichkeiten interessieren Sie nach der Ausbildung?</h3>
+                    <div class="interview-answer">
+                        <p>Zeigen Sie Ihr Interesse an kontinuierlicher beruflicher Entwicklung und informieren Sie sich vorab über mögliche Weiterbildungen in dem Bereich.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Nach meiner Ausbildung zum Elektroniker interessiere ich mich besonders für eine Weiterbildung zum Techniker für Elektrotechnik oder zum Industriemeister. Auch Spezialisierungen im Bereich erneuerbare Energien oder Automatisierungstechnik finde ich spannend. Ich möchte mein Wissen kontinuierlich erweitern und auf dem neuesten Stand der Technik bleiben, um langfristig erfolgreich in diesem Bereich arbeiten zu können."</p>
+                    </div>
+                </div>
+
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Warum sollten wir uns für Sie entscheiden?</h3>
+                    <div class="interview-answer">
+                        <p>Fassen Sie Ihre wichtigsten Stärken und Qualifikationen zusammen und erklären Sie, warum Sie der ideale Kandidat für die Ausbildung sind.</p>
+                        <p class="mt-2"><strong>Beispielantwort:</strong> "Sie sollten sich für mich entscheiden, weil ich nicht nur die fachlichen Voraussetzungen für diese Ausbildung mitbringe, sondern auch hoch motiviert und lernbereit bin. Meine guten Noten in den relevanten Fächern [Fächer nennen] zeigen, dass ich die theoretischen Grundlagen beherrsche. Durch mein Praktikum bei [Unternehmen] habe ich bereits erste praktische Erfahrungen gesammelt und weiß, dass dieser Beruf zu mir passt. Ich bin zuverlässig, teamfähig und bereit, mich voll für die Ausbildung zu engagieren. Ich bin überzeugt, dass ich eine Bereicherung für Ihr Unternehmen sein werde und freue mich darauf, mein Wissen und meine Fähigkeiten bei Ihnen einzubringen und weiterzuentwickeln."</p>
+                    </div>
+                </div>
+
+                <div class="interview-question">
+                    <h3 class="text-lg font-semibold">Haben Sie noch Fragen an uns?</h3>
+                    <div class="interview-answer">
+                        <p>Bereiten Sie eigene Fragen vor, die Ihr Interesse am Unternehmen und an der Ausbildung zeigen.</p>
+                        <p class="mt-2"><strong>Beispielfragen:</strong></p>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>Wie sieht der typische Arbeitsalltag eines Auszubildenden in Ihrem Unternehmen aus?</li>
+                            <li>Welche Abteilungen werde ich während meiner Ausbildung kennenlernen?</li>
+                            <li>Gibt es spezielle Projekte für Auszubildende?</li>
+                            <li>Wie wird die Betreuung während der Ausbildung organisiert?</li>
+                            <li>Welche Übernahmechancen bestehen nach erfolgreichem Abschluss der Ausbildung?</li>
+                            <li>Bieten Sie zusätzliche Schulungen oder Weiterbildungen während der Ausbildung an?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-12 py-8 border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-500">© 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Über uns</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Kontakt</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

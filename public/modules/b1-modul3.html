@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B1 Modul 3: Gesundheit und Wohlbefinden</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-yellow-100 text-yellow-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau B1</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 3: Gesundheit und Wohlbefinden</h1>
+            <p class="text-xl text-gray-600">Über Gesundheit, Krankheit und gesunde Lebensweise sprechen</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Über Gesundheitsprobleme und Symptome zu sprechen</li>
+                    <li>Einen Arzttermin zu vereinbaren und beim Arzt zu kommunizieren</li>
+                    <li>Über gesunde Ernährung und Lebensweise zu diskutieren</li>
+                    <li>Ratschläge und Empfehlungen zu geben und zu verstehen</li>
+                    <li>Über Stress und Stressbewältigung zu sprechen</li>
+                    <li>Das deutsche Gesundheitssystem zu verstehen</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Gesundheitsprobleme und Symptome</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Wortschatz: Körperteile und Symptome</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Kopf</p>
+                        <p class="text-gray-600">Ich habe Kopfschmerzen.</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Hals</p>
+                        <p class="text-gray-600">Mein Hals tut weh.</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Rücken</p>
+                        <p class="text-gray-600">Ich habe Rückenschmerzen.</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Magen</p>
+                        <p class="text-gray-600">Mir ist übel.</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Fieber</p>
+                        <p class="text-gray-600">Ich habe Fieber.</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Husten</p>
+                        <p class="text-gray-600">Ich habe Husten.</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Erkältung</p>
+                        <p class="text-gray-600">Ich bin erkältet.</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Allergie</p>
+                        <p class="text-gray-600">Ich habe eine Allergie gegen Pollen.</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Grippe</p>
+                        <p class="text-gray-600">Ich habe die Grippe.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich fühle mich nicht wohl.</p>
+                        <p class="text-gray-600">Ich fühle mich heute nicht wohl. Ich glaube, ich bin krank.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe Schmerzen in/an ...</p>
+                        <p class="text-gray-600">Ich habe Schmerzen im Rücken.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Seit wann haben Sie ...?</p>
+                        <p class="text-gray-600">Seit wann haben Sie diese Symptome?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich leide an ...</p>
+                        <p class="text-gray-600">Ich leide an Migräne.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich bin allergisch gegen ...</p>
+                        <p class="text-gray-600">Ich bin allergisch gegen Nüsse.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich muss ... nehmen.</p>
+                        <p class="text-gray-600">Ich muss regelmäßig Medikamente nehmen.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Dialogbeispiel: Beim Arzt</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Arzt:</strong> Guten Tag, Herr Wang. Was fehlt Ihnen denn?</p>
+                    <p class="mb-2"><strong>Herr Wang:</strong> Guten Tag, Herr Doktor. Ich fühle mich seit drei Tagen nicht wohl. Ich habe Kopfschmerzen und Halsschmerzen.</p>
+                    <p class="mb-2"><strong>Arzt:</strong> Haben Sie auch Fieber?</p>
+                    <p class="mb-2"><strong>Herr Wang:</strong> Ja, gestern Abend hatte ich 38,5 Grad.</p>
+                    <p class="mb-2"><strong>Arzt:</strong> Haben Sie auch Husten?</p>
+                    <p class="mb-2"><strong>Herr Wang:</strong> Ja, ich huste seit gestern, besonders nachts.</p>
+                    <p class="mb-2"><strong>Arzt:</strong> Ich werde Sie jetzt untersuchen. Machen Sie bitte den Oberkörper frei.</p>
+                    <p class="mb-2"><strong>Herr Wang:</strong> Ja, natürlich.</p>
+                    <p class="mb-2"><strong>Arzt:</strong> Atmen Sie tief ein und aus. ... So, Sie haben eine Erkältung mit Bronchitis. Ich verschreibe Ihnen ein Antibiotikum und einen Hustensaft.</p>
+                    <p class="mb-2"><strong>Herr Wang:</strong> Wie oft muss ich die Medikamente nehmen?</p>
+                    <p class="mb-2"><strong>Arzt:</strong> Das Antibiotikum nehmen Sie dreimal täglich nach den Mahlzeiten, den Hustensaft bei Bedarf, aber höchstens viermal täglich. Und Sie sollten viel trinken und sich ausruhen.</p>
+                    <p class="mb-2"><strong>Herr Wang:</strong> Wie lange soll ich zu Hause bleiben?</p>
+                    <p class="mb-2"><strong>Arzt:</strong> Ich schreibe Sie für eine Woche krank. Wenn es nicht besser wird, kommen Sie bitte wieder.</p>
+                    <p class="mb-2"><strong>Herr Wang:</strong> Vielen Dank, Herr Doktor.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Sprechübung: Gesundheitsprobleme beschreiben</h3>
+                <p class="mb-4">Beschreiben Sie ein Gesundheitsproblem und die Symptome. Verwenden Sie die gelernten Ausdrücke.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Wählen Sie ein Gesundheitsproblem (z.B. Erkältung, Rückenschmerzen, Allergie)</li>
+                        <li>Beschreiben Sie die Symptome</li>
+                        <li>Erklären Sie, seit wann Sie diese Symptome haben</li>
+                        <li>Beschreiben Sie, was Sie bereits dagegen unternommen haben</li>
+                        <li>Fragen Sie nach Ratschlägen</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Arzttermin vereinbaren</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich möchte einen Termin vereinbaren.</p>
+                        <p class="text-gray-600">Guten Tag, ich möchte einen Termin bei Dr. Schmidt vereinbaren.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wann hätten Sie Zeit?</p>
+                        <p class="text-gray-600">Wann hätten Sie Zeit? Ich kann vormittags oder nachmittags.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ist es dringend?</p>
+                        <p class="text-gray-600">Ist es dringend oder kann es bis nächste Woche warten?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich brauche ein Rezept für ...</p>
+                        <p class="text-gray-600">Ich brauche ein Rezept für meine Blutdrucktabletten.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich bin Patient/Patientin bei Dr. ...</p>
+                        <p class="text-gray-600">Ich bin Patientin bei Dr. Müller.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich bin bei der ... Krankenkasse versichert.</p>
+                        <p class="text-gray-600">Ich bin bei der AOK versichert.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Dialogbeispiel: Telefonat mit der Arztpraxis</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Sprechstundenhilfe:</strong> Praxis Dr. Becker, guten Tag!</p>
+                    <p class="mb-2"><strong>Frau Li:</strong> Guten Tag, mein Name ist Li Wei. Ich möchte einen Termin vereinbaren.</p>
+                    <p class="mb-2"><strong>Sprechstundenhilfe:</strong> Sind Sie schon Patientin bei uns?</p>
+                    <p class="mb-2"><strong>Frau Li:</strong> Ja, ich war schon einmal bei Ihnen.</p>
+                    <p class="mb-2"><strong>Sprechstundenhilfe:</strong> Worum geht es denn?</p>
+                    <p class="mb-2"><strong>Frau Li:</strong> Ich habe seit einer Woche starke Rückenschmerzen.</p>
+                    <p class="mb-2"><strong>Sprechstundenhilfe:</strong> Ist es sehr dringend?</p>
+                    <p class="mb-2"><strong>Frau Li:</strong> Ja, die Schmerzen sind ziemlich stark.</p>
+                    <p class="mb-2"><strong>Sprechstundenhilfe:</strong> Dann könnte ich Ihnen morgen um 10:30 Uhr einen Termin anbieten.</p>
+                    <p class="mb-2"><strong>Frau Li:</strong> Das passt gut. Vielen Dank.</p>
+                    <p class="mb-2"><strong>Sprechstundenhilfe:</strong> Bitte bringen Sie Ihre Versichertenkarte mit. Bis morgen um 10:30 Uhr.</p>
+                    <p class="mb-2"><strong>Frau Li:</strong> Ja, mache ich. Auf Wiederhören!</p>
+                    <p class="mb-2"><strong>Sprechstundenhilfe:</strong> Auf Wiederhören!</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Sprechübung: Arzttermin vereinbaren</h3>
+                <p class="mb-4">Üben Sie mit einem Partner, einen Arzttermin zu vereinbaren. Eine Person ist die Sprechstundenhilfe, die andere Person ist der Patient.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Rollenspiel-Situationen:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Sie haben Zahnschmerzen und brauchen dringend einen Termin beim Zahnarzt</li>
+                        <li>Sie möchten einen Termin für eine Routineuntersuchung beim Hausarzt vereinbaren</li>
+                        <li>Sie brauchen ein neues Rezept für Ihre Medikamente</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Gesunde Ernährung und Lebensweise</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Wortschatz: Ernährung und Lebensweise</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">gesunde Ernährung</p>
+                        <p class="text-gray-600">Eine gesunde Ernährung ist wichtig für das Wohlbefinden.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">regelmäßige Bewegung</p>
+                        <p class="text-gray-600">Regelmäßige Bewegung stärkt das Immunsystem.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">ausreichend Schlaf</p>
+                        <p class="text-gray-600">Ausreichend Schlaf ist wichtig für die Gesundheit.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Stress abbauen</p>
+                        <p class="text-gray-600">Es gibt verschiedene Methoden, um Stress abzubauen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Entspannungstechniken</p>
+                        <p class="text-gray-600">Yoga und Meditation sind beliebte Entspannungstechniken.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Work-Life-Balance</p>
+                        <p class="text-gray-600">Eine gute Work-Life-Balance ist wichtig für die psychische Gesundheit.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Nützliche Ausdrücke für Ratschläge</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">An deiner Stelle würde ich ...</p>
+                        <p class="text-gray-600">An deiner Stelle würde ich mehr Gemüse essen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Es wäre besser, wenn du ...</p>
+                        <p class="text-gray-600">Es wäre besser, wenn du regelmäßig Sport treiben würdest.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Du solltest ...</p>
+                        <p class="text-gray-600">Du solltest mehr Wasser trinken.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Es ist wichtig, dass ...</p>
+                        <p class="text-gray-600">Es ist wichtig, dass du genug schläfst.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich empfehle dir, ...</p>
+                        <p class="text-gray-600">Ich empfehle dir, weniger Zucker zu essen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Hast du schon einmal versucht, ...?</p>
+                        <p class="text-gray-600">Hast du schon einmal versucht, Yoga zu machen?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Dialogbeispiel: Gespräch über gesunde Lebensweise</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Markus:</strong> Hallo Jing! Du siehst so fit aus. Was machst du für deine Gesundheit?</p>
+                    <p class="mb-2"><strong>Jing:</strong> Hallo Markus! Ich achte auf meine Ernährung und mache regelmäßig Sport.</p>
+                    <p class="mb-2"><strong>Markus:</strong> Was isst du denn so?</p>
+                    <p class="mb-2"><strong>Jing:</strong> Ich esse viel Obst und Gemüse, Vollkornprodukte und wenig Fleisch. Und ich versuche, wenig Zucker zu essen.</p>
+                    <p class="mb-2"><strong>Markus:</strong> Das klingt vernünftig. Ich esse leider zu viel Fast Food und Süßigkeiten. Ich fühle mich oft müde und energielos.</p>
+                    <p class="mb-2"><strong>Jing:</strong> An deiner Stelle würde ich versuchen, mehr selbst zu kochen. Das ist nicht nur gesünder, sondern auch günstiger.</p>
+                    <p class="mb-2"><strong>Markus:</strong> Du hast Recht. Und welchen Sport machst du?</p>
+                    <p class="mb-2"><strong>Jing:</strong> Ich gehe dreimal pro Woche joggen und mache zweimal pro Woche Yoga. Das hilft mir auch, Stress abzubauen.</p>
+                    <p class="mb-2"><strong>Markus:</strong> Ich würde auch gerne mehr Sport machen, aber ich habe oft keine Zeit.</p>
+                    <p class="mb-2"><strong>Jing:</strong> Es ist wichtig, dass du dir Zeit für deine Gesundheit nimmst. Du könntest mit kleinen Schritten anfangen, zum Beispiel mit einem Spaziergang in der Mittagspause oder Treppensteigen statt Fahrstuhl fahren.</p>
+                    <p class="mb-2"><strong>Markus:</strong> Das sind gute Tipps. Ich werde es versuchen. Hast du noch andere Empfehlungen?</p>
+                    <p class="mb-2"><strong>Jing:</strong> Ja, achte auch auf ausreichend Schlaf und trinke genug Wasser. Und versuche, eine gute Work-Life-Balance zu finden.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Sprechübung: Ratschläge für eine gesunde Lebensweise</h3>
+                <p class="mb-4">Geben Sie Ratschläge für eine gesunde Lebensweise. Verwenden Sie die gelernten Ausdrücke.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Wählen Sie einen Bereich (Ernährung, Bewegung, Schlaf, Stressbewältigung)</li>
+                        <li>Geben Sie mindestens drei konkrete Ratschläge</li>
+                        <li>Begründen Sie Ihre Ratschläge</li>
+                        <li>Verwenden Sie verschiedene Formulierungen für Ratschläge</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Stress und Stressbewältigung</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Wortschatz: Stress und Entspannung</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">der Stress</p>
+                        <p class="text-gray-600">Ich habe viel Stress bei der Arbeit.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Entspannung</p>
+                        <p class="text-gray-600">Ich brauche mehr Zeit für Entspannung.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Überforderung</p>
+                        <p class="text-gray-600">Ich fühle mich überfordert mit meinen Aufgaben.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Meditation</p>
+                        <p class="text-gray-600">Meditation hilft mir, zur Ruhe zu kommen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Achtsamkeit</p>
+                        <p class="text-gray-600">Achtsamkeitsübungen können bei Stress helfen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Burnout-Prävention</p>
+                        <p class="text-gray-600">Burnout-Prävention ist in vielen Unternehmen ein wichtiges Thema.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich fühle mich gestresst/überfordert.</p>
+                        <p class="text-gray-600">Ich fühle mich in letzter Zeit sehr gestresst.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich brauche eine Pause/Auszeit.</p>
+                        <p class="text-gray-600">Ich brauche dringend eine Pause von der Arbeit.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich kann nicht abschalten.</p>
+                        <p class="text-gray-600">Abends kann ich oft nicht abschalten und denke an die Arbeit.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Das entspannt mich.</p>
+                        <p class="text-gray-600">Musik hören entspannt mich nach einem stressigen Tag.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich mache ... zur Entspannung.</p>
+                        <p class="text-gray-600">Ich mache Yoga zur Entspannung.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich achte auf meine Work-Life-Balance.</p>
+                        <p class="text-gray-600">Ich versuche, auf meine Work-Life-Balance zu achten.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Dialogbeispiel: Gespräch über Stressbewältigung</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Sabine:</strong> Hallo Chen, du siehst müde aus. Alles in Ordnung?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Hallo Sabine. Nein, nicht wirklich. Ich habe in letzter Zeit viel Stress bei der Arbeit und kann abends kaum abschalten.</p>
+                    <p class="mb-2"><strong>Sabine:</strong> Das kenne ich. Was stresst dich denn genau?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich habe zu viele Projekte gleichzeitig und ständig Deadlines. Außerdem lerne ich noch Deutsch für meine Prüfung. Ich fühle mich überfordert.</p>
+                    <p class="mb-2"><strong>Sabine:</strong> Das ist wirklich viel. Hast du mit deinem Chef darüber gesprochen?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Nein, noch nicht. Ich möchte nicht inkompetent wirken.</p>
+                    <p class="mb-2"><strong>Sabine:</strong> An deiner Stelle würde ich trotzdem mit ihm sprechen. Vielleicht kann er dir helfen, Prioritäten zu setzen oder einige Aufgaben zu delegieren.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Du hast wahrscheinlich Recht. Und was machst du, wenn du gestresst bist?</p>
+                    <p class="mb-2"><strong>Sabine:</strong> Ich mache regelmäßig Sport, das hilft mir sehr. Und ich achte darauf, genug zu schlafen und Pausen zu machen. Am Wochenende schalte ich manchmal mein Handy aus und gehe in die Natur.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Das klingt gut. Ich sollte auch mehr auf meine Work-Life-Balance achten.</p>
+                    <p class="mb-2"><strong>Sabine:</strong> Hast du schon einmal Entspannungstechniken wie Meditation oder Achtsamkeitsübungen ausprobiert?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Nein, aber ich bin offen dafür. Kannst du mir etwas empfehlen?</p>
+                    <p class="mb-2"><strong>Sabine:</strong> Es gibt gute Apps für Anfänger. Ich kann dir eine empfehlen. Und in unserem Fitnessstudio gibt es auch Yoga-Kurse.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Sprechübung: Über Stressbewältigung sprechen</h3>
+                <p class="mb-4">Sprechen Sie über Ihre Erfahrungen mit Stress und Ihre Methoden zur Stressbewältigung.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Diskussionsfragen:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Was verursacht bei Ihnen Stress?</li>
+                        <li>Wie fühlen Sie sich, wenn Sie gestresst sind?</li>
+                        <li>Welche Methoden zur Stressbewältigung haben Sie ausprobiert?</li>
+                        <li>Was funktioniert für Sie am besten?</li>
+                        <li>Wie achten Sie auf Ihre Work-Life-Balance?</li>
+                        <li>Welche Tipps würden Sie anderen geben?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Grammatik im Fokus</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Konjunktiv II für Ratschläge und Empfehlungen</h3>
+                <p class="mb-4">Der Konjunktiv II wird oft verwendet, um höfliche Ratschläge und Empfehlungen zu geben.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">An deiner/Ihrer Stelle würde ich ...</p>
+                        <p class="text-gray-600">An deiner Stelle würde ich mehr Sport machen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Es wäre besser, wenn du/Sie ...</p>
+                        <p class="text-gray-600">Es wäre besser, wenn du weniger Kaffee trinken würdest.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Du könntest/Sie könnten ...</p>
+                        <p class="text-gray-600">Du könntest jeden Tag 30 Minuten spazieren gehen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich würde dir/Ihnen empfehlen, ...</p>
+                        <p class="text-gray-600">Ich würde dir empfehlen, einen Arzt aufzusuchen.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-4 rounded-md">
+                    <p class="font-medium mb-2">Bildung des Konjunktiv II:</p>
+                    <ul class="list-disc pl-5">
+                        <li>würde + Infinitiv: Ich würde mehr Sport machen.</li>
+                        <li>Unregelmäßige Verben haben oft eigene Konjunktiv II-Formen: wäre (sein), hätte (haben), könnte (können), sollte (sollen)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-yellow-600 mb-4">Nebensätze mit "wenn" und "damit"</h3>
+                <p class="mb-4">Nebensätze mit "wenn" drücken eine Bedingung aus, Nebensätze mit "damit" einen Zweck.</p>
+                
+                <div class="grid grid-cols-1 gap-4 mb-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">wenn-Sätze (Bedingung)</p>
+                        <p class="text-gray-600">Wenn du regelmäßig Sport machst, bleibst du gesund.</p>
+                        <p class="text-gray-600">Du bleibst gesund, wenn du regelmäßig Sport machst.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">damit-Sätze (Zweck)</p>
+                        <p class="text-gray-600">Ich esse gesund, damit ich fit bleibe.</p>
+                        <p class="text-gray-600">Damit ich fit bleibe, esse ich gesund.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-4 rounded-md">
+                    <p class="font-medium mb-2">Beachten Sie:</p>
+                    <ul class="list-disc pl-5">
+                        <li>In Nebensätzen steht das Verb am Ende.</li>
+                        <li>Wenn der Nebensatz vor dem Hauptsatz steht, steht das konjugierte Verb im Hauptsatz direkt nach dem Nebensatz.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Kulturelles Wissen: Das deutsche Gesundheitssystem</h2>
+            
+            <div class="mb-8">
+                <p class="mb-4">Das deutsche Gesundheitssystem ist eines der besten der Welt, hat aber auch seine Besonderheiten:</p>
+                
+                <ul class="list-disc pl-5 space-y-2 mb-4">
+                    <li><strong>Krankenversicherung:</strong> In Deutschland ist eine Krankenversicherung gesetzlich vorgeschrieben. Es gibt die gesetzliche Krankenversicherung (GKV) und die private Krankenversicherung (PKV).</li>
+                    <li><strong>Versichertenkarte:</strong> Jeder Versicherte erhält eine elektronische Gesundheitskarte, die bei jedem Arztbesuch vorgelegt werden muss.</li>
+                    <li><strong>Hausarztprinzip:</strong> Der Hausarzt ist oft die erste Anlaufstelle bei gesundheitlichen Problemen und überweist bei Bedarf an Fachärzte.</li>
+                    <li><strong>Terminvereinbarung:</strong> Für Arztbesuche ist in der Regel eine Terminvereinbarung notwendig. Bei akuten Beschwerden gibt es oft Sprechstunden ohne Termin.</li>
+                    <li><strong>Krankschreibung:</strong> Bei Krankheit kann der Arzt eine Arbeitsunfähigkeitsbescheinigung (Krankschreibung) ausstellen, die dem Arbeitgeber vorgelegt werden muss.</li>
+                    <li><strong>Rezepte:</strong> Verschreibungspflichtige Medikamente erhält man nur mit einem Rezept vom Arzt in der Apotheke.</li>
+                    <li><strong>Zuzahlungen:</strong> Für bestimmte Leistungen und Medikamente müssen Patienten Zuzahlungen leisten.</li>
+                </ul>
+                
+                <p>In Deutschland gibt es eine klare Trennung zwischen ambulanter Versorgung (Arztpraxen) und stationärer Versorgung (Krankenhäuser). Notfälle werden in der Notaufnahme von Krankenhäusern behandelt, oder man ruft den Notruf 112.</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Hausaufgaben und Übungen</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-yellow-600 mb-3">Sprechaufgabe: Gesundheitstipps</h3>
+                    <p class="mb-2">Nehmen Sie eine Audiodatei (2-3 Minuten) auf, in der Sie Gesundheitstipps geben. Verwenden Sie dabei:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Konjunktiv II für Ratschläge</li>
+                        <li>Nebensätze mit "wenn" und "damit"</li>
+                        <li>Vokabeln zu Gesundheit und Wohlbefinden</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-yellow-600 mb-3">Dialogübung: Beim Arzt</h3>
+                    <p class="mb-2">Schreiben Sie einen Dialog für einen Arztbesuch. Verwenden Sie dabei:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Vokabeln zu Symptomen und Krankheiten</li>
+                        <li>Fragen und Antworten zum Gesundheitszustand</li>
+                        <li>Ratschläge des Arztes</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-yellow-600 mb-3">Schreibaufgabe: Gesunde Lebensweise</h3>
+                    <p>Schreiben Sie einen kurzen Text über Ihre persönliche gesunde Lebensweise oder Ihre Pläne für eine gesündere Lebensweise.</p>
+                </div>
+                
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium">Tipp für die Aussprache:</p>
+                    <p>Üben Sie besonders die Aussprache von medizinischen Fachbegriffen und längeren zusammengesetzten Wörtern wie "Krankenversicherung", "Arbeitsunfähigkeitsbescheinigung" oder "Entspannungstechniken".</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-12 py-8 border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-500">© 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Über uns</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Kontakt</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

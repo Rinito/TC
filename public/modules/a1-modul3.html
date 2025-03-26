@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1 Modul 3: Alltag und Freizeit</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau A1</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 3: Alltag und Freizeit</h1>
+            <p class="text-xl text-gray-600">Sprechen über tägliche Aktivitäten und Hobbys</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Über Ihren Tagesablauf zu sprechen</li>
+                    <li>Uhrzeiten anzugeben und zu verstehen</li>
+                    <li>Über Hobbys und Freizeitaktivitäten zu sprechen</li>
+                    <li>Verabredungen zu treffen</li>
+                    <li>Einfache Telefongespräche zu führen</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Tagesablauf beschreiben</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich stehe um ... Uhr auf.</p>
+                        <p class="text-gray-600">Ich stehe um sieben Uhr auf.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich frühstücke um ... Uhr.</p>
+                        <p class="text-gray-600">Ich frühstücke um halb acht.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich gehe um ... Uhr zur Arbeit/Schule.</p>
+                        <p class="text-gray-600">Ich gehe um acht Uhr zur Arbeit.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe um ... Uhr Mittagspause.</p>
+                        <p class="text-gray-600">Ich habe um zwölf Uhr Mittagspause.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich komme um ... Uhr nach Hause.</p>
+                        <p class="text-gray-600">Ich komme um sechs Uhr nach Hause.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich gehe um ... Uhr ins Bett.</p>
+                        <p class="text-gray-600">Ich gehe um elf Uhr ins Bett.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Anna:</strong> Hallo Chen! Wann stehst du normalerweise auf?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Hallo Anna! Ich stehe um sechs Uhr dreißig auf.</p>
+                    <p class="mb-2"><strong>Anna:</strong> So früh? Warum?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ja, ich mache gerne Sport am Morgen. Und wann stehst du auf?</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ich stehe um sieben Uhr auf und frühstücke um halb acht.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Wann gehst du zur Arbeit?</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ich gehe um acht Uhr zur Arbeit. Ich arbeite von neun bis fünf Uhr.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Und was machst du nach der Arbeit?</p>
+                    <p class="mb-2"><strong>Anna:</strong> Nach der Arbeit gehe ich manchmal ins Fitnessstudio oder treffe Freunde. Und du?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich lerne oft Deutsch oder sehe fern. Ich gehe um elf Uhr ins Bett.</p>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Ausspracheübung: Uhrzeiten</h3>
+                <p class="mb-4">Hören Sie die Uhrzeiten und sprechen Sie nach:</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3 text-center">
+                        <p>7:00 Uhr</p>
+                        <p class="font-medium">sieben Uhr</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>7:30 Uhr</p>
+                        <p class="font-medium">halb acht</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>7:15 Uhr</p>
+                        <p class="font-medium">Viertel nach sieben</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>7:45 Uhr</p>
+                        <p class="font-medium">Viertel vor acht</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>7:10 Uhr</p>
+                        <p class="font-medium">zehn nach sieben</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>7:55 Uhr</p>
+                        <p class="font-medium">fünf vor acht</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Mein Tagesablauf</h3>
+                <p class="mb-4">Beschreiben Sie Ihren typischen Tagesablauf. Verwenden Sie die Uhrzeiten und die gelernten Ausdrücke.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Notieren Sie 6-8 Aktivitäten aus Ihrem Alltag mit Uhrzeiten</li>
+                        <li>Üben Sie, diese Aktivitäten flüssig zu beschreiben</li>
+                        <li>Nehmen Sie Ihre Beschreibung auf und hören Sie sie sich an</li>
+                        <li>Achten Sie besonders auf die Aussprache der Uhrzeiten</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über Hobbys sprechen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Freizeitaktivitäten</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Fußball spielen</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">schwimmen</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Musik hören</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">lesen</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">fernsehen</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">kochen</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">tanzen</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">ins Kino gehen</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">Freunde treffen</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich spiele gern/gerne ...</p>
+                        <p class="text-gray-600">Ich spiele gerne Fußball.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich ... gern/gerne.</p>
+                        <p class="text-gray-600">Ich schwimme gerne.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Mein Hobby ist ...</p>
+                        <p class="text-gray-600">Mein Hobby ist Fotografieren.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">In meiner Freizeit ...</p>
+                        <p class="text-gray-600">In meiner Freizeit lese ich Bücher.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich ... (nicht) gern/gerne.</p>
+                        <p class="text-gray-600">Ich koche nicht gerne.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wie oft ...?</p>
+                        <p class="text-gray-600">Wie oft spielst du Tennis?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Thomas:</strong> Hallo Wei! Was machst du in deiner Freizeit?</p>
+                    <p class="mb-2"><strong>Wei:</strong> Hallo Thomas! Ich spiele gerne Basketball und höre Musik. Und du?</p>
+                    <p class="mb-2"><strong>Thomas:</strong> Ich lese gerne und gehe oft ins Kino. Spielst du in einem Verein Basketball?</p>
+                    <p class="mb-2"><strong>Wei:</strong> Ja, ich spiele zweimal pro Woche in einem Verein. Wie oft gehst du ins Kino?</p>
+                    <p class="mb-2"><strong>Thomas:</strong> Ich gehe einmal pro Woche ins Kino, meistens am Wochenende.</p>
+                    <p class="mb-2"><strong>Wei:</strong> Cool! Welche Filme magst du?</p>
+                    <p class="mb-2"><strong>Thomas:</strong> Ich mag Actionfilme und Komödien. Und du?</p>
+                    <p class="mb-2"><strong>Wei:</strong> Ich mag auch Komödien, aber am liebsten sehe ich Science-Fiction-Filme.</p>
+                    <p class="mb-2"><strong>Thomas:</strong> Vielleicht können wir zusammen ins Kino gehen?</p>
+                    <p class="mb-2"><strong>Wei:</strong> Ja, gerne! Das ist eine gute Idee.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Interview über Hobbys</h3>
+                <p class="mb-4">Führen Sie ein Interview mit einem Partner über seine/ihre Hobbys und Freizeitaktivitäten.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Fragen für das Interview:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Was machst du in deiner Freizeit?</li>
+                        <li>Was ist dein Lieblingshobby?</li>
+                        <li>Wie oft machst du das?</li>
+                        <li>Seit wann machst du das?</li>
+                        <li>Mit wem machst du das?</li>
+                        <li>Was machst du nicht gerne?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Verabredungen treffen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Hast du Zeit am ...?</p>
+                        <p class="text-gray-600">Hast du Zeit am Samstag?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wollen wir ... ?</p>
+                        <p class="text-gray-600">Wollen wir ins Kino gehen?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wann treffen wir uns?</p>
+                        <p class="text-gray-600">Wann treffen wir uns am Samstag?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wo treffen wir uns?</p>
+                        <p class="text-gray-600">Wo treffen wir uns? Am Bahnhof?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ja, gerne. / Tut mir leid, ich habe keine Zeit.</p>
+                        <p class="text-gray-600">Ja, gerne. Ich habe am Samstag Zeit.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Geht auch ...?</p>
+                        <p class="text-gray-600">Geht auch Sonntag?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Lisa:</strong> Hallo Mei! Hast du am Samstag Zeit?</p>
+                    <p class="mb-2"><strong>Mei:</strong> Hallo Lisa! Am Samstag? Moment... Ja, ich habe Zeit. Warum?</p>
+                    <p class="mb-2"><strong>Lisa:</strong> Wollen wir ins Kino gehen? Es gibt einen neuen Film.</p>
+                    <p class="mb-2"><strong>Mei:</strong> Ja, gerne! Welchen Film möchtest du sehen?</p>
+                    <p class="mb-2"><strong>Lisa:</strong> "Der Superheld" - das ist eine Komödie. Der Film beginnt um 19 Uhr.</p>
+                    <p class="mb-2"><strong>Mei:</strong> Super! Wann und wo treffen wir uns?</p>
+                    <p class="mb-2"><strong>Lisa:</strong> Um 18:30 Uhr vor dem Kino? Dann können wir noch Popcorn kaufen.</p>
+                    <p class="mb-2"><strong>Mei:</strong> Perfekt! Ich freue mich. Bis Samstag!</p>
+                    <p class="mb-2"><strong>Lisa:</strong> Bis Samstag! Tschüss!</p>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Wochentage und Zeitangaben</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="border rounded-md p-3 text-center">
+                        <p class="font-medium">Montag</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p class="font-medium">Dienstag</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p class="font-medium">Mittwoch</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p class="font-medium">Donnerstag</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p class="font-medium">Freitag</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p class="font-medium">Samstag</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p class="font-medium">Sonntag</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p class="font-medium">Wochenende</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+                    <div class="border rounded-md p-3 text-center">
+                        <p class="font-medium">morgen</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p class="font-medium">übermorgen</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p class="font-medium">nächste Woche</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Verabredungen treffen</h3>
+                <p class="mb-4">Üben Sie mit einem Partner, Verabredungen zu treffen. Verwenden Sie die gelernten Ausdrücke.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Situationen:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Sie möchten mit einem Freund/einer Freundin ins Kino gehen</li>
+                        <li>Sie möchten mit einem Kollegen/einer Kollegin Mittagessen gehen</li>
+                        <li>Sie möchten mit einem Freund/einer Freundin Sport machen</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Telefonieren</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Hallo, hier ist ...</p>
+                        <p class="text-gray-600">Hallo, hier ist Chen Wei.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Kann ich bitte mit ... sprechen?</p>
+                        <p class="text-gray-600">Kann ich bitte mit Frau Müller sprechen?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Einen Moment bitte.</p>
+                        <p class="text-gray-600">Einen Moment bitte, ich verbinde Sie.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich rufe wegen ... an.</p>
+                        <p class="text-gray-600">Ich rufe wegen unseres Termins am Freitag an.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Könnten Sie das bitte buchstabieren?</p>
+                        <p class="text-gray-600">Könnten Sie Ihren Namen bitte buchstabieren?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Auf Wiederhören!</p>
+                        <p class="text-gray-600">Danke für das Gespräch. Auf Wiederhören!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Rezeptionist:</strong> Zahnarztpraxis Dr. Schmidt, guten Tag!</p>
+                    <p class="mb-2"><strong>Liu:</strong> Guten Tag, hier ist Liu Ming. Ich möchte einen Termin vereinbaren.</p>
+                    <p class="mb-2"><strong>Rezeptionist:</strong> Gerne. Wann hätten Sie Zeit?</p>
+                    <p class="mb-2"><strong>Liu:</strong> Ich hätte nächste Woche Dienstag oder Mittwoch Zeit.</p>
+                    <p class="mb-2"><strong>Rezeptionist:</strong> Am Dienstag haben wir um 14:30 Uhr einen Termin frei. Geht das?</p>
+                    <p class="mb-2"><strong>Liu:</strong> Ja, das passt gut. 14:30 Uhr am Dienstag.</p>
+                    <p class="mb-2"><strong>Rezeptionist:</strong> Könnten Sie Ihren Nachnamen bitte buchstabieren?</p>
+                    <p class="mb-2"><strong>Liu:</strong> L-I-U</p>
+                    <p class="mb-2"><strong>Rezeptionist:</strong> Danke. Also, Dienstag um 14:30 Uhr für Herrn Liu. Wir sehen uns dann.</p>
+                    <p class="mb-2"><strong>Liu:</strong> Vielen Dank. Auf Wiederhören!</p>
+                    <p class="mb-2"><strong>Rezeptionist:</strong> Auf Wiederhören!</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Telefongespräche</h3>
+                <p class="mb-4">Üben Sie mit einem Partner verschiedene Telefongespräche. Verwenden Sie die gelernten Ausdrücke.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Situationen:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Sie rufen einen Freund/eine Freundin an, um eine Verabredung zu treffen</li>
+                        <li>Sie rufen beim Arzt an, um einen Termin zu vereinbaren</li>
+                        <li>Sie rufen in einem Restaurant an, um einen Tisch zu reservieren</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Grammatik im Fokus</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Trennbare Verben</h3>
+                <p class="mb-4">Im Deutschen gibt es Verben mit trennbaren Präfixen. Bei diesen Verben wird das Präfix im Hauptsatz abgetrennt und steht am Ende des Satzes.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">aufstehen</p>
+                        <p class="text-gray-600">Ich stehe um 7 Uhr auf.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">einkaufen</p>
+                        <p class="text-gray-600">Er kauft am Samstag ein.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">fernsehen</p>
+                        <p class="text-gray-600">Wir sehen am Abend fern.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">anrufen</p>
+                        <p class="text-gray-600">Sie ruft ihre Freundin an.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-4 rounded-md">
+                    <p class="font-medium mb-2">Weitere häufige trennbare Verben:</p>
+                    <ul class="list-disc pl-5 grid grid-cols-2 md:grid-cols-3 gap-2">
+                        <li>anfangen</li>
+                        <li>aufhören</li>
+                        <li>ausgehen</li>
+                        <li>einladen</li>
+                        <li>mitmachen</li>
+                        <li>zuhören</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Modalverben: können, möchten</h3>
+                <p class="mb-4">Modalverben drücken eine Einstellung zum Hauptverb aus. Sie werden konjugiert, und das Hauptverb steht im Infinitiv am Ende des Satzes.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
+                    <div>
+                        <p class="font-medium mb-2">können (Fähigkeit, Möglichkeit)</p>
+                        <table class="w-full border-collapse">
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">ich</td>
+                                <td class="py-1 font-medium">kann</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">du</td>
+                                <td class="py-1 font-medium">kannst</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">er/sie/es</td>
+                                <td class="py-1 font-medium">kann</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">wir</td>
+                                <td class="py-1 font-medium">können</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">ihr</td>
+                                <td class="py-1 font-medium">könnt</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 pr-4">sie/Sie</td>
+                                <td class="py-1 font-medium">können</td>
+                            </tr>
+                        </table>
+                        <p class="mt-2 text-gray-600">Ich kann gut schwimmen.</p>
+                        <p class="text-gray-600">Kannst du Deutsch sprechen?</p>
+                    </div>
+                    
+                    <div>
+                        <p class="font-medium mb-2">möchten (Wunsch)</p>
+                        <table class="w-full border-collapse">
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">ich</td>
+                                <td class="py-1 font-medium">möchte</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">du</td>
+                                <td class="py-1 font-medium">möchtest</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">er/sie/es</td>
+                                <td class="py-1 font-medium">möchte</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">wir</td>
+                                <td class="py-1 font-medium">möchten</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">ihr</td>
+                                <td class="py-1 font-medium">möchtet</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 pr-4">sie/Sie</td>
+                                <td class="py-1 font-medium">möchten</td>
+                            </tr>
+                        </table>
+                        <p class="mt-2 text-gray-600">Ich möchte einen Kaffee trinken.</p>
+                        <p class="text-gray-600">Möchtest du ins Kino gehen?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Kulturelles Wissen: Freizeit in Deutschland</h2>
+            
+            <div class="mb-8">
+                <p class="mb-4">Die Deutschen schätzen ihre Freizeit sehr. Hier sind einige typische Freizeitaktivitäten in Deutschland:</p>
+                
+                <ul class="list-disc pl-5 space-y-2 mb-4">
+                    <li><strong>Vereinsleben:</strong> Viele Deutsche sind Mitglied in Vereinen (Sport, Musik, Kultur). Dort treffen sie Freunde und üben gemeinsam Hobbys aus.</li>
+                    <li><strong>Wandern und Radfahren:</strong> Besonders am Wochenende sind viele Deutsche in der Natur unterwegs.</li>
+                    <li><strong>Grillen:</strong> Im Sommer grillen Deutsche gerne mit Freunden und Familie im Garten oder im Park.</li>
+                    <li><strong>Biergarten:</strong> Bei schönem Wetter sitzen viele Deutsche gerne im Biergarten, trinken ein Bier und essen eine Kleinigkeit.</li>
+                    <li><strong>Kaffee und Kuchen:</strong> Die Tradition, nachmittags Kaffee zu trinken und Kuchen zu essen, ist in Deutschland sehr beliebt.</li>
+                </ul>
+                
+                <p>In Deutschland ist die Work-Life-Balance wichtig. Die Arbeitszeiten sind oft geregelt, und die Freizeit wird respektiert. Viele Geschäfte sind sonntags geschlossen, damit die Menschen Zeit mit Familie und Freunden verbringen können.</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Hausaufgaben und Übungen</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Sprechaufgabe: Mein Wochenende</h3>
+                    <p class="mb-2">Nehmen Sie eine Audiodatei (1-2 Minuten) auf, in der Sie über Ihr typisches Wochenende sprechen. Verwenden Sie dabei:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Trennbare Verben</li>
+                        <li>Uhrzeiten</li>
+                        <li>Freizeitaktivitäten</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Dialogübung: Telefonat</h3>
+                    <p class="mb-2">Schreiben Sie einen Dialog für ein Telefongespräch in einer der folgenden Situationen:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Sie rufen in einem Restaurant an, um einen Tisch zu reservieren</li>
+                        <li>Sie rufen einen Freund an, um eine Verabredung zu treffen</li>
+                        <li>Sie rufen in einer Sprachschule an, um Informationen zu bekommen</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-600 mb-3">Vokabelübung: Meine Hobbys</h3>
+                    <p>Erstellen Sie eine Mindmap mit Ihren Hobbys und den dazugehörigen Vokabeln.</p>
+                </div>
+                
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium">Tipp für die Aussprache:</p>
+                    <p>Üben Sie besonders die Aussprache der Uhrzeiten und der trennbaren Verben. Achten Sie auf die Betonung der Präfixe bei trennbaren Verben (AUFstehen, EINkaufen).</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-12 py-8 border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-500">© 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Über uns</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Kontakt</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.level-section {
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+.module-card {
+    transition: transform 0.2s;
+}
+
+.module-card:hover {
+    transform: translateY(-5px);
+}
+
+.content-section {
+    margin-bottom: 2rem;
+}
+
+.content-section h3 {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.exercise {
+    background-color: #f3f4f6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.exercise-question {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.exercise-options {
+    margin-left: 1rem;
+}
+
+.speaking-tip {
+    background-color: #e0f2fe;
+    border-left: 4px solid #0ea5e9;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.vocabulary-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.vocabulary-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chinese-text {
+    font-family: 'Microsoft YaHei', 'PingFang SC', 'SimHei', sans-serif;
+}
+
+.pinyin {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.blog-post {
+    margin-bottom: 3rem;
+}
+
+.blog-post-header {
+    margin-bottom: 1.5rem;
+}
+
+.blog-post-content {
+    line-height: 1.7;
+}
+
+.transcript-section {
+    background-color: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.translation-section {
+    background-color: #f0fdf4;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.interview-question {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.interview-answer {
+    margin-top: 0.75rem;
+    padding-left: 1.5rem;
+    border-left: 3px solid #d1d5db;
+}
+
+.mock-interview {
+    margin-bottom: 3rem;
+}
+
+.mock-interview-dialog {
+    margin: 1.5rem 0;
+}
+
+.interviewer {
+    color: #1e40af;
+    font-weight: 500;
+}
+
+.applicant {
+    color: #047857;
+    font-weight: 500;
+}
+
+.reflection-section {
+    background-color: #fffbeb;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.tips-section {
+    background-color: #f0f9ff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+}

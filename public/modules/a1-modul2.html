@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1 Modul 2: Essen und Trinken</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau A1</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 2: Essen und Trinken</h1>
+            <p class="text-xl text-gray-600">Über Lebensmittel sprechen und im Restaurant bestellen</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Lebensmittel und Getränke zu benennen</li>
+                    <li>Im Restaurant zu bestellen</li>
+                    <li>Über Vorlieben zu sprechen</li>
+                    <li>Grammatik: Akkusativ, Verneinung, möchten</li>
+                    <li>Preise zu verstehen und zu bezahlen</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Lebensmittel und Getränke</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Lebensmittel</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Brot</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Käse</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Wurst</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Fleisch</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Fisch</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Gemüse</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Obst</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Apfel</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Banane</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Getränke</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Wasser</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Kaffee</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Tee</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Saft</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Milch</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Bier</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Einkaufsliste</h3>
+                <p class="mb-4">Erstellen Sie eine Einkaufsliste mit mindestens 10 Lebensmitteln und Getränken.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Schreiben Sie eine Einkaufsliste mit Artikeln</li>
+                        <li>Üben Sie, die Lebensmittel und Getränke auszusprechen</li>
+                        <li>Achten Sie auf die korrekten Artikel (der, die, das)</li>
+                        <li>Präsentieren Sie Ihre Liste einem Partner</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Im Restaurant bestellen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich möchte ... bestellen.</p>
+                        <p class="text-gray-600">Ich möchte einen Salat bestellen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich hätte gern ...</p>
+                        <p class="text-gray-600">Ich hätte gern ein Glas Wasser.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Bringen Sie mir bitte ...</p>
+                        <p class="text-gray-600">Bringen Sie mir bitte die Speisekarte.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Was können Sie empfehlen?</p>
+                        <p class="text-gray-600">Was können Sie als Hauptgericht empfehlen?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Rechnung, bitte.</p>
+                        <p class="text-gray-600">Können wir bitte die Rechnung haben?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Das schmeckt sehr gut!</p>
+                        <p class="text-gray-600">Der Kuchen schmeckt sehr gut!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Kellner:</strong> Guten Tag! Was möchten Sie bestellen?</p>
+                    <p class="mb-2"><strong>Gast:</strong> Guten Tag! Ich hätte gern die Tagessuppe und ein Schnitzel mit Pommes.</p>
+                    <p class="mb-2"><strong>Kellner:</strong> Sehr gerne. Und was möchten Sie trinken?</p>
+                    <p class="mb-2"><strong>Gast:</strong> Ein Glas Orangensaft, bitte.</p>
+                    <p class="mb-2"><strong>Kellner:</strong> Kommt sofort. Vielen Dank!</p>
+                    <p class="mb-2">... später ...</p>
+                    <p class="mb-2"><strong>Kellner:</strong> Hat es Ihnen geschmeckt?</p>
+                    <p class="mb-2"><strong>Gast:</strong> Ja, es war sehr lecker! Die Rechnung, bitte.</p>
+                    <p class="mb-2"><strong>Kellner:</strong> Das macht 18,50 Euro.</p>
+                    <p class="mb-2"><strong>Gast:</strong> Hier sind 20 Euro. Stimmt so.</p>
+                    <p class="mb-2"><strong>Kellner:</strong> Vielen Dank und auf Wiedersehen!</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Rollenspiel im Restaurant</h3>
+                <p class="mb-4">Üben Sie einen Dialog im Restaurant mit einem Partner.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Eine Person spielt den Kellner/die Kellnerin, die andere den Gast</li>
+                        <li>Der Gast bestellt Essen und Getränke</li>
+                        <li>Der Kellner/die Kellnerin nimmt die Bestellung auf und bringt die Rechnung</li>
+                        <li>Verwenden Sie die gelernten Ausdrücke</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über Vorlieben sprechen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich esse gern/gerne ...</p>
+                        <p class="text-gray-600">Ich esse gerne Pasta.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich trinke gern/gerne ...</p>
+                        <p class="text-gray-600">Ich trinke gerne Tee.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich mag ...</p>
+                        <p class="text-gray-600">Ich mag Schokolade.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich mag ... nicht.</p>
+                        <p class="text-gray-600">Ich mag keinen Fisch.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">... schmeckt mir (nicht).</p>
+                        <p class="text-gray-600">Suppe schmeckt mir sehr gut.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Mein Lieblingsessen ist ...</p>
+                        <p class="text-gray-600">Mein Lieblingsessen ist Pizza.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Akkusativ und Verneinung</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Nominativ</th>
+                                <th class="py-2 px-4 border-b">Akkusativ</th>
+                                <th class="py-2 px-4 border-b">Verneinung</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">der Apfel</td>
+                                <td class="py-2 px-4 border-b">den Apfel</td>
+                                <td class="py-2 px-4 border-b">keinen Apfel</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">die Banane</td>
+                                <td class="py-2 px-4 border-b">die Banane</td>
+                                <td class="py-2 px-4 border-b">keine Banane</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">das Brot</td>
+                                <td class="py-2 px-4 border-b">das Brot</td>
+                                <td class="py-2 px-4 border-b">kein Brot</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="mb-2"><strong>Beispiele:</strong></p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Ich esse einen Apfel. (Akkusativ)</li>
+                        <li>Ich esse keinen Apfel. (Verneinung)</li>
+                        <li>Ich trinke eine Cola. (Akkusativ)</li>
+                        <li>Ich trinke keine Cola. (Verneinung)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Meine Essgewohnheiten</h3>
+                <p class="mb-4">Sprechen Sie über Ihre Essgewohnheiten und Vorlieben.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Notieren Sie 5 Lebensmittel/Gerichte, die Sie mögen</li>
+                        <li>Notieren Sie 3 Lebensmittel/Gerichte, die Sie nicht mögen</li>
+                        <li>Beschreiben Sie Ihr Lieblingsessen</li>
+                        <li>Verwenden Sie die gelernten Ausdrücke und achten Sie auf den Akkusativ</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Zusammenfassung und Übungen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wichtiger Wortschatz</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Essen</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Getränk, -e</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Restaurant, -s</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Speisekarte, -n</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Rechnung, -en</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Preis, -e</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Hausaufgaben</h3>
+                <div class="bg-blue-50 p-4 rounded-md border border-blue-200">
+                    <p class="font-medium mb-2">Für die nächste Stunde:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Schreiben Sie einen kurzen Text über Ihre Essgewohnheiten (5-7 Sätze)</li>
+                        <li>Erstellen Sie eine Speisekarte mit typischen Gerichten aus Ihrem Heimatland</li>
+                        <li>Üben Sie die Dialoge im Restaurant</li>
+                        <li>Lernen Sie die Lebensmittel und Getränke mit Artikeln</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Deutsch Lernen</h3>
+                    <p class="text-gray-300">Umfassende Lernmaterialien für chinesische Studenten zur Vorbereitung auf das deutsche Ausbildungssystem.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-white">Startseite</a></li>
+                        <li><a href="../curriculum.html" class="text-gray-300 hover:text-white">Lehrplan</a></li>
+                        <li><a href="../interview.html" class="text-gray-300 hover:text-white">Interview-Fragen</a></li>
+                        <li><a href="../mock-interviews.html" class="text-gray-300 hover:text-white">Mock-Interviews</a></li>
+                        <li><a href="../blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+                    <p class="text-gray-300">Bei Fragen oder Anregungen kontaktieren Sie uns bitte.</p>
+                    <p class="text-gray-300 mt-2">Email: info@deutschlernen.com</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300">&copy; 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

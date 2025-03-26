@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1 Modul 1: Erste Begegnungen</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau A1</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 1: Erste Begegnungen</h1>
+            <p class="text-xl text-gray-600">Sich vorstellen, grüßen und einfache Gespräche führen</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Sich und andere vorzustellen</li>
+                    <li>Zahlen, Alphabet und Farben zu benennen</li>
+                    <li>Einfache Fragen zu stellen und zu beantworten</li>
+                    <li>Grundlegende Grammatik: Personalpronomen und Präsens</li>
+                    <li>Begrüßungen und Verabschiedungen</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Sich vorstellen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Hallo! / Guten Tag!</p>
+                        <p class="text-gray-600">Begrüßung</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich heiße ...</p>
+                        <p class="text-gray-600">Ich heiße Maria.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Mein Name ist ...</p>
+                        <p class="text-gray-600">Mein Name ist Thomas Müller.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich komme aus ...</p>
+                        <p class="text-gray-600">Ich komme aus China.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich wohne in ...</p>
+                        <p class="text-gray-600">Ich wohne in Berlin.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich bin ... Jahre alt.</p>
+                        <p class="text-gray-600">Ich bin 25 Jahre alt.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Anna:</strong> Hallo! Ich heiße Anna. Wie heißt du?</p>
+                    <p class="mb-2"><strong>Li:</strong> Hallo Anna! Ich heiße Li.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Woher kommst du, Li?</p>
+                    <p class="mb-2"><strong>Li:</strong> Ich komme aus China, aus Shanghai. Und du?</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ich komme aus Deutschland, aus München.</p>
+                    <p class="mb-2"><strong>Li:</strong> Wie alt bist du?</p>
+                    <p class="mb-2"><strong>Anna:</strong> Ich bin 23 Jahre alt. Und du?</p>
+                    <p class="mb-2"><strong>Li:</strong> Ich bin 24 Jahre alt.</p>
+                    <p class="mb-2"><strong>Anna:</strong> Wo wohnst du jetzt?</p>
+                    <p class="mb-2"><strong>Li:</strong> Ich wohne jetzt in Berlin, in Kreuzberg.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Sich vorstellen</h3>
+                <p class="mb-4">Stellen Sie sich vor. Verwenden Sie die gelernten Ausdrücke.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Notieren Sie Informationen über sich: Name, Herkunft, Alter, Wohnort</li>
+                        <li>Üben Sie, sich mit diesen Informationen vorzustellen</li>
+                        <li>Nehmen Sie Ihre Vorstellung auf und hören Sie sie sich an</li>
+                        <li>Achten Sie besonders auf die Aussprache der Personalpronomen</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Zahlen und Alphabet</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Zahlen 1-20</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="border rounded-md p-3 text-center">
+                        <p>1</p>
+                        <p class="font-medium">eins</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>2</p>
+                        <p class="font-medium">zwei</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>3</p>
+                        <p class="font-medium">drei</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>4</p>
+                        <p class="font-medium">vier</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>5</p>
+                        <p class="font-medium">fünf</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>6</p>
+                        <p class="font-medium">sechs</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>7</p>
+                        <p class="font-medium">sieben</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>8</p>
+                        <p class="font-medium">acht</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>9</p>
+                        <p class="font-medium">neun</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>10</p>
+                        <p class="font-medium">zehn</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>11</p>
+                        <p class="font-medium">elf</p>
+                    </div>
+                    <div class="border rounded-md p-3 text-center">
+                        <p>12</p>
+                        <p class="font-medium">zwölf</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Das deutsche Alphabet</h3>
+                <p class="mb-4">Hören Sie das Alphabet und sprechen Sie nach:</p>
+                <div class="grid grid-cols-3 md:grid-cols-6 gap-2">
+                    <div class="border rounded-md p-2 text-center">
+                        <p class="font-medium">A a</p>
+                    </div>
+                    <div class="border rounded-md p-2 text-center">
+                        <p class="font-medium">B b</p>
+                    </div>
+                    <div class="border rounded-md p-2 text-center">
+                        <p class="font-medium">C c</p>
+                    </div>
+                    <div class="border rounded-md p-2 text-center">
+                        <p class="font-medium">D d</p>
+                    </div>
+                    <div class="border rounded-md p-2 text-center">
+                        <p class="font-medium">E e</p>
+                    </div>
+                    <div class="border rounded-md p-2 text-center">
+                        <p class="font-medium">F f</p>
+                    </div>
+                    <div class="border rounded-md p-2 text-center">
+                        <p class="font-medium">G g</p>
+                    </div>
+                    <div class="border rounded-md p-2 text-center">
+                        <p class="font-medium">H h</p>
+                    </div>
+                    <div class="border rounded-md p-2 text-center">
+                        <p class="font-medium">I i</p>
+                    </div>
+                    <div class="border rounded-md p-2 text-center">
+                        <p class="font-medium">J j</p>
+                    </div>
+                    <div class="border rounded-md p-2 text-center">
+                        <p class="font-medium">K k</p>
+                    </div>
+                    <div class="border rounded-md p-2 text-center">
+                        <p class="font-medium">L l</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Telefonnummer</h3>
+                <p class="mb-4">Üben Sie, Ihre Telefonnummer auf Deutsch zu sagen.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Beispiel:</p>
+                    <p>Meine Telefonnummer ist: null - eins - sieben - zwei - fünf - acht - neun - drei - vier - sechs - null</p>
+                    <p class="mt-2 font-medium">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Schreiben Sie Ihre Telefonnummer auf</li>
+                        <li>Üben Sie, die Zahlen auf Deutsch auszusprechen</li>
+                        <li>Sprechen Sie langsam und deutlich</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Einfache Fragen stellen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Fragen</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wie heißt du?</p>
+                        <p class="text-gray-600">Wie heißen Sie?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Woher kommst du?</p>
+                        <p class="text-gray-600">Woher kommen Sie?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wo wohnst du?</p>
+                        <p class="text-gray-600">Wo wohnen Sie?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wie alt bist du?</p>
+                        <p class="text-gray-600">Wie alt sind Sie?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Was machst du?</p>
+                        <p class="text-gray-600">Was machen Sie?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Sprichst du Deutsch?</p>
+                        <p class="text-gray-600">Sprechen Sie Deutsch?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Personalpronomen und Präsens</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Personalpronomen</th>
+                                <th class="py-2 px-4 border-b">heißen</th>
+                                <th class="py-2 px-4 border-b">kommen</th>
+                                <th class="py-2 px-4 border-b">wohnen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">ich</td>
+                                <td class="py-2 px-4 border-b">heiße</td>
+                                <td class="py-2 px-4 border-b">komme</td>
+                                <td class="py-2 px-4 border-b">wohne</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">du</td>
+                                <td class="py-2 px-4 border-b">heißt</td>
+                                <td class="py-2 px-4 border-b">kommst</td>
+                                <td class="py-2 px-4 border-b">wohnst</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">er/sie/es</td>
+                                <td class="py-2 px-4 border-b">heißt</td>
+                                <td class="py-2 px-4 border-b">kommt</td>
+                                <td class="py-2 px-4 border-b">wohnt</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">wir</td>
+                                <td class="py-2 px-4 border-b">heißen</td>
+                                <td class="py-2 px-4 border-b">kommen</td>
+                                <td class="py-2 px-4 border-b">wohnen</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">ihr</td>
+                                <td class="py-2 px-4 border-b">heißt</td>
+                                <td class="py-2 px-4 border-b">kommt</td>
+                                <td class="py-2 px-4 border-b">wohnt</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">sie/Sie</td>
+                                <td class="py-2 px-4 border-b">heißen</td>
+                                <td class="py-2 px-4 border-b">kommen</td>
+                                <td class="py-2 px-4 border-b">wohnen</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Interview</h3>
+                <p class="mb-4">Führen Sie ein kurzes Interview mit einem Partner.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Stellen Sie die gelernten Fragen</li>
+                        <li>Notieren Sie die Antworten</li>
+                        <li>Stellen Sie Ihren Partner der Gruppe vor</li>
+                        <li>Achten Sie auf die korrekte Verwendung der Personalpronomen</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Zusammenfassung und Übungen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wichtiger Wortschatz</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Name, -n</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Land, -̈er</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Stadt, -̈e</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Sprache, -n</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Alter</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Telefonnummer, -n</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Hausaufgaben</h3>
+                <div class="bg-blue-50 p-4 rounded-md border border-blue-200">
+                    <p class="font-medium mb-2">Für die nächste Stunde:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Schreiben Sie einen kurzen Text über sich selbst (5-7 Sätze)</li>
+                        <li>Lernen Sie die Zahlen von 1-20 auswendig</li>
+                        <li>Üben Sie das Alphabet</li>
+                        <li>Bereiten Sie 3 Fragen vor, die Sie Ihren Mitschülern stellen möchten</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Deutsch Lernen</h3>
+                    <p class="text-gray-300">Umfassende Lernmaterialien für chinesische Studenten zur Vorbereitung auf das deutsche Ausbildungssystem.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-white">Startseite</a></li>
+                        <li><a href="../curriculum.html" class="text-gray-300 hover:text-white">Lehrplan</a></li>
+                        <li><a href="../interview.html" class="text-gray-300 hover:text-white">Interview-Fragen</a></li>
+                        <li><a href="../mock-interviews.html" class="text-gray-300 hover:text-white">Mock-Interviews</a></li>
+                        <li><a href="../blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+                    <p class="text-gray-300">Bei Fragen oder Anregungen kontaktieren Sie uns bitte.</p>
+                    <p class="text-gray-300 mt-2">Email: info@deutschlernen.com</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300">&copy; 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

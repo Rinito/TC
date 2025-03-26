@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2 Modul 2: Reisen und Verkehr</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau A2</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 2: Reisen und Verkehr</h1>
+            <p class="text-xl text-gray-600">Über Reisen sprechen und sich im Verkehr zurechtfinden</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Verkehrsmittel und Reisemöglichkeiten zu benennen</li>
+                    <li>Fahrkarten zu kaufen und nach Verbindungen zu fragen</li>
+                    <li>Im Hotel einzuchecken und Probleme zu lösen</li>
+                    <li>Grammatik: Perfekt, Modalverben, Komparativ</li>
+                    <li>Über Reiseerfahrungen zu berichten</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Verkehrsmittel und Reisemöglichkeiten</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Verkehrsmittel</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Bus</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Bahn / der Zug</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die U-Bahn</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Straßenbahn</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Auto</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Fahrrad</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Flugzeug</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Schiff</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Taxi</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich fahre mit dem/der ...</p>
+                        <p class="text-gray-600">Ich fahre mit dem Bus zur Arbeit.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich reise gerne mit dem/der ...</p>
+                        <p class="text-gray-600">Ich reise gerne mit dem Zug.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich fliege nach ...</p>
+                        <p class="text-gray-600">Ich fliege nach Berlin.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Fahrt dauert ... Minuten/Stunden.</p>
+                        <p class="text-gray-600">Die Fahrt dauert zwei Stunden.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Der Zug/Bus fährt um ... Uhr ab.</p>
+                        <p class="text-gray-600">Der Zug fährt um 14:30 Uhr ab.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Der Zug/Bus kommt um ... Uhr an.</p>
+                        <p class="text-gray-600">Der Bus kommt um 15:45 Uhr an.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Petra:</strong> Hallo Ming! Wie kommst du normalerweise zur Universität?</p>
+                    <p class="mb-2"><strong>Ming:</strong> Hallo Petra! Ich fahre meistens mit der U-Bahn. Und du?</p>
+                    <p class="mb-2"><strong>Petra:</strong> Ich fahre mit dem Fahrrad, wenn das Wetter gut ist. Bei Regen nehme ich den Bus.</p>
+                    <p class="mb-2"><strong>Ming:</strong> Wie lange brauchst du mit dem Fahrrad?</p>
+                    <p class="mb-2"><strong>Petra:</strong> Etwa 20 Minuten. Mit dem Bus dauert es länger, ungefähr 35 Minuten.</p>
+                    <p class="mb-2"><strong>Ming:</strong> Das ist nicht so schlecht. Mit der U-Bahn brauche ich 25 Minuten.</p>
+                    <p class="mb-2"><strong>Petra:</strong> Fährst du am Wochenende manchmal nach Hause?</p>
+                    <p class="mb-2"><strong>Ming:</strong> Ja, manchmal fahre ich mit dem Zug nach Hamburg. Die Fahrt dauert zwei Stunden.</p>
+                    <p class="mb-2"><strong>Petra:</strong> Das ist praktisch. Ich besuche am Wochenende oft meine Eltern. Sie wohnen nur 30 Kilometer entfernt.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Meine Verkehrsmittel</h3>
+                <p class="mb-4">Sprechen Sie über Ihre bevorzugten Verkehrsmittel und Reisegewohnheiten.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Notieren Sie, welche Verkehrsmittel Sie regelmäßig nutzen</li>
+                        <li>Beschreiben Sie Ihren täglichen Weg zur Arbeit/Schule</li>
+                        <li>Berichten Sie über Ihre Reisegewohnheiten</li>
+                        <li>Verwenden Sie die gelernten Ausdrücke</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Fahrkarten kaufen und nach Verbindungen fragen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich möchte eine Fahrkarte nach ... kaufen.</p>
+                        <p class="text-gray-600">Ich möchte eine Fahrkarte nach München kaufen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Einfach oder hin und zurück?</p>
+                        <p class="text-gray-600">Möchten Sie eine einfache Fahrt oder hin und zurück?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wann fährt der nächste Zug/Bus nach ...?</p>
+                        <p class="text-gray-600">Wann fährt der nächste Zug nach Berlin?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Gibt es eine direkte Verbindung?</p>
+                        <p class="text-gray-600">Gibt es eine direkte Verbindung nach Hamburg?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Muss ich umsteigen?</p>
+                        <p class="text-gray-600">Muss ich in Frankfurt umsteigen?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Was kostet die Fahrkarte?</p>
+                        <p class="text-gray-600">Was kostet die Fahrkarte nach Köln?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Perfekt</h3>
+                <p class="mb-4">Das Perfekt wird verwendet, um über vergangene Ereignisse zu sprechen.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Person</th>
+                                <th class="py-2 px-4 border-b">fahren</th>
+                                <th class="py-2 px-4 border-b">kaufen</th>
+                                <th class="py-2 px-4 border-b">fliegen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">ich</td>
+                                <td class="py-2 px-4 border-b">bin gefahren</td>
+                                <td class="py-2 px-4 border-b">habe gekauft</td>
+                                <td class="py-2 px-4 border-b">bin geflogen</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">du</td>
+                                <td class="py-2 px-4 border-b">bist gefahren</td>
+                                <td class="py-2 px-4 border-b">hast gekauft</td>
+                                <td class="py-2 px-4 border-b">bist geflogen</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">er/sie/es</td>
+                                <td class="py-2 px-4 border-b">ist gefahren</td>
+                                <td class="py-2 px-4 border-b">hat gekauft</td>
+                                <td class="py-2 px-4 border-b">ist geflogen</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="mb-2"><strong>Beispiele:</strong></p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Ich bin gestern mit dem Zug nach Berlin gefahren.</li>
+                        <li>Hast du schon die Fahrkarten gekauft?</li>
+                        <li>Sie ist letztes Jahr nach Japan geflogen.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Kun:</strong> Guten Tag, ich möchte eine Fahrkarte nach Dresden kaufen.</p>
+                    <p class="mb-2"><strong>Bahnmitarbeiter:</strong> Guten Tag. Einfach oder hin und zurück?</p>
+                    <p class="mb-2"><strong>Kun:</strong> Hin und zurück, bitte. Ich möchte am Freitag fahren und am Sonntag zurückkommen.</p>
+                    <p class="mb-2"><strong>Bahnmitarbeiter:</strong> Wann möchten Sie am Freitag fahren?</p>
+                    <p class="mb-2"><strong>Kun:</strong> Am Vormittag, vielleicht gegen 10 Uhr.</p>
+                    <p class="mb-2"><strong>Bahnmitarbeiter:</strong> Es gibt einen Zug um 9:45 Uhr. Er kommt um 12:30 Uhr in Dresden an.</p>
+                    <p class="mb-2"><strong>Kun:</strong> Das ist gut. Muss ich umsteigen?</p>
+                    <p class="mb-2"><strong>Bahnmitarbeiter:</strong> Nein, das ist eine direkte Verbindung. Und wann möchten Sie am Sonntag zurückfahren?</p>
+                    <p class="mb-2"><strong>Kun:</strong> Am Nachmittag, vielleicht um 16 Uhr.</p>
+                    <p class="mb-2"><strong>Bahnmitarbeiter:</strong> Es gibt einen Zug um 16:15 Uhr. Die Fahrkarte kostet 78 Euro.</p>
+                    <p class="mb-2"><strong>Kun:</strong> Gut, ich nehme die Fahrkarte.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Fahrkarten kaufen</h3>
+                <p class="mb-4">Üben Sie einen Dialog am Fahrkartenschalter.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Arbeiten Sie mit einem Partner</li>
+                        <li>Eine Person ist der Kunde, die andere der Bahnmitarbeiter</li>
+                        <li>Der Kunde möchte eine Fahrkarte kaufen und nach Verbindungen fragen</li>
+                        <li>Verwenden Sie die gelernten Ausdrücke und das Perfekt</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Im Hotel einchecken und Probleme lösen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Hotel</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Rezeption</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Zimmer</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Schlüssel</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Einzelzimmer</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Doppelzimmer</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Frühstück</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Aufzug</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Reservierung</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Klimaanlage</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe eine Reservierung.</p>
+                        <p class="text-gray-600">Ich habe eine Reservierung auf den Namen Wang.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich möchte ein Zimmer für ... Nächte.</p>
+                        <p class="text-gray-600">Ich möchte ein Zimmer für drei Nächte.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ist das Frühstück inklusive?</p>
+                        <p class="text-gray-600">Ist das Frühstück im Preis inbegriffen?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Es gibt ein Problem mit ...</p>
+                        <p class="text-gray-600">Es gibt ein Problem mit der Klimaanlage.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Können Sie mir bitte helfen?</p>
+                        <p class="text-gray-600">Können Sie mir bitte mit dem WLAN helfen?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich möchte auschecken.</p>
+                        <p class="text-gray-600">Ich möchte jetzt auschecken, bitte.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Modalverben</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Modalverb</th>
+                                <th class="py-2 px-4 border-b">ich</th>
+                                <th class="py-2 px-4 border-b">du</th>
+                                <th class="py-2 px-4 border-b">er/sie/es</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">können</td>
+                                <td class="py-2 px-4 border-b">kann</td>
+                                <td class="py-2 px-4 border-b">kannst</td>
+                                <td class="py-2 px-4 border-b">kann</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">müssen</td>
+                                <td class="py-2 px-4 border-b">muss</td>
+                                <td class="py-2 px-4 border-b">musst</td>
+                                <td class="py-2 px-4 border-b">muss</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">wollen</td>
+                                <td class="py-2 px-4 border-b">will</td>
+                                <td class="py-2 px-4 border-b">willst</td>
+                                <td class="py-2 px-4 border-b">will</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">möchten</td>
+                                <td class="py-2 px-4 border-b">möchte</td>
+                                <td class="py-2 px-4 border-b">möchtest</td>
+                                <td class="py-2 px-4 border-b">möchte</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="mb-2"><strong>Beispiele:</strong></p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Ich möchte ein Zimmer reservieren.</li>
+                        <li>Können Sie mir bitte helfen?</li>
+                        <li>Wir müssen bis 12 Uhr auschecken.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Rezeptionist:</strong> Guten Tag, wie kann ich Ihnen helfen?</p>
+                    <p class="mb-2"><strong>Li:</strong> Guten Tag, ich habe eine Reservierung auf den Namen Li.</p>
+                    <p class="mb-2"><strong>Rezeptionist:</strong> Einen Moment bitte... Ja, hier ist Ihre Reservierung. Ein Einzelzimmer für vier Nächte, richtig?</p>
+                    <p class="mb-2"><strong>Li:</strong> Ja, genau. Ist das Frühstück inklusive?</p>
+                    <p class="mb-2"><strong>Rezeptionist:</strong> Ja, das Frühstück ist inklusive. Es wird von 6:30 bis 10:00 Uhr serviert.</p>
+                    <p class="mb-2"><strong>Li:</strong> Gut, danke. Hat das Zimmer WLAN?</p>
+                    <p class="mb-2"><strong>Rezeptionist:</strong> Ja, wir haben kostenloses WLAN im ganzen Hotel. Hier ist Ihr Schlüssel. Ihr Zimmer ist Nummer 304 im dritten Stock. Der Aufzug ist rechts.</p>
+                    <p class="mb-2"><strong>Li:</strong> Vielen Dank. Um wie viel Uhr muss ich am letzten Tag auschecken?</p>
+                    <p class="mb-2"><strong>Rezeptionist:</strong> Die Check-out-Zeit ist 11:00 Uhr. Wenn Sie später auschecken möchten, sagen Sie uns bitte Bescheid.</p>
+                    <p class="mb-2"><strong>Li:</strong> Alles klar, vielen Dank!</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Probleme im Hotel lösen</h3>
+                <p class="mb-4">Üben Sie, Probleme im Hotel zu beschreiben und Lösungen zu finden.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Arbeiten Sie mit einem Partner</li>
+                        <li>Eine Person ist der Gast, die andere der Hotelmitarbeiter</li>
+                        <li>Der Gast hat ein Problem (z.B. kaputte Klimaanlage, kein WLAN, laute Nachbarn)</li>
+                        <li>Verwenden Sie die gelernten Ausdrücke und Modalverben</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Zusammenfassung und Übungen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wichtiger Wortschatz</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Verkehrsmittel, -</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Fahrkarte, -n</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Verbindung, -en</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Hotel, -s</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Reservierung, -en</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Reise, -n</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Hausaufgaben</h3>
+                <div class="bg-blue-50 p-4 rounded-md border border-blue-200">
+                    <p class="font-medium mb-2">Für die nächste Stunde:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Schreiben Sie einen Text über Ihre letzte Reise (8-10 Sätze im Perfekt)</li>
+                        <li>Bereiten Sie einen Dialog am Fahrkartenschalter vor</li>
+                        <li>Üben Sie die Modalverben in verschiedenen Situationen</li>
+                        <li>Lernen Sie den Wortschatz zu Verkehrsmitteln und Hotels</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Deutsch Lernen</h3>
+                    <p class="text-gray-300">Umfassende Lernmaterialien für chinesische Studenten zur Vorbereitung auf das deutsche Ausbildungssystem.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-white">Startseite</a></li>
+                        <li><a href="../curriculum.html" class="text-gray-300 hover:text-white">Lehrplan</a></li>
+                        <li><a href="../interview.html" class="text-gray-300 hover:text-white">Interview-Fragen</a></li>
+                        <li><a href="../mock-interviews.html" class="text-gray-300 hover:text-white">Mock-Interviews</a></li>
+                        <li><a href="../blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+                    <p class="text-gray-300">Bei Fragen oder Anregungen kontaktieren Sie uns bitte.</p>
+                    <p class="text-gray-300 mt-2">Email: info@deutschlernen.com</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300">&copy; 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
