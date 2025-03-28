@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2 Modul 3: Arbeitswelt und Bewerbung</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau A2</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 3: Arbeitswelt und Bewerbung</h1>
+            <p class="text-xl text-gray-600">Sprechen über Berufe und Bewerbungsgespräche führen</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Über verschiedene Berufe und Tätigkeiten zu sprechen</li>
+                    <li>Ihre beruflichen Erfahrungen und Qualifikationen zu beschreiben</li>
+                    <li>Eine Bewerbung zu schreiben und zu verstehen</li>
+                    <li>Ein Bewerbungsgespräch zu führen</li>
+                    <li>Über Stärken und Schwächen zu sprechen</li>
+                    <li>Nach Informationen zu Arbeitsbedingungen zu fragen</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Berufe und Tätigkeiten</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Wortschatz: Berufe</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Arzt / die Ärztin</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Lehrer / die Lehrerin</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Ingenieur / die Ingenieurin</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Mechaniker / die Mechanikerin</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Kaufmann / die Kauffrau</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Elektriker / die Elektrikerin</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Informatiker / die Informatikerin</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Koch / die Köchin</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Krankenpfleger / die Krankenschwester</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich bin ... von Beruf.</p>
+                        <p class="text-gray-600">Ich bin Ingenieur von Beruf.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich arbeite als ...</p>
+                        <p class="text-gray-600">Ich arbeite als Mechaniker.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich arbeite bei ...</p>
+                        <p class="text-gray-600">Ich arbeite bei Siemens.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Meine Aufgaben sind ...</p>
+                        <p class="text-gray-600">Meine Aufgaben sind Maschinen zu reparieren und zu warten.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich bin zuständig für ...</p>
+                        <p class="text-gray-600">Ich bin zuständig für die Kundenbetreuung.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe ... Jahre Berufserfahrung.</p>
+                        <p class="text-gray-600">Ich habe fünf Jahre Berufserfahrung.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Michael:</strong> Hallo Li! Was machst du beruflich?</p>
+                    <p class="mb-2"><strong>Li:</strong> Hallo Michael! Ich bin Informatikerin. Ich arbeite bei einer Software-Firma in Berlin.</p>
+                    <p class="mb-2"><strong>Michael:</strong> Das klingt interessant. Was sind deine Aufgaben?</p>
+                    <p class="mb-2"><strong>Li:</strong> Ich entwickle Apps für Smartphones. Ich programmiere und teste die Software. Und was machst du beruflich?</p>
+                    <p class="mb-2"><strong>Michael:</strong> Ich bin Krankenpfleger. Ich arbeite in einem Krankenhaus.</p>
+                    <p class="mb-2"><strong>Li:</strong> Wie lange arbeitest du schon als Krankenpfleger?</p>
+                    <p class="mb-2"><strong>Michael:</strong> Ich habe vor drei Jahren meine Ausbildung abgeschlossen und arbeite seitdem in diesem Beruf.</p>
+                    <p class="mb-2"><strong>Li:</strong> Gefällt dir deine Arbeit?</p>
+                    <p class="mb-2"><strong>Michael:</strong> Ja, sehr! Ich arbeite gerne mit Menschen und helfe ihnen. Aber manchmal ist es auch stressig, besonders wenn wir viele Patienten haben.</p>
+                    <p class="mb-2"><strong>Li:</strong> Das kann ich mir vorstellen. Meine Arbeit ist manchmal auch stressig, besonders wenn wir Deadlines haben.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Sprechübung: Mein Beruf</h3>
+                <p class="mb-4">Beschreiben Sie Ihren Beruf oder einen Beruf, der Sie interessiert. Verwenden Sie die gelernten Ausdrücke.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Sprechen Sie über:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Berufsbezeichnung</li>
+                        <li>Arbeitsort</li>
+                        <li>Aufgaben und Tätigkeiten</li>
+                        <li>Arbeitszeiten</li>
+                        <li>Vor- und Nachteile des Berufs</li>
+                        <li>Warum Sie diesen Beruf gewählt haben oder wählen würden</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Berufliche Qualifikationen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Wortschatz: Ausbildung und Qualifikationen</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Ausbildung</p>
+                        <p class="text-gray-600">Ich habe eine Ausbildung als Elektriker gemacht.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">das Studium</p>
+                        <p class="text-gray-600">Ich habe Informatik studiert.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">der Abschluss</p>
+                        <p class="text-gray-600">Ich habe einen Bachelor-Abschluss in Wirtschaft.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">das Praktikum</p>
+                        <p class="text-gray-600">Ich habe ein Praktikum bei BMW gemacht.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Berufserfahrung</p>
+                        <p class="text-gray-600">Ich habe drei Jahre Berufserfahrung im Marketing.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Kenntnisse</p>
+                        <p class="text-gray-600">Ich habe gute Englischkenntnisse.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Fähigkeiten</p>
+                        <p class="text-gray-600">Zu meinen Fähigkeiten gehört die Teamarbeit.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Weiterbildung</p>
+                        <p class="text-gray-600">Ich habe eine Weiterbildung im Projektmanagement gemacht.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe ... studiert.</p>
+                        <p class="text-gray-600">Ich habe Maschinenbau studiert.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe eine Ausbildung als ... gemacht.</p>
+                        <p class="text-gray-600">Ich habe eine Ausbildung als Kauffrau gemacht.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe ... Jahre Erfahrung in ...</p>
+                        <p class="text-gray-600">Ich habe zwei Jahre Erfahrung in der Kundenbetreuung.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich kann gut ...</p>
+                        <p class="text-gray-600">Ich kann gut mit Menschen umgehen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich spreche ...</p>
+                        <p class="text-gray-600">Ich spreche Deutsch, Englisch und Chinesisch.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe Kenntnisse in ...</p>
+                        <p class="text-gray-600">Ich habe Kenntnisse in Microsoft Office.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Personalleiter:</strong> Guten Tag, Herr Zhang. Erzählen Sie mir bitte etwas über Ihre Ausbildung.</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Guten Tag. Ich habe in China Elektrotechnik studiert und einen Bachelor-Abschluss gemacht. Danach habe ich zwei Jahre als Elektriker in einem großen Unternehmen gearbeitet.</p>
+                    <p class="mb-2"><strong>Personalleiter:</strong> Und welche Weiterbildungen haben Sie gemacht?</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Ich habe einen Deutschkurs bis zum Niveau B1 besucht und eine Weiterbildung im Bereich erneuerbare Energien absolviert.</p>
+                    <p class="mb-2"><strong>Personalleiter:</strong> Sehr gut. Welche Sprachen sprechen Sie?</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Ich spreche Chinesisch als Muttersprache, Deutsch auf B1-Niveau und Englisch fließend.</p>
+                    <p class="mb-2"><strong>Personalleiter:</strong> Und welche besonderen Fähigkeiten haben Sie?</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Ich kann gut im Team arbeiten und bin sehr zuverlässig. Außerdem habe ich gute Kenntnisse in CAD-Programmen und kann technische Zeichnungen erstellen und lesen.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Sprechübung: Meine Qualifikationen</h3>
+                <p class="mb-4">Beschreiben Sie Ihre Ausbildung, Berufserfahrung und Qualifikationen. Verwenden Sie die gelernten Ausdrücke.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Sprechen Sie über:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Ihre Ausbildung oder Ihr Studium</li>
+                        <li>Ihre Berufserfahrung</li>
+                        <li>Ihre Sprachkenntnisse</li>
+                        <li>Ihre Computerkenntnisse</li>
+                        <li>Ihre besonderen Fähigkeiten</li>
+                        <li>Ihre Weiterbildungen</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Bewerbungsgespräch</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Typische Fragen im Bewerbungsgespräch</h3>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Erzählen Sie etwas über sich.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Warum haben Sie sich bei uns beworben?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Was wissen Sie über unser Unternehmen?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Was sind Ihre Stärken und Schwächen?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Warum sollten wir Sie einstellen?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wo sehen Sie sich in fünf Jahren?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Haben Sie noch Fragen an uns?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Nützliche Ausdrücke für Antworten</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Zu meinen Stärken gehört ...</p>
+                        <p class="text-gray-600">Zu meinen Stärken gehört meine Teamfähigkeit.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich arbeite gerne ...</p>
+                        <p class="text-gray-600">Ich arbeite gerne im Team und löse Probleme.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich interessiere mich für ...</p>
+                        <p class="text-gray-600">Ich interessiere mich für neue Technologien.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich möchte mich beruflich weiterentwickeln.</p>
+                        <p class="text-gray-600">Ich möchte mich beruflich weiterentwickeln und neue Fähigkeiten lernen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe mich bei Ihnen beworben, weil ...</p>
+                        <p class="text-gray-600">Ich habe mich bei Ihnen beworben, weil Ihr Unternehmen einen guten Ruf hat.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich könnte mich verbessern in ...</p>
+                        <p class="text-gray-600">Ich könnte mich verbessern in der Organisation meiner Arbeit.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Dialogbeispiel: Bewerbungsgespräch</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Personalleiter:</strong> Guten Tag, Frau Chen. Schön, dass Sie heute zu uns gekommen sind.</p>
+                    <p class="mb-2"><strong>Frau Chen:</strong> Guten Tag. Vielen Dank für die Einladung zum Gespräch.</p>
+                    <p class="mb-2"><strong>Personalleiter:</strong> Erzählen Sie mir doch bitte etwas über sich.</p>
+                    <p class="mb-2"><strong>Frau Chen:</strong> Gerne. Ich bin 26 Jahre alt und habe in China Betriebswirtschaft studiert. Seit zwei Jahren lebe ich in Deutschland und habe hier eine Weiterbildung im Bereich Online-Marketing gemacht. Zurzeit arbeite ich als Praktikantin in einer Marketingagentur.</p>
+                    <p class="mb-2"><strong>Personalleiter:</strong> Warum haben Sie sich bei uns beworben?</p>
+                    <p class="mb-2"><strong>Frau Chen:</strong> Ich habe mich bei Ihnen beworben, weil Ihr Unternehmen international tätig ist und ich meine Sprachkenntnisse und mein interkulturelles Verständnis einbringen kann. Außerdem interessiere ich mich sehr für die Produkte, die Sie herstellen.</p>
+                    <p class="mb-2"><strong>Personalleiter:</strong> Was sind Ihre Stärken?</p>
+                    <p class="mb-2"><strong>Frau Chen:</strong> Zu meinen Stärken gehören meine Kommunikationsfähigkeit und meine Kreativität. Ich arbeite gerne im Team und bin sehr zuverlässig. Außerdem lerne ich schnell und bin flexibel.</p>
+                    <p class="mb-2"><strong>Personalleiter:</strong> Und wo sehen Sie Ihre Schwächen?</p>
+                    <p class="mb-2"><strong>Frau Chen:</strong> Manchmal bin ich ungeduldig und möchte Aufgaben zu schnell erledigen. Ich arbeite daran, geduldiger zu sein und mir mehr Zeit für komplexe Aufgaben zu nehmen. Außerdem könnte ich mich in der deutschen Grammatik noch verbessern.</p>
+                    <p class="mb-2"><strong>Personalleiter:</strong> Wo sehen Sie sich in fünf Jahren?</p>
+                    <p class="mb-2"><strong>Frau Chen:</strong> In fünf Jahren möchte ich mehr Verantwortung im Bereich Marketing übernehmen und vielleicht ein kleines Team leiten. Ich möchte meine Deutschkenntnisse perfektionieren und mich beruflich weiterentwickeln.</p>
+                    <p class="mb-2"><strong>Personalleiter:</strong> Haben Sie noch Fragen an uns?</p>
+                    <p class="mb-2"><strong>Frau Chen:</strong> Ja, ich würde gerne wissen, wie die Einarbeitungsphase aussieht und welche Weiterbildungsmöglichkeiten es in Ihrem Unternehmen gibt.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Sprechübung: Bewerbungsgespräch</h3>
+                <p class="mb-4">Üben Sie ein Bewerbungsgespräch mit einem Partner. Eine Person ist der Personalleiter, die andere Person ist der Bewerber.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Tipps für das Bewerbungsgespräch:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Bereiten Sie sich gut vor und informieren Sie sich über das Unternehmen</li>
+                        <li>Sprechen Sie klar und deutlich</li>
+                        <li>Halten Sie Blickkontakt</li>
+                        <li>Seien Sie ehrlich, aber positiv</li>
+                        <li>Stellen Sie auch eigene Fragen</li>
+                        <li>Bedanken Sie sich am Ende für das Gespräch</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Arbeitsbedingungen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Wortschatz: Arbeitsbedingungen</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Arbeitszeit</p>
+                        <p class="text-gray-600">Meine Arbeitszeit ist von 9 bis 17 Uhr.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">das Gehalt</p>
+                        <p class="text-gray-600">Das Gehalt wird monatlich überwiesen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">der Urlaub</p>
+                        <p class="text-gray-600">Ich habe 30 Tage Urlaub im Jahr.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Überstunden</p>
+                        <p class="text-gray-600">Manchmal muss ich Überstunden machen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Probezeit</p>
+                        <p class="text-gray-600">Die Probezeit beträgt sechs Monate.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">der Arbeitsvertrag</p>
+                        <p class="text-gray-600">Ich habe einen unbefristeten Arbeitsvertrag.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Vollzeit / die Teilzeit</p>
+                        <p class="text-gray-600">Ich arbeite in Vollzeit / in Teilzeit.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Schichtarbeit</p>
+                        <p class="text-gray-600">In diesem Job gibt es Schichtarbeit.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Nützliche Fragen zu Arbeitsbedingungen</h3>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wie sind die Arbeitszeiten?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wie hoch ist das Gehalt?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wie viele Urlaubstage gibt es?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Gibt es flexible Arbeitszeiten?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ist Homeoffice möglich?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wie lange ist die Probezeit?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Bewerber:</strong> Könnten Sie mir bitte mehr über die Arbeitsbedingungen erzählen?</p>
+                    <p class="mb-2"><strong>Personalleiter:</strong> Natürlich. Die reguläre Arbeitszeit ist von Montag bis Freitag von 9 bis 17 Uhr. Wir bieten aber auch flexible Arbeitszeiten an.</p>
+                    <p class="mb-2"><strong>Bewerber:</strong> Ist Homeoffice auch möglich?</p>
+                    <p class="mb-2"><strong>Personalleiter:</strong> Ja, Sie können bis zu zwei Tage pro Woche im Homeoffice arbeiten.</p>
+                    <p class="mb-2"><strong>Bewerber:</strong> Wie viele Urlaubstage gibt es?</p>
+                    <p class="mb-2"><strong>Personalleiter:</strong> Sie haben 28 Tage Urlaub im Jahr, plus die gesetzlichen Feiertage.</p>
+                    <p class="mb-2"><strong>Bewerber:</strong> Und wie lange ist die Probezeit?</p>
+                    <p class="mb-2"><strong>Personalleiter:</strong> Die Probezeit beträgt sechs Monate. Danach bekommen Sie einen unbefristeten Arbeitsvertrag.</p>
+                    <p class="mb-2"><strong>Bewerber:</strong> Gibt es auch Weiterbildungsmöglichkeiten?</p>
+                    <p class="mb-2"><strong>Personalleiter:</strong> Ja, wir unterstützen unsere Mitarbeiter bei Weiterbildungen und bieten auch interne Schulungen an.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Sprechübung: Fragen zu Arbeitsbedingungen</h3>
+                <p class="mb-4">Üben Sie mit einem Partner, Fragen zu Arbeitsbedingungen zu stellen und zu beantworten.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Mögliche Themen:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Arbeitszeiten</li>
+                        <li>Gehalt und Zusatzleistungen</li>
+                        <li>Urlaub und Feiertage</li>
+                        <li>Homeoffice-Möglichkeiten</li>
+                        <li>Weiterbildungsmöglichkeiten</li>
+                        <li>Arbeitsatmosphäre und Team</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Grammatik im Fokus</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Präteritum der Modalverben</h3>
+                <p class="mb-4">Im Deutschen verwendet man das Präteritum (einfache Vergangenheit) oft für Modalverben, auch in der gesprochenen Sprache.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
+                    <div>
+                        <p class="font-medium mb-2">können → konnte</p>
+                        <table class="w-full border-collapse">
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">ich</td>
+                                <td class="py-1 font-medium">konnte</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">du</td>
+                                <td class="py-1 font-medium">konntest</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">er/sie/es</td>
+                                <td class="py-1 font-medium">konnte</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">wir</td>
+                                <td class="py-1 font-medium">konnten</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">ihr</td>
+                                <td class="py-1 font-medium">konntet</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 pr-4">sie/Sie</td>
+                                <td class="py-1 font-medium">konnten</td>
+                            </tr>
+                        </table>
+                        <p class="mt-2 text-gray-600">Ich konnte gestern nicht arbeiten.</p>
+                    </div>
+                    
+                    <div>
+                        <p class="font-medium mb-2">wollen → wollte</p>
+                        <table class="w-full border-collapse">
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">ich</td>
+                                <td class="py-1 font-medium">wollte</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">du</td>
+                                <td class="py-1 font-medium">wolltest</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">er/sie/es</td>
+                                <td class="py-1 font-medium">wollte</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">wir</td>
+                                <td class="py-1 font-medium">wollten</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-1 pr-4">ihr</td>
+                                <td class="py-1 font-medium">wolltet</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 pr-4">sie/Sie</td>
+                                <td class="py-1 font-medium">wollten</td>
+                            </tr>
+                        </table>
+                        <p class="mt-2 text-gray-600">Er wollte Arzt werden.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-4 rounded-md">
+                    <p class="font-medium mb-2">Weitere Modalverben im Präteritum:</p>
+                    <ul class="list-disc pl-5">
+                        <li>müssen → musste</li>
+                        <li>dürfen → durfte</li>
+                        <li>sollen → sollte</li>
+                        <li>mögen → mochte</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-green-600 mb-4">Konjunktiv II für höfliche Bitten und Wünsche</h3>
+                <p class="mb-4">Der Konjunktiv II wird oft für höfliche Bitten, Wünsche oder hypothetische Situationen verwendet.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich hätte gerne ...</p>
+                        <p class="text-gray-600">Ich hätte gerne mehr Informationen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Könnten Sie bitte ...</p>
+                        <p class="text-gray-600">Könnten Sie bitte die Frage wiederholen?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Würden Sie mir bitte ...</p>
+                        <p class="text-gray-600">Würden Sie mir bitte helfen?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich würde gerne ...</p>
+                        <p class="text-gray-600">Ich würde gerne in Ihrem Unternehmen arbeiten.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-4 rounded-md">
+                    <p class="font-medium mb-2">Wichtige Konjunktiv II-Formen:</p>
+                    <ul class="list-disc pl-5">
+                        <li>sein → wäre</li>
+                        <li>haben → hätte</li>
+                        <li>werden → würde</li>
+                        <li>können → könnte</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Kulturelles Wissen: Arbeiten in Deutschland</h2>
+            
+            <div class="mb-8">
+                <p class="mb-4">Das deutsche Arbeitsleben hat einige Besonderheiten, die für Ausländer interessant sein können:</p>
+                
+                <ul class="list-disc pl-5 space-y-2 mb-4">
+                    <li><strong>Duale Ausbildung:</strong> In Deutschland gibt es das System der dualen Ausbildung, bei dem man gleichzeitig in einem Betrieb praktisch arbeitet und in der Berufsschule theoretisches Wissen erwirbt.</li>
+                    <li><strong>Pünktlichkeit:</strong> Pünktlichkeit ist sehr wichtig im deutschen Arbeitsleben. Zu spät zu kommen gilt als unhöflich und unprofessionell.</li>
+                    <li><strong>Direktheit:</strong> Deutsche kommunizieren oft direkt und sachlich. Kritik wird offen angesprochen, ist aber nicht persönlich gemeint.</li>
+                    <li><strong>Work-Life-Balance:</strong> In Deutschland wird die Trennung von Arbeit und Freizeit respektiert. Überstunden sind nicht die Regel, und der Urlaub wird ernst genommen.</li>
+                    <li><strong>Hierarchie:</strong> Obwohl es Hierarchien gibt, werden Mitarbeiter oft in Entscheidungsprozesse einbezogen und können ihre Meinung äußern.</li>
+                    <li><strong>Formelle Anrede:</strong> Im Berufsleben ist die Anrede mit "Sie" und dem Nachnamen üblich, bis das "Du" angeboten wird.</li>
+                </ul>
+                
+                <p>In Deutschland gibt es starke Arbeitnehmerrechte und viele Unternehmen haben einen Betriebsrat, der die Interessen der Mitarbeiter vertritt. Der gesetzliche Mindestjahresurlaub beträgt 20 Tage bei einer 5-Tage-Woche, viele Arbeitgeber bieten aber mehr Urlaubstage an.</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Hausaufgaben und Übungen</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-green-600 mb-3">Sprechaufgabe: Mein Traumjob</h3>
+                    <p class="mb-2">Nehmen Sie eine Audiodatei (2-3 Minuten) auf, in der Sie über Ihren Traumjob sprechen. Verwenden Sie dabei:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Berufsbezeichnungen und Tätigkeiten</li>
+                        <li>Qualifikationen und Fähigkeiten</li>
+                        <li>Arbeitsbedingungen</li>
+                        <li>Gründe, warum dieser Job zu Ihnen passt</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-green-600 mb-3">Dialogübung: Bewerbungsgespräch</h3>
+                    <p class="mb-2">Schreiben Sie einen Dialog für ein Bewerbungsgespräch. Verwenden Sie dabei:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Typische Fragen und Antworten</li>
+                        <li>Höfliche Formulierungen (Konjunktiv II)</li>
+                        <li>Vokabeln zu Qualifikationen und Berufserfahrung</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-green-600 mb-3">Schreibaufgabe: Bewerbungsschreiben</h3>
+                    <p>Schreiben Sie ein kurzes Bewerbungsschreiben für eine Stelle, die Sie interessiert.</p>
+                </div>
+                
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium">Tipp für die Aussprache:</p>
+                    <p>Üben Sie besonders die Aussprache von Fachbegriffen und längeren zusammengesetzten Wörtern wie "Bewerbungsgespräch", "Arbeitsbedingungen" oder "Weiterbildungsmöglichkeiten".</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-12 py-8 border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-500">© 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Über uns</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Kontakt</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

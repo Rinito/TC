@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Deutsch im Alltag</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="curriculum.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="blog.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="blog.html" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="blog-zh.html" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="curriculum.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="blog.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="blog.html" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="blog-zh.html" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-blue-600 mb-4">Blog: Deutsch im Alltag</h1>
+            <p class="text-xl text-gray-600">Lernen Sie mit authentischen Videos und chinesischen Übersetzungen</p>
+        </div>
+
+        <div class="mb-8">
+            <p class="text-lg text-gray-700 mb-6">Diese Seite enthält Videos vom YouTube-Kanal <a href="https://www.youtube.com/@EasyGerman" target="_blank" class="text-blue-600 hover:underline">Easy German</a>, die Alltagssituationen in Deutschland zeigen. Jedes Video wird mit deutschem Transkript und chinesischer Übersetzung präsentiert, um Ihnen zu helfen, authentisches Deutsch zu verstehen.</p>
+        </div>
+
+        <!-- Winter in Berlin -->
+        <div class="blog-post bg-white p-8 rounded-lg shadow-md mb-12">
+            <div class="blog-post-header">
+                <h2 class="text-2xl font-bold text-blue-600 mb-2">Winter in Berlin</h2>
+                <div class="flex items-center text-gray-500 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span>Veröffentlicht am 15. Januar 2025</span>
+                </div>
+                <div class="aspect-w-16 aspect-h-9 mb-6">
+                    <iframe class="w-full h-96" src="https://www.youtube.com/embed/example1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="blog-post-content">
+                <p class="mb-4">In diesem Video erkunden wir Berlin im Winter. Die Moderatoren sprechen mit Einheimischen über ihre Lieblingsaktivitäten in der kalten Jahreszeit und zeigen typische Winterszenen in der deutschen Hauptstadt.</p>
+                
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">Worum geht es in diesem Video?</h3>
+                <p class="mb-6">Das Video zeigt verschiedene Winteraktivitäten in Berlin, wie Weihnachtsmärkte besuchen, Schlittschuhlaufen und in gemütlichen Cafés warme Getränke genießen. Die Berliner erzählen, wie sie mit der Kälte umgehen und was sie am Winter in der Stadt mögen oder nicht mögen.</p>
+                
+                <div class="transcript-section">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Deutsches Transkript</h3>
+                    <p class="mb-2"><strong>Moderator:</strong> Hallo und willkommen zu Easy German. Heute sind wir in Berlin unterwegs und sprechen mit den Leuten über den Winter. Wie findest du den Winter in Berlin?</p>
+                    <p class="mb-2"><strong>Person 1:</strong> Also, ich mag den Winter in Berlin eigentlich ganz gerne. Es gibt viele Weihnachtsmärkte, man kann Glühwein trinken und es ist eine gemütliche Atmosphäre.</p>
+                    <p class="mb-2"><strong>Moderator:</strong> Was machst du gerne im Winter?</p>
+                    <p class="mb-2"><strong>Person 1:</strong> Ich gehe gerne Schlittschuhlaufen im Volkspark Friedrichshain. Da gibt es eine schöne Eisbahn. Und natürlich besuche ich die Weihnachtsmärkte mit Freunden.</p>
+                    <p class="mb-2"><strong>Moderator:</strong> Und wie gehst du mit der Kälte um?</p>
+                    <p class="mb-2"><strong>Person 1:</strong> Man muss sich einfach warm anziehen. Ich trage immer eine dicke Jacke, einen Schal, Handschuhe und eine Mütze. Und wenn es sehr kalt ist, bleibe ich einfach zu Hause und mache es mir gemütlich.</p>
+                    <p class="mb-2"><strong>Moderator:</strong> Vielen Dank! Jetzt fragen wir mal jemand anderen. Hallo, wie findest du den Winter in Berlin?</p>
+                    <p class="mb-2"><strong>Person 2:</strong> Ehrlich gesagt, ich mag den Winter nicht so gerne. Es ist zu kalt und zu dunkel. Die Tage sind so kurz, morgens ist es noch dunkel, wenn ich zur Arbeit gehe, und abends ist es schon wieder dunkel, wenn ich nach Hause komme.</p>
+                    <p class="mb-2"><strong>Moderator:</strong> Gibt es denn etwas, das du am Winter magst?</p>
+                    <p class="mb-2"><strong>Person 2:</strong> Na ja, Weihnachten ist schön. Und manchmal, wenn Schnee liegt, sieht die Stadt wirklich schön aus. Aber das passiert leider nicht mehr so oft wie früher.</p>
+                </div>
+                
+                <div class="translation-section">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Chinesische Übersetzung</h3>
+                    <p class="mb-2 chinese-text"><strong>主持人：</strong> 你好，欢迎来到Easy German。今天我们在柏林街头，与人们谈论冬天。你觉得柏林的冬天怎么样？</p>
+                    <p class="mb-2 pinyin">Zhǔchírén: Nǐ hǎo, huānyíng lái dào Easy German. Jīntiān wǒmen zài Bólín jiētóu, yǔ rénmen tánlùn dōngtiān. Nǐ juéde Bólín de dōngtiān zěnme yàng?</p>
+                    <p class="mb-2 chinese-text"><strong>人物1：</strong> 嗯，我其实很喜欢柏林的冬天。这里有很多圣诞市场，可以喝热红酒，氛围很温馨。</p>
+                    <p class="mb-2 pinyin">Rénwù 1: Èn, wǒ qíshí hěn xǐhuān Bólín de dōngtiān. Zhèlǐ yǒu hěnduō shèngdàn shìchǎng, kěyǐ hē rè hóngjiǔ, fēnwéi hěn wēnxīn.</p>
+                    <p class="mb-2 chinese-text"><strong>主持人：</strong> 冬天你喜欢做什么？</p>
+                    <p class="mb-2 pinyin">Zhǔchírén: Dōngtiān nǐ xǐhuān zuò shénme?</p>
+                    <p class="mb-2 chinese-text"><strong>人物1：</strong> 我喜欢去弗里德里希斯海因公园滑冰。那里有一个很漂亮的溜冰场。当然，我也会和朋友一起去逛圣诞市场。</p>
+                    <p class="mb-2 pinyin">Rénwù 1: Wǒ xǐhuān qù Fúlǐdélǐxīsī hǎiyīn gōngyuán huábīng. Nàlǐ yǒu yīgè hěn piàoliang de liūbīngchǎng. Dāngrán, wǒ yě huì hé péngyǒu yīqǐ qù guàng shèngdàn shìchǎng.</p>
+                    <p class="mb-2 chinese-text"><strong>主持人：</strong> 你是怎么应对寒冷的？</p>
+                    <p class="mb-2 pinyin">Zhǔchírén: Nǐ shì zěnme yìngduì hánlěng de?</p>
+                    <p class="mb-2 chinese-text"><strong>人物1：</strong> 你必须穿暖和点。我总是穿厚外套，围巾，手套和帽子。如果天气特别冷，我就待在家里，让自己舒适一点。</p>
+                    <p class="mb-2 pinyin">Rénwù 1: Nǐ bìxū chuān nuǎnhuo diǎn. Wǒ zǒngshì chuān hòu wàitào, wéijīn, shǒutào hé màozi. Rúguǒ tiānqì tèbié lěng, wǒ jiù dāi zài jiālǐ, ràng zìjǐ shūshì yīdiǎn.</p>
+                </div>
+                
+                <div class="mt-8">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Nützliche Vokabeln</h3>
+                    <div class="vocabulary-list">
+                        <div class="vocabulary-item">
+                            <span>der Winter</span>
+                            <span class="chinese-text">冬天</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>der Weihnachtsmarkt</span>
+                            <span class="chinese-text">圣诞市场</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>der Glühwein</span>
+                            <span class="chinese-text">热红酒</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>Schlittschuh laufen</span>
+                            <span class="chinese-text">滑冰</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>die Eisbahn</span>
+                            <span class="chinese-text">溜冰场</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>sich warm anziehen</span>
+                            <span class="chinese-text">穿暖和</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>die Jacke</span>
+                            <span class="chinese-text">外套</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>der Schal</span>
+                            <span class="chinese-text">围巾</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>die Handschuhe</span>
+                            <span class="chinese-text">手套</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>die Mütze</span>
+                            <span class="chinese-text">帽子</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- In der Bäckerei -->
+        <div class="blog-post bg-white p-8 rounded-lg shadow-md mb-12">
+            <div class="blog-post-header">
+                <h2 class="text-2xl font-bold text-blue-600 mb-2">In der Bäckerei</h2>
+                <div class="flex items-center text-gray-500 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span>Veröffentlicht am 5. Februar 2025</span>
+                </div>
+                <div class="aspect-w-16 aspect-h-9 mb-6">
+                    <iframe class="w-full h-96" src="https://www.youtube.com/embed/example2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="blog-post-content">
+                <p class="mb-4">In diesem Video besuchen wir eine typische deutsche Bäckerei. Die Moderatoren zeigen verschiedene Brotsorten und Gebäck und sprechen mit Kunden und Verkäufern über deutsche Backwaren.</p>
+                
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">Worum geht es in diesem Video?</h3>
+                <p class="mb-6">Das Video gibt einen Einblick in die deutsche Brotkultur und zeigt, wie man in einer Bäckerei einkauft. Sie lernen typische Ausdrücke und Redewendungen, die beim Einkaufen in einer Bäckerei nützlich sind, sowie die Namen verschiedener Brotsorten und Gebäckstücke.</p>
+                
+                <div class="transcript-section">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Deutsches Transkript</h3>
+                    <p class="mb-2"><strong>Moderator:</strong> Hallo und willkommen zu Easy German. Heute sind wir in einer typischen deutschen Bäckerei. Deutschland ist bekannt für seine Brotvielfalt. Es gibt über 300 verschiedene Brotsorten.</p>
+                    <p class="mb-2"><strong>Verkäuferin:</strong> Guten Tag, was darf es sein?</p>
+                    <p class="mb-2"><strong>Kunde:</strong> Ich hätte gerne ein Vollkornbrot und zwei Brötchen.</p>
+                    <p class="mb-2"><strong>Verkäuferin:</strong> Gerne. Möchten Sie die Brötchen aufgeschnitten haben?</p>
+                    <p class="mb-2"><strong>Kunde:</strong> Ja, bitte.</p>
+                    <p class="mb-2"><strong>Verkäuferin:</strong> Sonst noch etwas?</p>
+                    <p class="mb-2"><strong>Kunde:</strong> Ja, ich nehme noch ein Stück Apfelkuchen.</p>
+                    <p class="mb-2"><strong>Verkäuferin:</strong> Sehr gerne. Das macht zusammen 7,85 €.</p>
+                    <p class="mb-2"><strong>Moderator:</strong> Entschuldigung, darf ich Sie kurz etwas fragen? Wie oft kaufen Sie Brot?</p>
+                    <p class="mb-2"><strong>Kunde:</strong> Ich kaufe fast jeden Tag frisches Brot. Für mich gehört das zum Alltag. Morgens ein frisches Brötchen mit Butter und Marmelade – das ist für mich ein perfektes Frühstück.</p>
+                    <p class="mb-2"><strong>Moderator:</strong> Vielen Dank! Jetzt schauen wir uns mal die verschiedenen Brotsorten an.</p>
+                </div>
+                
+                <div class="translation-section">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Chinesische Übersetzung</h3>
+                    <p class="mb-2 chinese-text"><strong>主持人：</strong> 你好，欢迎来到Easy German。今天我们在一家典型的德国面包店。德国以其面包种类多样而闻名。这里有超过300种不同的面包。</p>
+                    <p class="mb-2 pinyin">Zhǔchírén: Nǐ hǎo, huānyíng lái dào Easy German. Jīntiān wǒmen zài yī jiā diǎnxíng de Déguó miànbāo diàn. Déguó yǐ qí miànbāo zhǒnglèi duōyàng ér wénmíng. Zhèlǐ yǒu chāoguò 300 zhǒng bùtóng de miànbāo.</p>
+                    <p class="mb-2 chinese-text"><strong>售货员：</strong> 你好，需要什么？</p>
+                    <p class="mb-2 pinyin">Shòuhuòyuán: Nǐ hǎo, xūyào shénme?</p>
+                    <p class="mb-2 chinese-text"><strong>顾客：</strong> 我想要一个全麦面包和两个小圆面包。</p>
+                    <p class="mb-2 pinyin">Gùkè: Wǒ xiǎng yào yīgè quánmài miànbāo hé liǎng gè xiǎo yuán miànbāo.</p>
+                    <p class="mb-2 chinese-text"><strong>售货员：</strong> 好的。您要把小圆面包切开吗？</p>
+                    <p class="mb-2 pinyin">Shòuhuòyuán: Hǎo de. Nín yào bǎ xiǎo yuán miànbāo qiē kāi ma?</p>
+                    <p class="mb-2 chinese-text"><strong>顾客：</strong> 是的，请切开。</p>
+                    <p class="mb-2 pinyin">Gùkè: Shì de, qǐng qiē kāi.</p>
+                    <p class="mb-2 chinese-text"><strong>售货员：</strong> 还需要别的吗？</p>
+                    <p class="mb-2 pinyin">Shòuhuòyuán: Hái xūyào bié de ma?</p>
+                    <p class="mb-2 chinese-text"><strong>顾客：</strong> 是的，我再要一块苹果蛋糕。</p>
+                    <p class="mb-2 pinyin">Gùkè: Shì de, wǒ zài yào yī kuài píngguǒ dàngāo.</p>
+                </div>
+                
+                <div class="mt-8">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Nützliche Vokabeln</h3>
+                    <div class="vocabulary-list">
+                        <div class="vocabulary-item">
+                            <span>die Bäckerei</span>
+                            <span class="chinese-text">面包店</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>das Brot</span>
+                            <span class="chinese-text">面包</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>das Vollkornbrot</span>
+                            <span class="chinese-text">全麦面包</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>das Brötchen</span>
+                            <span class="chinese-text">小圆面包</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>aufschneiden</span>
+                            <span class="chinese-text">切开</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>der Kuchen</span>
+                            <span class="chinese-text">蛋糕</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>der Apfelkuchen</span>
+                            <span class="chinese-text">苹果蛋糕</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>Was darf es sein?</span>
+                            <span class="chinese-text">需要什么？</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>Ich hätte gerne...</span>
+                            <span class="chinese-text">我想要...</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>Sonst noch etwas?</span>
+                            <span class="chinese-text">还需要别的吗？</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deutsche Snacks -->
+        <div class="blog-post bg-white p-8 rounded-lg shadow-md mb-12">
+            <div class="blog-post-header">
+                <h2 class="text-2xl font-bold text-blue-600 mb-2">Deutsche Snacks</h2>
+                <div class="flex items-center text-gray-500 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span>Veröffentlicht am 20. März 2025</span>
+                </div>
+                <div class="aspect-w-16 aspect-h-9 mb-6">
+                    <iframe class="w-full h-96" src="https://www.youtube.com/embed/example3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="blog-post-content">
+                <p class="mb-4">In diesem Video geht es um typische deutsche Snacks und Imbisse. Die Moderatoren probieren verschiedene Snacks und sprechen mit Passanten über ihre Lieblingssnacks.</p>
+                
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">Worum geht es in diesem Video?</h3>
+                <p class="mb-6">Das Video stellt beliebte deutsche Snacks wie Currywurst, Döner Kebab, Bretzel und verschiedene Süßigkeiten vor. Sie lernen, wie man diese Snacks bestellt und welche Variationen es gibt. Außerdem erfahren Sie mehr über die deutsche Snackkultur und die Essgewohnheiten der Deutschen.</p>
+                
+                <div class="transcript-section">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Deutsches Transkript</h3>
+                    <p class="mb-2"><strong>Moderator:</strong> Hallo und willkommen zu Easy German. Heute geht es um deutsche Snacks. Wir sind hier an einem Imbissstand und werden verschiedene typische Snacks probieren.</p>
+                    <p class="mb-2"><strong>Verkäufer:</strong> Hallo, was möchtest du haben?</p>
+                    <p class="mb-2"><strong>Moderator:</strong> Ich hätte gerne eine Currywurst mit Pommes.</p>
+                    <p class="mb-2"><strong>Verkäufer:</strong> Mit oder ohne Darm?</p>
+                    <p class="mb-2"><strong>Moderator:</strong> Ohne Darm, bitte.</p>
+                    <p class="mb-2"><strong>Verkäufer:</strong> Kommt sofort. Möchtest du Ketchup oder Mayonnaise zu den Pommes?</p>
+                    <p class="mb-2"><strong>Moderator:</strong> Beides, bitte.</p>
+                    <p class="mb-2"><strong>Moderator:</strong> Jetzt fragen wir mal die Leute hier, welche Snacks sie gerne essen. Entschuldigung, was ist Ihr Lieblingssnack?</p>
+                    <p class="mb-2"><strong>Person 1:</strong> Ich esse sehr gerne Döner Kebab. Das ist eigentlich türkisch, aber in Deutschland sehr beliebt. Man bekommt ihn an fast jeder Ecke.</p>
+                    <p class="mb-2"><strong>Moderator:</strong> Und wie oft essen Sie Döner?</p>
+                    <p class="mb-2"><strong>Person 1:</strong> Ungefähr einmal pro Woche. Es ist schnell, lecker und nicht zu teuer.</p>
+                    <p class="mb-2"><strong>Moderator:</strong> Vielen Dank! Und was ist Ihr Lieblingssnack?</p>
+                    <p class="mb-2"><strong>Person 2:</strong> Ich mag Brezeln sehr gerne, besonders die aus Süddeutschland. Sie schmecken am besten mit etwas Butter.</p>
+                </div>
+                
+                <div class="translation-section">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Chinesische Übersetzung</h3>
+                    <p class="mb-2 chinese-text"><strong>主持人：</strong> 你好，欢迎来到Easy German。今天我们要讲德国小吃。我们现在在一个小吃摊，将尝试各种典型的德国小吃。</p>
+                    <p class="mb-2 pinyin">Zhǔchírén: Nǐ hǎo, huānyíng lái dào Easy German. Jīntiān wǒmen yào jiǎng Déguó xiǎochī. Wǒmen xiànzài zài yīgè xiǎochī tān, jiāng chángshì gèzhǒng diǎnxíng de Déguó xiǎochī.</p>
+                    <p class="mb-2 chinese-text"><strong>售货员：</strong> 你好，你想要什么？</p>
+                    <p class="mb-2 pinyin">Shòuhuòyuán: Nǐ hǎo, nǐ xiǎng yào shénme?</p>
+                    <p class="mb-2 chinese-text"><strong>主持人：</strong> 我想要一份咖喱香肠配薯条。</p>
+                    <p class="mb-2 pinyin">Zhǔchírén: Wǒ xiǎng yào yī fèn kāfēi xiāngcháng pèi shǔtiáo.</p>
+                    <p class="mb-2 chinese-text"><strong>售货员：</strong> 要带肠衣的还是不带肠衣的？</p>
+                    <p class="mb-2 pinyin">Shòuhuòyuán: Yào dài chángyī de háishì bù dài chángyī de?</p>
+                    <p class="mb-2 chinese-text"><strong>主持人：</strong> 不带肠衣的，谢谢。</p>
+                    <p class="mb-2 pinyin">Zhǔchírén: Bù dài chángyī de, xièxie.</p>
+                    <p class="mb-2 chinese-text"><strong>售货员：</strong> 马上就好。薯条要番茄酱还是蛋黄酱？</p>
+                    <p class="mb-2 pinyin">Shòuhuòyuán: Mǎshàng jiù hǎo. Shǔtiáo yào fānqié jiàng háishì dànhuáng jiàng?</p>
+                    <p class="mb-2 chinese-text"><strong>主持人：</strong> 两种都要，谢谢。</p>
+                    <p class="mb-2 pinyin">Zhǔchírén: Liǎng zhǒng dōu yào, xièxie.</p>
+                </div>
+                
+                <div class="mt-8">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Nützliche Vokabeln</h3>
+                    <div class="vocabulary-list">
+                        <div class="vocabulary-item">
+                            <span>der Snack</span>
+                            <span class="chinese-text">小吃</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>der Imbissstand</span>
+                            <span class="chinese-text">小吃摊</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>die Currywurst</span>
+                            <span class="chinese-text">咖喱香肠</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>die Pommes</span>
+                            <span class="chinese-text">薯条</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>mit/ohne Darm</span>
+                            <span class="chinese-text">带/不带肠衣</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>das Ketchup</span>
+                            <span class="chinese-text">番茄酱</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>die Mayonnaise</span>
+                            <span class="chinese-text">蛋黄酱</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>der Döner Kebab</span>
+                            <span class="chinese-text">土耳其烤肉卷</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>die Brezel</span>
+                            <span class="chinese-text">椒盐脆饼</span>
+                        </div>
+                        <div class="vocabulary-item">
+                            <span>Was möchtest du haben?</span>
+                            <span class="chinese-text">你想要什么？</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-12 py-8 border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-500">© 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Über uns</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Kontakt</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

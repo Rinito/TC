@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock-Interviews für Ausbildungsbewerber</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="curriculum.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="mock-interviews.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="mock-interviews.html" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="mock-interviews-zh.html" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="curriculum.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="mock-interviews.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="mock-interviews.html" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="mock-interviews-zh.html" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-blue-600 mb-4">Mock-Interviews für Ausbildungsbewerber</h1>
+            <p class="text-xl text-gray-600">Üben Sie mit realistischen Simulationen von Vorstellungsgesprächen</p>
+        </div>
+
+        <div class="mb-8">
+            <div class="flex justify-center space-x-4 mb-8">
+                <a href="#mechatroniker" class="px-4 py-2 bg-blue-100 text-blue-800 rounded-md hover:bg-blue-200 transition">Mechatroniker</a>
+                <a href="#kauffrau" class="px-4 py-2 bg-green-100 text-green-800 rounded-md hover:bg-green-200 transition">Kauffrau für Büromanagement</a>
+                <a href="#fachinformatiker" class="px-4 py-2 bg-purple-100 text-purple-800 rounded-md hover:bg-purple-200 transition">Fachinformatiker</a>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Wie Sie diese Mock-Interviews nutzen können</h2>
+            
+            <div class="space-y-4">
+                <p>Diese Mock-Interviews sind realistische Simulationen von Vorstellungsgesprächen für verschiedene Ausbildungsberufe. Sie können sie auf folgende Weise nutzen:</p>
+                
+                <ol class="list-decimal pl-5 space-y-2">
+                    <li>Lesen Sie das gesamte Interview durch, um einen Überblick zu bekommen.</li>
+                    <li>Üben Sie das Gespräch mit einem Partner, wobei einer den Interviewer und einer den Bewerber spielt.</li>
+                    <li>Nehmen Sie Ihre Antworten auf und hören Sie sie sich kritisch an.</li>
+                    <li>Reflektieren Sie über die Fragen und überlegen Sie, wie Sie persönlich antworten würden.</li>
+                    <li>Nutzen Sie die Reflexionsfragen und Tipps am Ende jedes Interviews, um Ihre Vorbereitung zu verbessern.</li>
+                </ol>
+                
+                <p class="mt-4">Denken Sie daran: Es gibt keine perfekten Antworten. Authentizität und ehrliches Interesse sind wichtiger als auswendig gelernte Phrasen.</p>
+            </div>
+        </div>
+
+        <!-- Mechatroniker Mock-Interview -->
+        <div id="mechatroniker" class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-blue-600 mb-6">Mock-Interview: Mechatroniker</h2>
+            
+            <div class="mock-interview">
+                <div class="bg-gray-100 p-4 rounded-md mb-6">
+                    <p class="font-medium">Unternehmen: Technik GmbH</p>
+                    <p>Branche: Maschinenbau</p>
+                    <p>Position: Auszubildender zum Mechatroniker</p>
+                    <p>Bewerber: Liu Wei, 18 Jahre, Realschulabschluss</p>
+                </div>
+                
+                <div class="mock-interview-dialog">
+                    <p class="interviewer">Guten Tag, Herr Wei. Schön, dass Sie heute zu uns gekommen sind. Mein Name ist Frau Schmidt, ich bin die Ausbildungsleiterin hier bei der Technik GmbH. Bitte nehmen Sie Platz.</p>
+                    <p class="applicant">Guten Tag, Frau Schmidt. Vielen Dank für die Einladung zum Gespräch. Ich freue mich, hier zu sein.</p>
+                    
+                    <p class="interviewer">Erzählen Sie mir doch bitte etwas über sich und warum Sie sich für eine Ausbildung zum Mechatroniker interessieren.</p>
+                    <p class="applicant">Mein Name ist Liu Wei, ich bin 18 Jahre alt und habe vor kurzem meinen Realschulabschluss gemacht. Schon seit meiner Kindheit interessiere ich mich für Technik und habe gerne Dinge auseinandergebaut, um zu verstehen, wie sie funktionieren. In der Schule waren Mathematik und Physik meine Lieblingsfächer. Ich habe mich für die Ausbildung zum Mechatroniker entschieden, weil mich die Kombination aus Mechanik und Elektronik fasziniert. Bei einem Praktikum in einer Werkstatt konnte ich bereits erste Erfahrungen sammeln und war begeistert von der Vielseitigkeit dieses Berufs.</p>
+                    
+                    <p class="interviewer">Das klingt interessant. Welche Erfahrungen haben Sie in Ihrem Praktikum genau gesammelt?</p>
+                    <p class="applicant">Während meines zweiwöchigen Praktikums durfte ich bei verschiedenen Aufgaben assistieren. Ich habe bei der Wartung von Maschinen geholfen, einfache elektronische Schaltungen gelötet und bei der Fehlersuche an einer Produktionsanlage mitgewirkt. Besonders spannend fand ich, wie mechanische und elektronische Komponenten zusammenarbeiten. Der Mechatroniker, der mich betreut hat, hat mir erklärt, wie wichtig es ist, beide Bereiche zu verstehen, um Probleme effektiv lösen zu können.</p>
+                    
+                    <p class="interviewer">Was wissen Sie über unser Unternehmen und warum haben Sie sich bei uns beworben?</p>
+                    <p class="applicant">Die Technik GmbH ist ein führender Hersteller von Spezialmaschinen für die Lebensmittelindustrie mit etwa 200 Mitarbeitern. Ich habe auf Ihrer Website gesehen, dass Sie großen Wert auf Innovation und Qualität legen und regelmäßig Auszubildende einstellen. Besonders beeindruckt hat mich, dass Sie Ihre Auszubildenden durch alle Abteilungen rotieren lassen, um einen umfassenden Einblick in das Unternehmen zu geben. Ein Bekannter, der bei Ihnen arbeitet, hat mir außerdem von dem guten Arbeitsklima und den modernen Werkstätten erzählt. Das hat mich überzeugt, dass Ihr Unternehmen ein idealer Ort für meine Ausbildung wäre.</p>
+                    
+                    <p class="interviewer">Welche Stärken bringen Sie für die Ausbildung zum Mechatroniker mit?</p>
+                    <p class="applicant">Zu meinen Stärken gehört mein technisches Verständnis, das ich in der Schule und in meiner Freizeit entwickelt habe. Ich arbeite präzise und geduldig, was bei der Fehlersuche und Reparatur wichtig ist. Außerdem lerne ich schnell und bin sehr motiviert, Neues zu erlernen. In Gruppenarbeiten in der Schule habe ich gezeigt, dass ich gut im Team arbeiten kann, was in diesem Beruf ja auch wichtig ist. Meine Mathematik- und Physikkenntnisse sind gut, was mir bei den theoretischen Aspekten der Ausbildung helfen wird.</p>
+                    
+                    <p class="interviewer">Gibt es auch Bereiche, in denen Sie sich noch verbessern möchten?</p>
+                    <p class="applicant">Ja, ich weiß, dass meine Deutschkenntnisse noch nicht perfekt sind, da ich erst vor drei Jahren nach Deutschland gekommen bin. Ich arbeite aber kontinuierlich daran, meine Sprachkenntnisse zu verbessern, indem ich viel lese und deutsche Filme schaue. Außerdem fehlt mir noch praktische Erfahrung im Umgang mit speziellen Werkzeugen und Messgeräten. Ich bin aber sehr lernbereit und freue mich darauf, diese Fähigkeiten während der Ausbildung zu entwickeln.</p>
+                    
+                    <p class="interviewer">Wie stellen Sie sich einen typischen Arbeitstag als Mechatroniker vor?</p>
+                    <p class="applicant">Ich stelle mir vor, dass ein Mechatroniker morgens zunächst die anstehenden Aufgaben prüft und plant. Das könnten Wartungsarbeiten, Reparaturen oder die Installation neuer Komponenten sein. Während des Tages arbeitet er an verschiedenen Maschinen, führt Messungen durch, tauscht defekte Teile aus oder programmiert Steuerungen. Dabei arbeitet er oft im Team mit Kollegen aus verschiedenen Bereichen zusammen. Er dokumentiert seine Arbeit sorgfältig und hält sich über neue technische Entwicklungen auf dem Laufenden. Ich denke, der Beruf ist sehr abwechslungsreich und erfordert sowohl handwerkliches Geschick als auch technisches Verständnis.</p>
+                    
+                    <p class="interviewer">Wie gehen Sie mit Stress und Zeitdruck um?</p>
+                    <p class="applicant">Bei Stress und Zeitdruck versuche ich, ruhig zu bleiben und strukturiert vorzugehen. Ich setze Prioritäten und konzentriere mich auf eine Aufgabe nach der anderen. In der Schule hatte ich manchmal mehrere Prüfungen in kurzer Zeit, da hat mir geholfen, einen genauen Zeitplan zu erstellen. Wenn nötig, hole ich mir Unterstützung oder frage nach Rat. Nach stressigen Phasen sorge ich für Ausgleich durch Sport oder Zeit mit Freunden.</p>
+                    
+                    <p class="interviewer">Wo sehen Sie sich beruflich in fünf Jahren?</p>
+                    <p class="applicant">Nach erfolgreichem Abschluss meiner Ausbildung möchte ich zunächst Berufserfahrung als Mechatroniker sammeln und mein Wissen in der Praxis vertiefen. Ich könnte mir vorstellen, mich auf den Bereich Automatisierungstechnik zu spezialisieren, da ich die Programmierung von Steuerungen besonders interessant finde. Langfristig strebe ich eine Weiterbildung zum Techniker an, um mehr Verantwortung übernehmen zu können. Ich hoffe, dass ich auch in fünf Jahren noch bei der Technik GmbH arbeite und Teil eines Teams bin, das innovative Lösungen entwickelt.</p>
+                    
+                    <p class="interviewer">Haben Sie noch Fragen an uns?</p>
+                    <p class="applicant">Ja, ich würde gerne mehr über den Ablauf der Ausbildung erfahren. Welche Abteilungen würde ich während der Ausbildung kennenlernen? Gibt es spezielle Projekte für Auszubildende? Und wie wird die Betreuung während der Ausbildung organisiert?</p>
+                    
+                    <p class="interviewer">Das sind gute Fragen. Unsere Auszubildenden durchlaufen alle wichtigen Abteilungen, von der Konstruktion über die Fertigung bis zur Montage und dem Kundendienst. Im zweiten Lehrjahr arbeiten alle Auszubildenden an einem gemeinsamen Projekt, bei dem sie eine kleine Anlage selbstständig planen und bauen. Jeder Auszubildende hat einen festen Ausbilder als Ansprechpartner, zusätzlich gibt es in jeder Abteilung einen Betreuer. Wir legen großen Wert auf eine gute Begleitung unserer Auszubildenden.</p>
+                    <p class="interviewer">Haben Sie noch weitere Fragen?</p>
+                    
+                    <p class="applicant">Vielen Dank für die Informationen. Ich hätte noch eine Frage zu den Übernahmechancen nach der Ausbildung.</p>
+                    
+                    <p class="interviewer">Wir übernehmen in der Regel alle Auszubildenden, die ihre Prüfung erfolgreich bestehen und sich während der Ausbildung bewährt haben. In den letzten Jahren lag unsere Übernahmequote bei über 90%.</p>
+                    <p class="interviewer">Gut, Herr Wei, dann bedanke ich mich für das angenehme Gespräch. Wir melden uns in den nächsten zwei Wochen bei Ihnen. Haben Sie noch Fragen zum weiteren Ablauf?</p>
+                    
+                    <p class="applicant">Nein, das ist klar für mich. Ich bedanke mich auch für das Gespräch und freue mich auf Ihre Rückmeldung.</p>
+                </div>
+                
+                <div class="reflection-section mt-8">
+                    <h3 class="text-xl font-semibold mb-4">Reflexionsfragen</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Wie hat der Bewerber seine Motivation für den Beruf des Mechatronikers dargestellt?</li>
+                        <li>Welche konkreten Beispiele hat er für seine Fähigkeiten und Erfahrungen genannt?</li>
+                        <li>Wie ist er mit der Frage nach seinen Schwächen umgegangen?</li>
+                        <li>Welche Informationen hat er über das Unternehmen recherchiert?</li>
+                        <li>Wie haben Sie die Körpersprache und den Sprachstil des Bewerbers wahrgenommen?</li>
+                    </ul>
+                </div>
+                
+                <div class="tips-section mt-8">
+                    <h3 class="text-xl font-semibold mb-4">Tipps für Bewerber als Mechatroniker</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Zeigen Sie Ihr technisches Interesse und Verständnis durch konkrete Beispiele.</li>
+                        <li>Bereiten Sie sich auf Fragen zu Ihren Mathematik- und Physikkenntnissen vor.</li>
+                        <li>Informieren Sie sich über die Produkte und Technologien des Unternehmens.</li>
+                        <li>Betonen Sie Ihre Fähigkeit zur Problemlösung und Ihre Genauigkeit.</li>
+                        <li>Zeigen Sie Interesse an den verschiedenen Aspekten des Berufs (Mechanik, Elektronik, Informatik).</li>
+                        <li>Stellen Sie eigene Fragen zur Ausbildung und zu den eingesetzten Technologien.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kauffrau für Büromanagement Mock-Interview -->
+        <div id="kauffrau" class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-green-600 mb-6">Mock-Interview: Kauffrau für Büromanagement</h2>
+            
+            <div class="mock-interview">
+                <div class="bg-gray-100 p-4 rounded-md mb-6">
+                    <p class="font-medium">Unternehmen: Müller & Partner GmbH</p>
+                    <p>Branche: Dienstleistungsunternehmen</p>
+                    <p>Position: Auszubildende zur Kauffrau für Büromanagement</p>
+                    <p>Bewerberin: Chen Mei, 19 Jahre, Realschulabschluss</p>
+                </div>
+                
+                <div class="mock-interview-dialog">
+                    <p class="interviewer">Guten Tag, Frau Chen. Willkommen bei Müller & Partner. Ich bin Herr Wagner, Leiter der Personalabteilung, und das ist Frau Becker, unsere Ausbildungsleiterin.</p>
+                    <p class="applicant">Guten Tag, Herr Wagner, guten Tag, Frau Becker. Vielen Dank für die Einladung zum Vorstellungsgespräch. Ich freue mich, Sie kennenzulernen.</p>
+                    
+                    <p class="interviewer">Frau Chen, erzählen Sie uns doch bitte etwas über sich und warum Sie sich für eine Ausbildung zur Kauffrau für Büromanagement interessieren.</p>
+                    <p class="applicant">Gerne. Ich bin Chen Mei, 19 Jahre alt und habe letztes Jahr meinen Realschulabschluss gemacht. Seitdem arbeite ich als Aushilfe im Büro eines kleinen Handwerksbetriebs, wo ich bei der Terminplanung und Rechnungsstellung helfe. Diese Tätigkeit hat mir gezeigt, wie vielseitig und interessant Büroarbeit sein kann. Ich arbeite gerne organisiert und strukturiert und habe Freude am Umgang mit Menschen. Deshalb möchte ich eine Ausbildung zur Kauffrau für Büromanagement machen, um meine Fähigkeiten in diesem Bereich professionell zu entwickeln.</p>
+                    
+                    <p class="interviewer">Das klingt interessant. Welche Aufgaben haben Sie genau in Ihrem Nebenjob übernommen?</p>
+                    <p class="applicant">In meinem Nebenjob bin ich hauptsächlich für die Terminkoordination zuständig. Ich nehme Kundenanfragen entgegen, trage Termine in den digitalen Kalender ein und informiere die Handwerker über ihre Einsätze. Außerdem erstelle ich einfache Rechnungen mit einem Buchhaltungsprogramm und helfe bei der Ablage von Dokumenten. Gelegentlich unterstütze ich auch bei der Bestellung von Büromaterial und bei der Vorbereitung von Kundenmailings.</p>
+                    
+                    <p class="interviewer">Warum haben Sie sich für eine Ausbildung bei Müller & Partner entschieden?</p>
+                    <p class="applicant">Ich habe mich für Müller & Partner entschieden, weil Sie als Dienstleistungsunternehmen in verschiedenen Bereichen tätig sind und mir so eine vielseitige Ausbildung ermöglichen können. Auf Ihrer Website habe ich gesehen, dass Sie Wert auf moderne Arbeitsweisen und digitale Prozesse legen, was mir sehr wichtig ist. Außerdem habe ich gelesen, dass Sie Ihre Auszubildenden individuell fördern und ihnen auch nach der Ausbildung gute Perspektiven bieten. Ein weiterer Pluspunkt ist, dass Sie international tätig sind, was gut zu meinem interkulturellen Hintergrund passt.</p>
+                    
+                    <p class="interviewer">Welche Stärken bringen Sie für die Ausbildung zur Kauffrau für Büromanagement mit?</p>
+                    <p class="applicant">Zu meinen Stärken gehört meine Organisationsfähigkeit. Ich plane gerne voraus und behalte auch in stressigen Situationen den Überblick. Durch meinen Nebenjob habe ich bereits grundlegende Kenntnisse in der Büroorganisation und im Umgang mit gängiger Bürosoftware erworben. Ich bin kommunikativ und arbeite gerne im Team, kann aber auch selbstständig Aufgaben erledigen. Meine Mehrsprachigkeit – ich spreche Deutsch, Chinesisch und Englisch – könnte ebenfalls von Vorteil sein, besonders wenn es um internationale Kontakte geht. Außerdem lerne ich schnell und bin sehr motiviert, mich weiterzuentwickeln.</p>
+                    
+                    <p class="interviewer">Gibt es auch Bereiche, in denen Sie sich noch verbessern möchten?</p>
+                    <p class="applicant">Ja, ich würde gerne meine Kenntnisse in Buchhaltung vertiefen. Bisher habe ich nur einfache Rechnungen erstellt, aber ich möchte die komplexeren Aspekte der Finanzbuchhaltung besser verstehen. Außerdem könnte ich manchmal etwas geduldiger sein, wenn es um langwierige, detailorientierte Aufgaben geht. Ich arbeite daran, indem ich mir bewusst mehr Zeit für solche Aufgaben nehme und sie in kleinere Schritte unterteile.</p>
+                    
+                    <p class="interviewer">Wie würden Sie mit einer Situation umgehen, in der Sie mehrere dringende Aufgaben gleichzeitig erledigen müssen?</p>
+                    <p class="applicant">In einer solchen Situation würde ich zunächst alle Aufgaben nach Wichtigkeit und Dringlichkeit priorisieren. Besonders zeitkritische Aufgaben würde ich sofort angehen. Wenn möglich, würde ich Aufgaben in kleinere Teilschritte zerlegen, um effizienter arbeiten zu können. Bei sehr hohem Arbeitsaufkommen würde ich das Gespräch mit meinem Vorgesetzten suchen, um zu klären, welche Aufgaben Vorrang haben oder ob ich Unterstützung bekommen kann. Wichtig ist mir, trotz Zeitdruck sorgfältig zu arbeiten und den Überblick zu behalten.</p>
+                    
+                    <p class="interviewer">Wie stellen Sie sich einen typischen Arbeitstag als Kauffrau für Büromanagement vor?</p>
+                    <p class="applicant">Ich stelle mir vor, dass der Tag mit dem Checken von E-Mails und der Planung anstehender Aufgaben beginnt. Im Laufe des Tages könnten verschiedene Tätigkeiten anfallen: Korrespondenz erledigen, Termine koordinieren, Besprechungen vorbereiten, Rechnungen bearbeiten oder Kundenanfragen beantworten. Wahrscheinlich gibt es auch regelmäßige Meetings mit Kollegen oder Vorgesetzten. Je nach Abteilung könnten spezifische Aufgaben wie Personalverwaltung, Buchhaltung oder Marketing hinzukommen. Ich denke, der Beruf ist sehr vielseitig und erfordert Flexibilität, Organisationstalent und Kommunikationsfähigkeit.</p>
+                    
+                    <p class="interviewer">Wo sehen Sie sich beruflich in fünf Jahren?</p>
+                    <p class="applicant">Nach erfolgreichem Abschluss meiner Ausbildung möchte ich zunächst Berufserfahrung sammeln und meine Kenntnisse in verschiedenen Bereichen des Büromanagements vertiefen. Ich könnte mir vorstellen, mich auf einen Bereich wie Personalwesen oder Controlling zu spezialisieren. Mittelfristig strebe ich eine Weiterbildung zur Fachwirtin für Büro- und Projektorganisation an, um mehr Verantwortung übernehmen zu können. In fünf Jahren sehe ich mich als kompetente Fachkraft, die selbstständig Projekte koordiniert und vielleicht auch jüngere Kollegen oder Auszubildende anleitet.</p>
+                    
+                    <p class="interviewer">Haben Sie noch Fragen an uns?</p>
+                    <p class="applicant">Ja, ich würde gerne mehr über den konkreten Ablauf der Ausbildung erfahren. Welche Abteilungen würde ich während der Ausbildung kennenlernen? Gibt es spezielle Projekte für Auszubildende? Und wie wird die Begleitung während der Ausbildung organisiert?</p>
+                    
+                    <p class="interviewer">Bei uns durchlaufen die Auszubildenden alle wichtigen Abteilungen: Empfang, Sekretariat, Buchhaltung, Personalwesen und Marketing. Im zweiten Ausbildungsjahr organisieren unsere Auszubildenden selbstständig eine Firmenveranstaltung, was immer eine spannende Herausforderung ist. Jeder Auszubildende hat einen festen Ausbildungsbeauftragten als Ansprechpartner, zusätzlich gibt es in jeder Abteilung einen Betreuer. Wir treffen uns auch regelmäßig zu Feedback-Gesprächen, um den Lernfortschritt zu besprechen.</p>
+                    <p class="interviewer">Haben Sie noch weitere Fragen?</p>
+                    
+                    <p class="applicant">Vielen Dank für die Informationen. Ich würde noch gerne wissen, ob es die Möglichkeit gibt, während der Ausbildung an zusätzlichen Schulungen teilzunehmen, zum Beispiel zu spezieller Software oder Fremdsprachen?</p>
+                    
+                    <p class="interviewer">Ja, wir bieten regelmäßig interne Schulungen an, besonders zu unseren Softwaresystemen. Bei besonderem Interesse und guten Leistungen unterstützen wir auch die Teilnahme an externen Kursen, zum Beispiel für Fremdsprachen oder spezielle Fachthemen. Wir fördern die Weiterbildung unserer Mitarbeiter sehr aktiv.</p>
+                    <p class="interviewer">Gut, Frau Chen, dann bedanke ich mich für das angenehme Gespräch. Wir melden uns in den nächsten zwei Wochen bei Ihnen. Haben Sie noch Fragen zum weiteren Ablauf?</p>
+                    
+                    <p class="applicant">Nein, das ist klar für mich. Ich bedanke mich auch für das Gespräch und freue mich auf Ihre Rückmeldung.</p>
+                </div>
+                
+                <div class="reflection-section mt-8">
+                    <h3 class="text-xl font-semibold mb-4">Reflexionsfragen</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Wie hat die Bewerberin ihre praktischen Erfahrungen im Bürobereich dargestellt?</li>
+                        <li>Welche Stärken hat sie hervorgehoben, die für den Beruf relevant sind?</li>
+                        <li>Wie ist sie mit der Frage nach ihren Verbesserungsbereichen umgegangen?</li>
+                        <li>Wie hat sie ihre Kenntnisse über das Unternehmen gezeigt?</li>
+                        <li>Welche eigenen Fragen hat sie gestellt und was sagen diese über ihr Interesse aus?</li>
+                    </ul>
+                </div>
+                
+                <div class="tips-section mt-8">
+                    <h3 class="text-xl font-semibold mb-4">Tipps für Bewerber als Kauffrau/Kaufmann für Büromanagement</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Betonen Sie Ihre Organisationsfähigkeit und Ihre Kommunikationsstärke.</li>
+                        <li>Zeigen Sie Ihre EDV-Kenntnisse (MS Office, eventuell Buchhaltungssoftware).</li>
+                        <li>Bereiten Sie Beispiele vor, die Ihre Zuverlässigkeit und Sorgfalt belegen.</li>
+                        <li>Informieren Sie sich über die verschiedenen Abteilungen des Unternehmens.</li>
+                        <li>Heben Sie Ihre Sprachkenntnisse hervor, besonders wenn das Unternehmen international tätig ist.</li>
+                        <li>Zeigen Sie Interesse an den verschiedenen Aufgabenbereichen des Berufs (Korrespondenz, Organisation, Buchhaltung).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fachinformatiker Mock-Interview -->
+        <div id="fachinformatiker" class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-purple-600 mb-6">Mock-Interview: Fachinformatiker</h2>
+            
+            <div class="mock-interview">
+                <div class="bg-gray-100 p-4 rounded-md mb-6">
+                    <p class="font-medium">Unternehmen: DigiSolutions GmbH</p>
+                    <p>Branche: IT-Dienstleistungen</p>
+                    <p>Position: Auszubildender zum Fachinformatiker für Anwendungsentwicklung</p>
+                    <p>Bewerber: Zhang Min, 20 Jahre, Fachabitur</p>
+                </div>
+                
+                <div class="mock-interview-dialog">
+                    <p class="interviewer">Guten Tag, Herr Zhang. Willkommen bei DigiSolutions. Ich bin Herr Müller, Leiter der Entwicklungsabteilung, und das ist Frau Klein aus unserer Personalabteilung.</p>
+                    <p class="applicant">Guten Tag, Herr Müller, guten Tag, Frau Klein. Vielen Dank für die Einladung zum Gespräch. Ich freue mich, hier zu sein.</p>
+                    
+                    <p class="interviewer">Herr Zhang, erzählen Sie uns doch bitte etwas über sich und warum Sie sich für eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung interessieren.</p>
+                    <p class="applicant">Gerne. Ich bin Zhang Min, 20 Jahre alt und habe vor kurzem mein Fachabitur mit Schwerpunkt Informatik abgeschlossen. Mein Interesse für Programmierung begann schon in der Schulzeit, wo ich in einer AG erste Erfahrungen mit Python sammeln konnte. In meiner Freizeit habe ich mehrere kleine Webprojekte umgesetzt und mir selbst HTML, CSS und JavaScript beigebracht. Die Möglichkeit, kreative Lösungen für praktische Probleme zu entwickeln, fasziniert mich. Deshalb möchte ich Fachinformatiker für Anwendungsentwicklung werden – um meine Programmierkenntnisse zu professionalisieren und zu lernen, wie man Software entwickelt, die wirklich einen Mehrwert bietet.</p>
+                    
+                    <p class="interviewer">Das klingt interessant. Können Sie uns mehr über Ihre Webprojekte erzählen?</p>
+                    <p class="applicant">Natürlich. Mein erstes größeres Projekt war eine Website für den Sportverein meines Bruders. Ich habe eine responsive Seite mit HTML und CSS erstellt, die Trainingszeiten, Neuigkeiten und Kontaktinformationen enthält. Später habe ich JavaScript hinzugefügt, um einen dynamischen Spielplan zu integrieren. Mein zweites Projekt war eine persönliche To-Do-App, bei der ich mit lokalem Speicher gearbeitet habe, um Aufgaben zu speichern und zu kategorisieren. Aktuell arbeite ich an einer kleinen Quiz-App mit React, um meine Kenntnisse in diesem Framework zu vertiefen. Bei allen Projekten habe ich viel durch Fehler gelernt und mich kontinuierlich verbessert.</p>
+                    
+                    <p class="interviewer">Warum haben Sie sich bei DigiSolutions beworben?</p>
+                    <p class="applicant">Ich habe mich bei DigiSolutions beworben, weil Sie als innovatives Unternehmen bekannt sind, das vielfältige IT-Lösungen für unterschiedliche Branchen entwickelt. Auf Ihrer Website habe ich gesehen, dass Sie mit modernen Technologien wie React, Node.js und Cloud-Diensten arbeiten, die ich sehr interessant finde. Besonders angesprochen hat mich Ihr Projekt für das Gesundheitswesen, da ich es wichtig finde, dass Technologie einen positiven Einfluss auf die Gesellschaft hat. Außerdem habe ich gelesen, dass Sie Wert auf kontinuierliche Weiterbildung legen und Ihre Mitarbeiter ermutigen, neue Technologien zu erlernen, was mir für meine berufliche Entwicklung sehr wichtig ist.</p>
+                    
+                    <p class="interviewer">Welche Programmiersprachen und Technologien beherrschen Sie bereits?</p>
+                    <p class="applicant">Ich habe gute Grundkenntnisse in Python, das war die erste Sprache, die ich in der Schule gelernt habe. Im Webbereich bin ich vertraut mit HTML, CSS und JavaScript. Mit JavaScript habe ich auch einige kleinere Projekte umgesetzt und erste Erfahrungen mit dem React-Framework gesammelt. Grundlegende SQL-Kenntnisse habe ich ebenfalls, da ich für meine Projekte einfache Datenbanken erstellt habe. Mit Git als Versionskontrollsystem arbeite ich bei allen meinen Projekten. Ich bin mir bewusst, dass ich noch viel zu lernen habe, aber ich bringe eine solide Grundlage mit und bin sehr motiviert, mein Wissen zu erweitern.</p>
+                    
+                    <p class="interviewer">Vor welchen Herausforderungen standen Sie bei Ihren Projekten und wie haben Sie diese gelöst?</p>
+                    <p class="applicant">Eine große Herausforderung bei meinem ersten Webprojekt war die Responsive-Gestaltung, da die Website auf verschiedenen Geräten gut aussehen sollte. Ich habe viel über CSS-Flexbox und Media Queries recherchiert und durch Versuch und Irrtum gelernt. Bei meiner To-Do-App war die Datenpersistenz eine Herausforderung. Zunächst wollte ich eine richtige Datenbank einbinden, habe dann aber den lokalen Speicher des Browsers genutzt, was für den Anfang einfacher war. Bei meinem aktuellen React-Projekt ist das State-Management komplex. Ich habe verschiedene Tutorials durchgearbeitet und in Online-Foren nach Hilfe gefragt. Generell löse ich Probleme, indem ich sie in kleinere Teilprobleme zerlege, recherchiere und bei Bedarf die Community um Rat frage.</p>
+                    
+                    <p class="interviewer">Wie stellen Sie sich einen typischen Arbeitstag als Fachinformatiker für Anwendungsentwicklung vor?</p>
+                    <p class="applicant">Ich stelle mir vor, dass der Tag mit einem kurzen Team-Meeting beginnt, bei dem aktuelle Aufgaben und Probleme besprochen werden. Danach würde ich an meinen zugewiesenen Aufgaben arbeiten, sei es die Entwicklung neuer Funktionen, das Beheben von Bugs oder das Testen von Code. Wahrscheinlich gibt es regelmäßige Code-Reviews und Abstimmungen mit Kollegen. Ich denke, ein wichtiger Teil der Arbeit ist auch die Dokumentation des Codes und die Kommunikation mit anderen Abteilungen oder Kunden, um Anforderungen zu klären. Außerdem gehört sicher auch das kontinuierliche Lernen dazu, um mit neuen Technologien Schritt zu halten.</p>
+                    
+                    <p class="interviewer">Wie gehen Sie vor, wenn Sie auf ein technisches Problem stoßen, das Sie nicht sofort lösen können?</p>
+                    <p class="applicant">Wenn ich auf ein schwieriges Problem stoße, versuche ich zunächst, es genau zu analysieren und zu verstehen. Ich prüfe, ob ich ähnliche Probleme schon einmal gelöst habe und ob ich diese Erfahrungen übertragen kann. Dann recherchiere ich in der Dokumentation, in Fachforen oder auf Plattformen wie Stack Overflow nach möglichen Lösungsansätzen. Wenn ich nach angemessener Zeit keine Lösung finde, zögere ich nicht, Kollegen um Rat zu fragen – manchmal bringt ein frischer Blick die entscheidende Idee. Wichtig ist mir, aus jedem Problem zu lernen und das neue Wissen zu dokumentieren, damit ich oder andere es später nutzen können.</p>
+                    
+                    <p class="interviewer">Wo sehen Sie sich beruflich in fünf Jahren?</p>
+                    <p class="applicant">In fünf Jahren sehe ich mich als erfahrenen Entwickler, der komplexe Projekte selbstständig umsetzen kann. Ich möchte mich in bestimmten Technologien spezialisieren, vielleicht im Bereich Web-Entwicklung oder Mobile Apps, je nachdem, welche Richtung mir während der Ausbildung besonders liegt. Ich könnte mir auch vorstellen, Verantwortung in einem Entwicklerteam zu übernehmen oder an der Ausbildung neuer Kollegen mitzuwirken. Kontinuierliche Weiterbildung ist mir wichtig, daher strebe ich nach der Ausbildung weitere Zertifizierungen an. Langfristig interessiere ich mich auch für die Schnittstelle zwischen Entwicklung und Projektmanagement.</p>
+                    
+                    <p class="interviewer">Haben Sie noch Fragen an uns?</p>
+                    <p class="applicant">Ja, ich würde gerne mehr über den Ausbildungsablauf erfahren. An welchen Projekten würde ich als Auszubildender mitarbeiten? Gibt es interne Schulungen zu bestimmten Technologien? Und wie ist das Verhältnis zwischen praktischer Arbeit im Unternehmen und dem Berufsschulunterricht?</p>
+                    
+                    <p class="interviewer">Unsere Auszubildenden werden schrittweise an reale Projekte herangeführt. Zunächst arbeiten Sie an internen Übungsprojekten, später unterstützen Sie die Teams bei Kundenprojekten. Wir bieten regelmäßige interne Workshops zu Themen wie Clean Code, Testautomatisierung oder neuen Frameworks an. Der Berufsschulunterricht findet im Blockunterricht statt, etwa alle zwei Monate für zwei Wochen. In der restlichen Zeit sind Sie bei uns im Unternehmen und lernen die praktische Seite kennen.</p>
+                    <p class="interviewer">Haben Sie noch weitere Fragen?</p>
+                    
+                    <p class="applicant">Vielen Dank für die Informationen. Ich würde noch gerne wissen, ob es die Möglichkeit gibt, während der Ausbildung an Open-Source-Projekten mitzuarbeiten oder eigene Ideen einzubringen?</p>
+                    
+                    <p class="interviewer">Ja, wir fördern das aktiv. Wir haben einen „Innovation Day" pro Monat, an dem alle Mitarbeiter, auch Auszubildende, an eigenen Projekten oder Open-Source-Beiträgen arbeiten können. Einige unserer besten Produktideen sind so entstanden. Wir glauben, dass Kreativität und Eigeninitiative wichtig für gute Entwickler sind.</p>
+                    <p class="interviewer">Gut, Herr Zhang, dann bedanke ich mich für das interessante Gespräch. Wir melden uns in den nächsten zwei Wochen bei Ihnen. Haben Sie noch Fragen zum weiteren Ablauf?</p>
+                    
+                    <p class="applicant">Nein, das ist klar für mich. Ich bedanke mich auch für das Gespräch und die Einblicke in Ihr Unternehmen. Ich freue mich auf Ihre Rückmeldung.</p>
+                </div>
+                
+                <div class="reflection-section mt-8">
+                    <h3 class="text-xl font-semibold mb-4">Reflexionsfragen</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Wie hat der Bewerber seine praktischen Programmiererfahrungen dargestellt?</li>
+                        <li>Welche technischen Kenntnisse hat er hervorgehoben?</li>
+                        <li>Wie hat er seine Problemlösungsfähigkeiten demonstriert?</li>
+                        <li>Welche Informationen hat er über das Unternehmen recherchiert?</li>
+                        <li>Wie hat er seine Motivation für den Beruf und seine Zukunftspläne dargestellt?</li>
+                    </ul>
+                </div>
+                
+                <div class="tips-section mt-8">
+                    <h3 class="text-xl font-semibold mb-4">Tipps für Bewerber als Fachinformatiker</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Zeigen Sie praktische Projekterfahrungen, idealerweise mit Code-Beispielen oder GitHub-Profil.</li>
+                        <li>Bereiten Sie sich auf technische Fragen zu Ihren angegebenen Kenntnissen vor.</li>
+                        <li>Demonstrieren Sie Ihre Problemlösungsfähigkeiten anhand konkreter Beispiele.</li>
+                        <li>Zeigen Sie Lernbereitschaft und Interesse an neuen Technologien.</li>
+                        <li>Informieren Sie sich über die Technologien und Projekte des Unternehmens.</li>
+                        <li>Betonen Sie neben technischen auch Soft Skills wie Teamfähigkeit und Kommunikation.</li>
+                        <li>Stellen Sie eigene Fragen zu Entwicklungsmethoden, Technologie-Stack und Lernmöglichkeiten.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-12 py-8 border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-500">© 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Über uns</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Kontakt</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

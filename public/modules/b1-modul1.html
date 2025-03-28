@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B1 Modul 1: Arbeit und Beruf</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-yellow-100 text-yellow-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau B1</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 1: Arbeit und Beruf</h1>
+            <p class="text-xl text-gray-600">Vertiefen Sie Ihre Kenntnisse über die Arbeitswelt und berufliche Kommunikation</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Über Arbeitsbedingungen zu sprechen</li>
+                    <li>Berufliche Stärken und Schwächen zu beschreiben</li>
+                    <li>Konflikte am Arbeitsplatz zu lösen</li>
+                    <li>Grammatik: Konjunktiv II, Passiv, indirekte Rede</li>
+                    <li>Berufliche Kommunikation zu verbessern</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über Arbeitsbedingungen sprechen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Arbeitsbedingungen</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Arbeitszeit</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Gehalt</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Urlaub</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Überstunden</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Arbeitsatmosphäre</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kollegen</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Aufgaben</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Verantwortung</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Weiterbildung</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich arbeite ... Stunden pro Woche.</p>
+                        <p class="text-gray-600">Ich arbeite 40 Stunden pro Woche.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Mein Gehalt beträgt ... Euro brutto/netto.</p>
+                        <p class="text-gray-600">Mein Gehalt beträgt 3.500 Euro brutto.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe ... Tage Urlaub im Jahr.</p>
+                        <p class="text-gray-600">Ich habe 30 Tage Urlaub im Jahr.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich muss oft/selten Überstunden machen.</p>
+                        <p class="text-gray-600">Ich muss selten Überstunden machen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Arbeitsatmosphäre ist ...</p>
+                        <p class="text-gray-600">Die Arbeitsatmosphäre ist angenehm.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich bin zufrieden/unzufrieden mit ...</p>
+                        <p class="text-gray-600">Ich bin zufrieden mit meinen Aufgaben.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Michael:</strong> Hallo Jing! Wie gefällt dir dein neuer Job?</p>
+                    <p class="mb-2"><strong>Jing:</strong> Hallo Michael! Ich bin sehr zufrieden mit meinem neuen Job. Die Arbeitsatmosphäre ist angenehm und die Kollegen sind nett.</p>
+                    <p class="mb-2"><strong>Michael:</strong> Das freut mich zu hören. Wie sind deine Arbeitszeiten?</p>
+                    <p class="mb-2"><strong>Jing:</strong> Ich arbeite von Montag bis Freitag, 8 bis 17 Uhr. Das sind 40 Stunden pro Woche. Und ich habe 30 Tage Urlaub im Jahr.</p>
+                    <p class="mb-2"><strong>Michael:</strong> Das klingt gut. Musst du oft Überstunden machen?</p>
+                    <p class="mb-2"><strong>Jing:</strong> Zum Glück nicht. Nur wenn wir wichtige Projekte abschließen müssen. Und die Überstunden werden bezahlt oder ich kann sie als Freizeitausgleich nehmen.</p>
+                    <p class="mb-2"><strong>Michael:</strong> Und wie ist das Gehalt?</p>
+                    <p class="mb-2"><strong>Jing:</strong> Das Gehalt ist in Ordnung. Ich verdiene 3.200 Euro brutto. Außerdem bietet die Firma gute Weiterbildungsmöglichkeiten.</p>
+                    <p class="mb-2"><strong>Michael:</strong> Das klingt wirklich nach einem guten Job. Ich bin froh, dass du zufrieden bist.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Meine Arbeitsbedingungen</h3>
+                <p class="mb-4">Beschreiben Sie Ihre aktuellen oder gewünschten Arbeitsbedingungen.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Notieren Sie wichtige Aspekte Ihrer Arbeitsbedingungen</li>
+                        <li>Beschreiben Sie, womit Sie zufrieden und unzufrieden sind</li>
+                        <li>Erklären Sie, was Sie sich für die Zukunft wünschen</li>
+                        <li>Verwenden Sie die gelernten Ausdrücke</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Berufliche Stärken und Schwächen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Eigenschaften und Fähigkeiten</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">zuverlässig</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">teamfähig</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">flexibel</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">kreativ</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">organisiert</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">kommunikativ</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">geduldig</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">belastbar</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">selbstständig</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Konjunktiv II</h3>
+                <p class="mb-4">Der Konjunktiv II wird verwendet, um höfliche Bitten, Wünsche oder hypothetische Situationen auszudrücken.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Verb</th>
+                                <th class="py-2 px-4 border-b">Konjunktiv II</th>
+                                <th class="py-2 px-4 border-b">Beispiel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">sein</td>
+                                <td class="py-2 px-4 border-b">wäre</td>
+                                <td class="py-2 px-4 border-b">Ich wäre gerne Teamleiter.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">haben</td>
+                                <td class="py-2 px-4 border-b">hätte</td>
+                                <td class="py-2 px-4 border-b">Ich hätte gerne mehr Verantwortung.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">können</td>
+                                <td class="py-2 px-4 border-b">könnte</td>
+                                <td class="py-2 px-4 border-b">Ich könnte besser organisiert sein.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">würde + Infinitiv</td>
+                                <td class="py-2 px-4 border-b">würde machen</td>
+                                <td class="py-2 px-4 border-b">Ich würde gerne im Ausland arbeiten.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Meine Stärken sind ...</p>
+                        <p class="text-gray-600">Meine Stärken sind meine Teamfähigkeit und Zuverlässigkeit.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich bin gut in ...</p>
+                        <p class="text-gray-600">Ich bin gut in der Organisation von Projekten.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Zu meinen Schwächen gehört/gehören ...</p>
+                        <p class="text-gray-600">Zu meinen Schwächen gehört meine Ungeduld.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich könnte besser ... sein.</p>
+                        <p class="text-gray-600">Ich könnte besser im Zeitmanagement sein.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich würde gerne ... verbessern.</p>
+                        <p class="text-gray-600">Ich würde gerne meine Präsentationsfähigkeiten verbessern.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich arbeite daran, ... zu verbessern.</p>
+                        <p class="text-gray-600">Ich arbeite daran, meine Deutschkenntnisse zu verbessern.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Stärken und Schwächen im Vorstellungsgespräch</h3>
+                <p class="mb-4">Üben Sie, über Ihre beruflichen Stärken und Schwächen zu sprechen.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Notieren Sie drei berufliche Stärken mit Beispielen</li>
+                        <li>Notieren Sie zwei Schwächen und wie Sie daran arbeiten</li>
+                        <li>Bereiten Sie Antworten für ein Vorstellungsgespräch vor</li>
+                        <li>Verwenden Sie den Konjunktiv II, um über Verbesserungsmöglichkeiten zu sprechen</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Konflikte am Arbeitsplatz lösen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Konflikte und Lösungen</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Konflikt</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Missverständnis</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Lösung</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Gespräch</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Kompromiss</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kritik</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Meinung</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Zusammenarbeit</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kommunikation</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich verstehe Ihren Standpunkt, aber ...</p>
+                        <p class="text-gray-600">Ich verstehe Ihren Standpunkt, aber ich sehe das anders.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Können wir darüber sprechen?</p>
+                        <p class="text-gray-600">Können wir über das Problem sprechen?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich schlage vor, dass wir ...</p>
+                        <p class="text-gray-600">Ich schlage vor, dass wir einen Kompromiss finden.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Es tut mir leid, wenn ich ...</p>
+                        <p class="text-gray-600">Es tut mir leid, wenn ich Sie missverstanden habe.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich würde gerne eine Lösung finden.</p>
+                        <p class="text-gray-600">Ich würde gerne eine Lösung finden, die für alle passt.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wir sollten offen kommunizieren.</p>
+                        <p class="text-gray-600">Wir sollten offen über unsere Erwartungen kommunizieren.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Chen:</strong> Entschuldigung Frau Weber, hätten Sie einen Moment Zeit? Ich würde gerne über die Aufgabenverteilung im Projekt sprechen.</p>
+                    <p class="mb-2"><strong>Frau Weber:</strong> Natürlich, Chen. Was ist das Problem?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich habe das Gefühl, dass ich zu viele Aufgaben gleichzeitig bearbeiten muss. Es ist schwierig, alles termingerecht zu erledigen.</p>
+                    <p class="mb-2"><strong>Frau Weber:</strong> Ich verstehe Ihre Bedenken. Ich dachte, Sie könnten diese Aufgaben gut bewältigen, da Sie in diesem Bereich Erfahrung haben.</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ich arbeite gerne an diesen Aufgaben, aber die Menge ist momentan zu viel. Ich schlage vor, dass wir einige Aufgaben neu verteilen oder die Fristen verlängern.</p>
+                    <p class="mb-2"><strong>Frau Weber:</strong> Das ist ein guter Vorschlag. Welche Aufgaben sind besonders zeitintensiv?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Die Datenanalyse und die Präsentationsvorbereitung nehmen viel Zeit in Anspruch. Vielleicht könnte jemand anderes bei der Datenanalyse helfen?</p>
+                    <p class="mb-2"><strong>Frau Weber:</strong> Ich werde mit Herrn Müller sprechen. Er könnte die Datenanalyse übernehmen. Wäre das eine gute Lösung für Sie?</p>
+                    <p class="mb-2"><strong>Chen:</strong> Ja, das würde mir sehr helfen. Vielen Dank für Ihr Verständnis.</p>
+                    <p class="mb-2"><strong>Frau Weber:</strong> Kein Problem. Es ist wichtig, dass wir offen kommunizieren. Bitte sprechen Sie mich in Zukunft direkt an, wenn Sie Probleme haben.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Konfliktlösung</h3>
+                <p class="mb-4">Üben Sie, Konflikte am Arbeitsplatz konstruktiv zu lösen.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Arbeiten Sie mit einem Partner</li>
+                        <li>Wählen Sie eine Konfliktsituation am Arbeitsplatz (z.B. unterschiedliche Meinungen, Missverständnisse, Arbeitsbelastung)</li>
+                        <li>Führen Sie ein Gespräch, um den Konflikt zu lösen</li>
+                        <li>Verwenden Sie die gelernten Ausdrücke und den Konjunktiv II</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Zusammenfassung und Übungen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wichtiger Wortschatz</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Arbeitsbedingungen</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Stärke, -n</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Schwäche, -n</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Konflikt, -e</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Lösung, -en</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kommunikation</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Hausaufgaben</h3>
+                <div class="bg-blue-50 p-4 rounded-md border border-blue-200">
+                    <p class="font-medium mb-2">Für die nächste Stunde:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Schreiben Sie einen Text über Ihre idealen Arbeitsbedingungen (10-12 Sätze)</li>
+                        <li>Bereiten Sie eine kurze Präsentation über Ihre beruflichen Stärken und Schwächen vor</li>
+                        <li>Üben Sie den Konjunktiv II in verschiedenen Situationen</li>
+                        <li>Schreiben Sie einen Dialog zur Lösung eines Konflikts am Arbeitsplatz</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Deutsch Lernen</h3>
+                    <p class="text-gray-300">Umfassende Lernmaterialien für chinesische Studenten zur Vorbereitung auf das deutsche Ausbildungssystem.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-white">Startseite</a></li>
+                        <li><a href="../curriculum.html" class="text-gray-300 hover:text-white">Lehrplan</a></li>
+                        <li><a href="../interview.html" class="text-gray-300 hover:text-white">Interview-Fragen</a></li>
+                        <li><a href="../mock-interviews.html" class="text-gray-300 hover:text-white">Mock-Interviews</a></li>
+                        <li><a href="../blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+                    <p class="text-gray-300">Bei Fragen oder Anregungen kontaktieren Sie uns bitte.</p>
+                    <p class="text-gray-300 mt-2">Email: info@deutschlernen.com</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300">&copy; 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

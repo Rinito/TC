@@ -1,6 +1,6 @@
 # TC - Teaching Chinese Students German
 
-This project is a web application designed to teach German language to Chinese students, with a focus on speaking skills and practical conversation practice. The application provides comprehensive curriculum materials from A1 to B2 levels, interview preparation resources, and real-life scenarios.
+A comprehensive German language learning platform designed for Chinese students, focusing on speaking skills while covering grammar, vocabulary, reading, and writing. The website includes curriculum materials from A1 to B2 levels, interview preparation resources, and real-life scenarios.
 
 ## Features
 
@@ -58,7 +58,33 @@ TC/
 
 ## Getting Started
 
-Instructions for setting up the development environment will be added soon.
+1. Clone the repository:
+   ```
+   git clone https://github.com/Rinito/TC.git
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd TC
+   ```
+
+3. Install dependencies:
+   ```
+   npm install
+   ```
+
+4. Start the development server:
+   ```
+   npm run dev
+   ```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 

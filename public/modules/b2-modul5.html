@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2 Modul 5: Kunst und Kreativität</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau B2</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 5: Kunst und Kreativität</h1>
+            <p class="text-xl text-gray-600">Über Kunst diskutieren, kreative Werke beschreiben und kulturelle Erfahrungen austauschen</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Über verschiedene Kunstformen und kulturelle Veranstaltungen zu sprechen</li>
+                    <li>Kunstwerke detailliert zu beschreiben und zu interpretieren</li>
+                    <li>Ihre Meinung zu kulturellen Themen differenziert auszudrücken</li>
+                    <li>Über kreative Prozesse und künstlerische Inspiration zu diskutieren</li>
+                    <li>Kulturelle Unterschiede und Gemeinsamkeiten zu reflektieren</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über Kunst und Kultur diskutieren</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Kunstformen</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Malerei</p>
+                        <p class="text-gray-600">绘画</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Bildhauerei</p>
+                        <p class="text-gray-600">雕塑</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Fotografie</p>
+                        <p class="text-gray-600">摄影</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Literatur</p>
+                        <p class="text-gray-600">文学</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Musik</p>
+                        <p class="text-gray-600">音乐</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Theater</p>
+                        <p class="text-gray-600">戏剧</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Tanz</p>
+                        <p class="text-gray-600">舞蹈</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Film</p>
+                        <p class="text-gray-600">电影</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Architektur</p>
+                        <p class="text-gray-600">建筑</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Kulturelle Einrichtungen und Veranstaltungen</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Museum</p>
+                        <p class="text-gray-600">博物馆</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Galerie</p>
+                        <p class="text-gray-600">画廊</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Theater</p>
+                        <p class="text-gray-600">剧院</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Oper</p>
+                        <p class="text-gray-600">歌剧院</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Konzert</p>
+                        <p class="text-gray-600">音乐会</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Festival</p>
+                        <p class="text-gray-600">节日</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Ausstellung</p>
+                        <p class="text-gray-600">展览</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Vernissage</p>
+                        <p class="text-gray-600">艺术展览开幕式</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Aufführung</p>
+                        <p class="text-gray-600">表演</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich interessiere mich für zeitgenössische Kunst.</p>
+                        <p class="text-gray-600">我对当代艺术感兴趣。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Ausstellung hat mich tief beeindruckt.</p>
+                        <p class="text-gray-600">这个展览给我留下了深刻的印象。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Das Kunstwerk spiegelt die gesellschaftlichen Probleme wider.</p>
+                        <p class="text-gray-600">这件艺术品反映了社会问题。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Inszenierung war sehr innovativ.</p>
+                        <p class="text-gray-600">这个舞台表演非常创新。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Der Künstler hat einen unverwechselbaren Stil.</p>
+                        <p class="text-gray-600">这位艺术家有独特的风格。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Das Stück hat mich zum Nachdenken angeregt.</p>
+                        <p class="text-gray-600">这部作品引发了我的思考。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich finde die Interpretation sehr gelungen.</p>
+                        <p class="text-gray-600">我认为这个诠释非常成功。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Komposition ist harmonisch und ausgewogen.</p>
+                        <p class="text-gray-600">这个构图和谐而平衡。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Erweiterte Partizipialkonstruktionen</h3>
+                <p class="mb-4">Erweiterte Partizipialkonstruktionen werden häufig in Beschreibungen und Analysen von Kunstwerken verwendet. Sie ermöglichen es, komplexe Informationen kompakt auszudrücken.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Struktur</th>
+                                <th class="py-2 px-4 border-b">Beispiel</th>
+                                <th class="py-2 px-4 border-b">Alternative mit Relativsatz</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Partizip I (Präsens)</td>
+                                <td class="py-2 px-4 border-b">Die <span class="font-medium">in der Galerie ausgestellten</span> Bilder sind sehr wertvoll.</td>
+                                <td class="py-2 px-4 border-b">Die Bilder, <span class="font-medium">die in der Galerie ausgestellt werden</span>, sind sehr wertvoll.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Partizip II (Perfekt)</td>
+                                <td class="py-2 px-4 border-b">Das <span class="font-medium">von einem unbekannten Künstler geschaffene</span> Werk wurde entdeckt.</td>
+                                <td class="py-2 px-4 border-b">Das Werk, <span class="font-medium">das von einem unbekannten Künstler geschaffen wurde</span>, wurde entdeckt.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Zu + Partizip I</td>
+                                <td class="py-2 px-4 border-b">Die <span class="font-medium">zu bewundernde</span> Technik des Malers ist einzigartig.</td>
+                                <td class="py-2 px-4 border-b">Die Technik des Malers, <span class="font-medium">die bewundert werden sollte</span>, ist einzigartig.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Hinweise zur Verwendung:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Partizip I (Präsens) drückt Gleichzeitigkeit und aktive Bedeutung aus: "ein tanzendes Paar" = "ein Paar, das tanzt"</li>
+                        <li>Partizip II (Perfekt) drückt Vorzeitigkeit und meist passive Bedeutung aus: "ein gemaltes Bild" = "ein Bild, das gemalt wurde"</li>
+                        <li>Die Partizipialkonstruktion steht vor dem Nomen, das sie beschreibt</li>
+                        <li>Die Partizipialkonstruktion wird wie ein Adjektiv dekliniert</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel: Museumsbesuch</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Frau Schmidt:</strong> Hallo Herr Zhang, wie hat Ihnen die Ausstellung im Museum für moderne Kunst gefallen?</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Guten Tag, Frau Schmidt. Die Ausstellung war wirklich beeindruckend. Besonders die von dem japanischen Künstler Takashi Murakami geschaffenen Werke haben mich fasziniert.</p>
+                    <p class="mb-2"><strong>Frau Schmidt:</strong> Ja, seine Arbeiten sind sehr interessant. Was hat Ihnen an seinen Werken besonders gefallen?</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Ich finde die Verbindung von traditionellen japanischen Elementen mit zeitgenössischer Popkultur sehr gelungen. Die leuchtenden Farben und die detailreichen Kompositionen sind wirklich beeindruckend. Außerdem spiegeln seine Werke oft gesellschaftliche Themen wider.</p>
+                    <p class="mb-2"><strong>Frau Schmidt:</strong> Das stimmt. Seine Kunst ist sowohl ästhetisch ansprechend als auch inhaltlich tiefgründig. Haben Sie auch die Videoinstallation im dritten Raum gesehen?</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Ja, die mit verschiedenen Projektionen arbeitende Installation war sehr innovativ. Ich habe noch nie etwas Vergleichbares gesehen. Die Art und Weise, wie der Künstler Raum, Licht und Bewegung kombiniert hat, war faszinierend.</p>
+                    <p class="mb-2"><strong>Frau Schmidt:</strong> Ich fand es auch sehr beeindruckend. Die Installation regt zum Nachdenken über unsere Wahrnehmung der Realität an. Übrigens, nächste Woche wird eine neue Ausstellung über chinesische Gegenwartskunst eröffnet. Würde Sie das interessieren?</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Auf jeden Fall! Die sich ständig weiterentwickelnde chinesische Kunstszene ist sehr dynamisch. Ich bin gespannt, welche Künstler vertreten sein werden.</p>
+                    <p class="mb-2"><strong>Frau Schmidt:</strong> Laut Programmheft werden Werke von Ai Weiwei, Zeng Fanzhi und Yue Minjun ausgestellt. Die Vernissage findet am Freitag um 19 Uhr statt. Hätten Sie Lust, gemeinsam hinzugehen?</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Das klingt wunderbar. Die von Ai Weiwei geschaffenen Installationen sind immer sehr provokativ und politisch. Und die Gemälde von Zeng Fanzhi mit ihren expressiven Pinselstrichen finde ich sehr beeindruckend.</p>
+                    <p class="mb-2"><strong>Frau Schmidt:</strong> Ja, und die lachenden Gesichter in Yue Minjuns Bildern sind unverwechselbar. Dann treffen wir uns am Freitag vor dem Museum?</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Gerne. Ich freue mich auf die Ausstellung und auf unseren Austausch über die zu bewundernden Kunstwerke.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Kunstdiskussion</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Arbeiten Sie in Gruppen von 3-4 Personen</li>
+                        <li>Jede Gruppe erhält Abbildungen verschiedener Kunstwerke (Gemälde, Skulpturen, Fotografien)</li>
+                        <li>Diskutieren Sie über die Kunstwerke und berücksichtigen Sie dabei folgende Aspekte:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Beschreibung des Kunstwerks (Form, Farbe, Komposition, Technik)</li>
+                            <li>Interpretation (mögliche Bedeutung, Symbolik, Botschaft)</li>
+                            <li>Persönlicher Eindruck und Bewertung</li>
+                            <li>Vergleich mit anderen Kunstwerken oder Stilen</li>
+                        </ul>
+                        <li>Verwenden Sie erweiterte Partizipialkonstruktionen und den Fachwortschatz aus diesem Modul</li>
+                        <li>Präsentieren Sie anschließend ein ausgewähltes Kunstwerk vor der Klasse (3-5 Minuten)</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Kreative Prozesse beschreiben</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Kreativität und künstlerischer Prozess</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kreativität</p>
+                        <p class="text-gray-600">创造力</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Inspiration</p>
+                        <p class="text-gray-600">灵感</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Schaffensprozess</p>
+                        <p class="text-gray-600">创作过程</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Idee</p>
+                        <p class="text-gray-600">想法</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Entwurf</p>
+                        <p class="text-gray-600">草图</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Umsetzung</p>
+                        <p class="text-gray-600">实现</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Technik</p>
+                        <p class="text-gray-600">技术</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Material</p>
+                        <p class="text-gray-600">材料</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Originalität</p>
+                        <p class="text-gray-600">原创性</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Künstlerische Techniken und Materialien</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Ölmalerei</p>
+                        <p class="text-gray-600">油画</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Aquarell</p>
+                        <p class="text-gray-600">水彩画</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Acrylfarbe</p>
+                        <p class="text-gray-600">丙烯颜料</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Leinwand</p>
+                        <p class="text-gray-600">画布</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Pinsel</p>
+                        <p class="text-gray-600">画笔</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Ton / der Lehm</p>
+                        <p class="text-gray-600">粘土</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Marmor</p>
+                        <p class="text-gray-600">大理石</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Collage</p>
+                        <p class="text-gray-600">拼贴画</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Digitale Kunst</p>
+                        <p class="text-gray-600">数字艺术</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich lasse mich von der Natur inspirieren.</p>
+                        <p class="text-gray-600">我从自然中获得灵感。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Der kreative Prozess beginnt mit einer Idee.</p>
+                        <p class="text-gray-600">创作过程始于一个想法。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich experimentiere gerne mit verschiedenen Techniken.</p>
+                        <p class="text-gray-600">我喜欢尝试不同的技术。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Umsetzung erfordert viel Geduld und Übung.</p>
+                        <p class="text-gray-600">实现需要很多耐心和练习。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Manchmal stoße ich auf unerwartete Herausforderungen.</p>
+                        <p class="text-gray-600">有时我会遇到意想不到的挑战。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Durch Fehler kann man viel lernen.</p>
+                        <p class="text-gray-600">通过错误可以学到很多东西。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Das Feedback anderer ist sehr wertvoll.</p>
+                        <p class="text-gray-600">他人的反馈非常有价值。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Jedes Kunstwerk erzählt eine Geschichte.</p>
+                        <p class="text-gray-600">每件艺术品都讲述一个故事。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Funktionsverbgefüge</h3>
+                <p class="mb-4">Funktionsverbgefüge bestehen aus einem bedeutungsarmen Verb und einem Nomen, das die Hauptbedeutung trägt. Sie werden häufig in formellen Kontexten und Fachsprachen verwendet.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Funktionsverbgefüge</th>
+                                <th class="py-2 px-4 border-b">Bedeutung</th>
+                                <th class="py-2 px-4 border-b">Beispiel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">in Betracht ziehen</td>
+                                <td class="py-2 px-4 border-b">betrachten, erwägen</td>
+                                <td class="py-2 px-4 border-b">Der Künstler <span class="font-medium">zieht verschiedene Materialien in Betracht</span>.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">zum Ausdruck bringen</td>
+                                <td class="py-2 px-4 border-b">ausdrücken</td>
+                                <td class="py-2 px-4 border-b">In seinem Werk <span class="font-medium">bringt</span> er seine Gefühle <span class="font-medium">zum Ausdruck</span>.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Einfluss nehmen</td>
+                                <td class="py-2 px-4 border-b">beeinflussen</td>
+                                <td class="py-2 px-4 border-b">Die Umgebung <span class="font-medium">nimmt Einfluss</span> auf den kreativen Prozess.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">zur Verfügung stehen</td>
+                                <td class="py-2 px-4 border-b">verfügbar sein</td>
+                                <td class="py-2 px-4 border-b">Verschiedene Techniken <span class="font-medium">stehen zur Verfügung</span>.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">eine Entscheidung treffen</td>
+                                <td class="py-2 px-4 border-b">entscheiden</td>
+                                <td class="py-2 px-4 border-b">Der Künstler muss <span class="font-medium">eine Entscheidung treffen</span>.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">in Frage stellen</td>
+                                <td class="py-2 px-4 border-b">bezweifeln, hinterfragen</td>
+                                <td class="py-2 px-4 border-b">Die Kritiker <span class="font-medium">stellen</span> die Originalität <span class="font-medium">in Frage</span>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Hinweise zur Verwendung:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Das Verb im Funktionsverbgefüge ist oft bedeutungsarm (bringen, kommen, nehmen, stehen, etc.)</li>
+                        <li>Das Nomen trägt die Hauptbedeutung und steht oft mit einer Präposition</li>
+                        <li>Funktionsverbgefüge klingen formeller als einfache Verben</li>
+                        <li>Sie ermöglichen eine präzisere Ausdrucksweise (z.B. Aspekte wie Beginn, Dauer, Ende einer Handlung)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel: Interview mit einem Künstler</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Interviewer:</strong> Herr Becker, vielen Dank, dass Sie uns einen Einblick in Ihren kreativen Prozess geben. Woher nehmen Sie Ihre Inspiration?</p>
+                    <p class="mb-2"><strong>Künstler:</strong> Ich lasse mich von alltäglichen Situationen inspirieren. Oft sind es die kleinen, unscheinbaren Momente, die zum Ausgangspunkt meiner Arbeit werden. Auch Reisen und der Austausch mit anderen Künstlern bringen mich auf neue Ideen.</p>
+                    <p class="mb-2"><strong>Interviewer:</strong> Wie beginnen Sie mit einem neuen Projekt?</p>
+                    <p class="mb-2"><strong>Künstler:</strong> Zunächst sammle ich Eindrücke und mache Skizzen. Ich ziehe verschiedene Materialien und Techniken in Betracht. In dieser Phase experimentiere ich viel und lasse mich von den Materialien leiten. Manchmal nehmen die Werke eine ganz andere Richtung als ursprünglich geplant.</p>
+                    <p class="mb-2"><strong>Interviewer:</strong> Welche Rolle spielt die Technik in Ihrem Schaffensprozess?</p>
+                    <p class="mb-2"><strong>Künstler:</strong> Die Technik steht mir als Werkzeug zur Verfügung, um meine Ideen zum Ausdruck zu bringen. Ich arbeite hauptsächlich mit Acrylfarben auf Leinwand, aber auch mit Collagen und digitalen Medien. Die Wahl der Technik hängt vom Thema und der beabsichtigten Wirkung ab.</p>
+                    <p class="mb-2"><strong>Interviewer:</strong> Stoßen Sie manchmal auf Schwierigkeiten während des kreativen Prozesses?</p>
+                    <p class="mb-2"><strong>Künstler:</strong> Natürlich. Kreative Blockaden gehören zum künstlerischen Prozess dazu. Wenn ich nicht weiterkomme, nehme ich Abstand von der Arbeit und beschäftige mich mit anderen Dingen. Oft kommen die besten Ideen, wenn man nicht bewusst darüber nachdenkt. Außerdem stelle ich meine Arbeit regelmäßig in Frage, um mich weiterzuentwickeln.</p>
+                    <p class="mb-2"><strong>Interviewer:</strong> Wie wichtig ist das Feedback anderer für Sie?</p>
+                    <p class="mb-2"><strong>Künstler:</strong> Feedback nimmt großen Einfluss auf meine Arbeit. Ich tausche mich regelmäßig mit Kollegen aus und präsentiere meine Werke in Galerien. Die Reaktionen des Publikums helfen mir, meine Arbeit aus anderen Perspektiven zu betrachten. Letztendlich muss ich aber eine eigene Entscheidung treffen, welche Richtung ich einschlage.</p>
+                    <p class="mb-2"><strong>Interviewer:</strong> Was möchten Sie mit Ihrer Kunst erreichen?</p>
+                    <p class="mb-2"><strong>Künstler:</strong> Ich möchte Emotionen wecken und zum Nachdenken anregen. Kunst sollte in Bewegung setzen und neue Perspektiven eröffnen. Wenn meine Werke bei den Betrachtern etwas auslösen, habe ich mein Ziel erreicht.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Kreativer Prozess</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Denken Sie an ein kreatives Projekt, das Sie durchgeführt haben (z.B. Fotografie, Kochen, Schreiben, Handwerk, Musik)</li>
+                        <li>Bereiten Sie einen kurzen Vortrag (3-5 Minuten) über Ihren kreativen Prozess vor</li>
+                        <li>Berücksichtigen Sie dabei folgende Aspekte:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Inspiration und Ideenfindung</li>
+                            <li>Planung und Vorbereitung</li>
+                            <li>Verwendete Techniken und Materialien</li>
+                            <li>Herausforderungen und Lösungen</li>
+                            <li>Das Endergebnis und Ihre Zufriedenheit damit</li>
+                        </ul>
+                        <li>Verwenden Sie Funktionsverbgefüge und den Fachwortschatz aus diesem Modul</li>
+                        <li>Präsentieren Sie Ihren kreativen Prozess vor der Gruppe und beantworten Sie Fragen</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Kulturelle Unterschiede und Gemeinsamkeiten</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Kultur und Identität</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kultur</p>
+                        <p class="text-gray-600">文化</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Tradition</p>
+                        <p class="text-gray-600">传统</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Brauchtum</p>
+                        <p class="text-gray-600">习俗</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Identität</p>
+                        <p class="text-gray-600">身份认同</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Erbe</p>
+                        <p class="text-gray-600">遗产</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Vielfalt</p>
+                        <p class="text-gray-600">多样性</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Austausch</p>
+                        <p class="text-gray-600">交流</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Integration</p>
+                        <p class="text-gray-600">融合</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Globalisierung</p>
+                        <p class="text-gray-600">全球化</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Kulturelle Unterschiede und Gemeinsamkeiten</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Unterschied</p>
+                        <p class="text-gray-600">差异</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Gemeinsamkeit</p>
+                        <p class="text-gray-600">共同点</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Perspektive</p>
+                        <p class="text-gray-600">视角</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Wert</p>
+                        <p class="text-gray-600">价值观</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Norm</p>
+                        <p class="text-gray-600">规范</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Vorurteil</p>
+                        <p class="text-gray-600">偏见</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Missverständnis</p>
+                        <p class="text-gray-600">误解</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Bereicherung</p>
+                        <p class="text-gray-600">丰富</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Anpassung</p>
+                        <p class="text-gray-600">适应</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">In meiner Kultur ist es üblich, dass...</p>
+                        <p class="text-gray-600">在我的文化中，通常...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ein wesentlicher Unterschied besteht darin, dass...</p>
+                        <p class="text-gray-600">一个主要的区别在于...</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Trotz der Unterschiede gibt es viele Gemeinsamkeiten.</p>
+                        <p class="text-gray-600">尽管有差异，但有很多共同点。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die kulturelle Vielfalt empfinde ich als Bereicherung.</p>
+                        <p class="text-gray-600">我认为文化多样性是一种丰富。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Durch den Austausch lernt man andere Perspektiven kennen.</p>
+                        <p class="text-gray-600">通过交流，人们了解其他视角。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Es ist wichtig, Vorurteile zu überwinden.</p>
+                        <p class="text-gray-600">克服偏见很重要。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Globalisierung führt zu einer Annäherung der Kulturen.</p>
+                        <p class="text-gray-600">全球化导致文化的接近。</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Traditionen sollten bewahrt und gleichzeitig weiterentwickelt werden.</p>
+                        <p class="text-gray-600">传统应该被保存，同时也要发展。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Konzessive Konnektoren</h3>
+                <p class="mb-4">Konzessive Konnektoren drücken einen Gegensatz oder ein Zugeständnis aus. Sie sind nützlich, um über kulturelle Unterschiede und Gemeinsamkeiten zu sprechen.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Konnektor</th>
+                                <th class="py-2 px-4 border-b">Position im Satz</th>
+                                <th class="py-2 px-4 border-b">Beispiel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">obwohl</td>
+                                <td class="py-2 px-4 border-b">Nebensatz (Verb am Ende)</td>
+                                <td class="py-2 px-4 border-b"><span class="font-medium">Obwohl</span> die Kulturen unterschiedlich sind, gibt es viele Gemeinsamkeiten.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">trotzdem</td>
+                                <td class="py-2 px-4 border-b">Hauptsatz (Verb an Position 2)</td>
+                                <td class="py-2 px-4 border-b">Die Kulturen sind unterschiedlich, <span class="font-medium">trotzdem</span> gibt es viele Gemeinsamkeiten.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">dennoch</td>
+                                <td class="py-2 px-4 border-b">Hauptsatz (Verb an Position 2)</td>
+                                <td class="py-2 px-4 border-b">Die Traditionen sind verschieden, <span class="font-medium">dennoch</span> teilen wir ähnliche Werte.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">trotz + Genitiv</td>
+                                <td class="py-2 px-4 border-b">Präpositionalgruppe</td>
+                                <td class="py-2 px-4 border-b"><span class="font-medium">Trotz der</span> kulturellen Unterschiede verstehen wir uns gut.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">zwar... aber</td>
+                                <td class="py-2 px-4 border-b">zwar im ersten Teilsatz, aber im zweiten</td>
+                                <td class="py-2 px-4 border-b">Die Feste werden <span class="font-medium">zwar</span> unterschiedlich gefeiert, <span class="font-medium">aber</span> sie haben ähnliche Bedeutungen.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="font-medium">Hinweise zur Verwendung:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>"Obwohl" leitet einen Nebensatz ein, das Verb steht am Ende</li>
+                        <li>"Trotzdem" und "dennoch" stehen im Hauptsatz, das Verb folgt direkt danach</li>
+                        <li>"Trotz" wird mit dem Genitiv verwendet (trotz des Unterschieds, trotz der Unterschiede)</li>
+                        <li>"Zwar... aber" verbindet zwei Hauptsätze und betont den Gegensatz</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel: Kultureller Austausch</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Frau Weber:</strong> Herr Li, Sie leben jetzt seit zwei Jahren in Deutschland. Wie erleben Sie die kulturellen Unterschiede zwischen China und Deutschland?</p>
+                    <p class="mb-2"><strong>Herr Li:</strong> Es gibt tatsächlich viele interessante Unterschiede. In China ist zum Beispiel die Gemeinschaft sehr wichtig. Familiäre Bindungen und soziale Beziehungen stehen oft im Vordergrund. Obwohl in Deutschland die Individualität stärker betont wird, habe ich festgestellt, dass auch hier Freundschaften und Familie einen hohen Stellenwert haben.</p>
+                    <p class="mb-2"><strong>Frau Weber:</strong> Das stimmt. Zwar legen wir viel Wert auf persönliche Freiheit und Selbstständigkeit, aber familiäre Bindungen bleiben dennoch wichtig. Wie ist es mit den Traditionen und Festen?</p>
+                    <p class="mb-2"><strong>Herr Li:</strong> Das chinesische Neujahrsfest ist für uns das wichtigste Fest des Jahres. Es ist eine Zeit der Familienzusammenführung und des Neubeginns. Trotz der unterschiedlichen Bräuche sehe ich Parallelen zu Weihnachten in Deutschland, wo auch die Familie zusammenkommt.</p>
+                    <p class="mb-2"><strong>Frau Weber:</strong> Interessant, diese Gemeinsamkeit hatte ich noch nicht so gesehen. Wie erleben Sie die Kommunikation zwischen Deutschen und Chinesen?</p>
+                    <p class="mb-2"><strong>Herr Li:</strong> In China kommunizieren wir oft indirekt, um Harmonie zu bewahren. Deutsche sind dagegen sehr direkt und sagen offen ihre Meinung. Das hat mich anfangs überrascht, trotzdem schätze ich mittlerweile diese Direktheit, weil sie Missverständnisse vermeiden kann.</p>
+                    <p class="mb-2"><strong>Frau Weber:</strong> Ja, unsere direkte Art kann für Menschen aus anderen Kulturen manchmal unhöflich wirken. Obwohl wir es gut meinen, kommt es dadurch gelegentlich zu Missverständnissen.</p>
+                    <p class="mb-2"><strong>Herr Li:</strong> Genau. Aber durch den kulturellen Austausch lernt man, diese Unterschiede zu verstehen und zu respektieren. Die kulturelle Vielfalt empfinde ich als große Bereicherung.</p>
+                    <p class="mb-2"><strong>Frau Weber:</strong> Das sehe ich auch so. Zwar haben wir unterschiedliche kulturelle Hintergründe, aber wir teilen viele grundlegende menschliche Werte und Bedürfnisse.</p>
+                    <p class="mb-2"><strong>Herr Li:</strong> Absolut. Trotz der Globalisierung ist es wichtig, kulturelle Traditionen zu bewahren. Gleichzeitig sollten wir offen für neue Einflüsse sein. Der interkulturelle Dialog hilft uns, voneinander zu lernen und Vorurteile abzubauen.</p>
+                    <p class="mb-2"><strong>Frau Weber:</strong> Da stimme ich Ihnen vollkommen zu. Die Begegnung verschiedener Kulturen kann zu kreativen Innovationen führen und unseren Horizont erweitern.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Kultureller Vergleich</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Arbeiten Sie mit einem Partner aus einem anderen kulturellen Hintergrund</li>
+                        <li>Wählen Sie eines der folgenden Themen für einen kulturellen Vergleich:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Feste und Feiertage</li>
+                            <li>Kunst und Musik</li>
+                            <li>Essen und Essgewohnheiten</li>
+                            <li>Familienleben und soziale Beziehungen</li>
+                            <li>Bildung und Erziehung</li>
+                        </ul>
+                        <li>Diskutieren Sie folgende Aspekte:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Wichtige Traditionen und Bräuche in Ihren Kulturen</li>
+                            <li>Kulturelle Unterschiede und ihre Hintergründe</li>
+                            <li>Überraschende Gemeinsamkeiten</li>
+                            <li>Persönliche Erfahrungen mit kulturellen Missverständnissen</li>
+                            <li>Was Sie an der jeweils anderen Kultur schätzen</li>
+                        </ul>
+                        <li>Verwenden Sie konzessive Konnektoren und den Fachwortschatz aus diesem Modul</li>
+                        <li>Bereiten Sie eine kurze Präsentation (5 Minuten) über Ihre Erkenntnisse vor</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Zusammenfassung und Übungen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wichtiger Wortschatz</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kunst</p>
+                        <p class="text-gray-600">艺术</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kreativität</p>
+                        <p class="text-gray-600">创造力</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kultur</p>
+                        <p class="text-gray-600">文化</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Inspiration</p>
+                        <p class="text-gray-600">灵感</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Ausdruck</p>
+                        <p class="text-gray-600">表达</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Vielfalt</p>
+                        <p class="text-gray-600">多样性</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Kulturelles Symposium</h3>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Organisieren Sie ein kleines kulturelles Symposium in der Klasse</li>
+                        <li>Jeder Teilnehmer wählt ein kulturelles Thema aus seinem Heimatland oder einer anderen Kultur</li>
+                        <li>Bereiten Sie einen kurzen Vortrag (5-7 Minuten) vor, der folgende Elemente enthält:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Beschreibung eines Kunstwerks, einer Tradition oder eines kulturellen Phänomens</li>
+                            <li>Erklärung des kreativen Prozesses oder der historischen Entwicklung</li>
+                            <li>Vergleich mit ähnlichen Phänomenen in anderen Kulturen</li>
+                            <li>Persönliche Reflexion über die kulturelle Bedeutung</li>
+                        </ul>
+                        <li>Verwenden Sie alle in diesem Modul gelernten sprachlichen Mittel:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Erweiterte Partizipialkonstruktionen</li>
+                            <li>Funktionsverbgefüge</li>
+                            <li>Konzessive Konnektoren</li>
+                            <li>Fachvokabular zu Kunst und Kultur</li>
+                        </ul>
+                        <li>Nach jedem Vortrag folgt eine kurze Diskussion (5 Minuten)</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Hausaufgaben</h3>
+                <div class="bg-blue-50 p-4 rounded-md border border-blue-200">
+                    <p class="font-medium mb-2">Für die nächste Stunde:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Schreiben Sie einen Essay (300-350 Wörter) zu einem der folgenden Themen:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Die Rolle der Kunst in der modernen Gesellschaft</li>
+                            <li>Kultureller Austausch in Zeiten der Globalisierung</li>
+                            <li>Kreativität im Alltag: Wie kann man sie fördern?</li>
+                        </ul>
+                        <li>Verwenden Sie mindestens:</li>
+                        <ul class="list-disc pl-5 mt-1 mb-2">
+                            <li>Vier erweiterte Partizipialkonstruktionen</li>
+                            <li>Fünf Funktionsverbgefüge</li>
+                            <li>Drei konzessive Konnektoren</li>
+                            <li>Mindestens 20 Fachbegriffe aus diesem Modul</li>
+                        </ul>
+                        <li>Besuchen Sie eine Kunstausstellung oder ein kulturelles Event und bereiten Sie einen kurzen Bericht darüber vor</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Deutsch Lernen</h3>
+                    <p class="text-gray-300">Umfassende Lernmaterialien für chinesische Studenten zur Vorbereitung auf das deutsche Ausbildungssystem.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-white">Startseite</a></li>
+                        <li><a href="../curriculum.html" class="text-gray-300 hover:text-white">Lehrplan</a></li>
+                        <li><a href="../interview.html" class="text-gray-300 hover:text-white">Interview-Fragen</a></li>
+                        <li><a href="../mock-interviews.html" class="text-gray-300 hover:text-white">Mock-Interviews</a></li>
+                        <li><a href="../blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+                    <p class="text-gray-300">Bei Fragen oder Anregungen kontaktieren Sie uns bitte.</p>
+                    <p class="text-gray-300 mt-2">Email: info@deutschlernen.com</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300">&copy; 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

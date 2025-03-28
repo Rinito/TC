@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2 Modul 3: Bildung und Ausbildungssystem</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-red-100 text-red-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau B2</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 3: Bildung und Ausbildungssystem</h1>
+            <p class="text-xl text-gray-600">Über Bildungswege, Ausbildung und berufliche Integration in Deutschland sprechen</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Das deutsche Bildungs- und Ausbildungssystem detailliert zu beschreiben</li>
+                    <li>Über Bildungswege und Karrieremöglichkeiten zu diskutieren</li>
+                    <li>Ihre eigene Ausbildung und berufliche Qualifikationen präzise darzustellen</li>
+                    <li>Komplexe Gespräche über berufliche Integration zu führen</li>
+                    <li>Fachbegriffe aus dem Bildungs- und Berufsbereich zu verwenden</li>
+                    <li>Kulturelle Unterschiede in Bildungssystemen zu vergleichen und zu diskutieren</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Das deutsche Bildungssystem</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Wortschatz: Bildungswege in Deutschland</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Grundschule</p>
+                        <p class="text-gray-600">In Deutschland besuchen Kinder in der Regel vier Jahre die Grundschule.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Hauptschule</p>
+                        <p class="text-gray-600">Die Hauptschule führt zum Hauptschulabschluss nach Klasse 9 oder 10.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Realschule</p>
+                        <p class="text-gray-600">Die Realschule führt zur Mittleren Reife nach Klasse 10.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">das Gymnasium</p>
+                        <p class="text-gray-600">Das Gymnasium führt zum Abitur, der allgemeinen Hochschulreife.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Gesamtschule</p>
+                        <p class="text-gray-600">Die Gesamtschule vereint verschiedene Schulformen unter einem Dach.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Berufsschule</p>
+                        <p class="text-gray-600">Die Berufsschule ist Teil der dualen Ausbildung.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Universität</p>
+                        <p class="text-gray-600">An der Universität kann man verschiedene Studiengänge absolvieren.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Fachhochschule (FH)</p>
+                        <p class="text-gray-600">Die Fachhochschule bietet praxisorientierte Studiengänge an.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Wortschatz: Abschlüsse und Qualifikationen</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">der Hauptschulabschluss</p>
+                        <p class="text-gray-600">Mit dem Hauptschulabschluss kann man eine Ausbildung beginnen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Mittlere Reife</p>
+                        <p class="text-gray-600">Die Mittlere Reife eröffnet bessere Chancen auf dem Ausbildungsmarkt.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">das Abitur</p>
+                        <p class="text-gray-600">Das Abitur berechtigt zum Studium an Universitäten und Fachhochschulen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Fachhochschulreife</p>
+                        <p class="text-gray-600">Die Fachhochschulreife berechtigt zum Studium an Fachhochschulen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">der Gesellenbrief</p>
+                        <p class="text-gray-600">Nach der Ausbildung im Handwerk erhält man den Gesellenbrief.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">der Meisterbrief</p>
+                        <p class="text-gray-600">Der Meisterbrief ist eine höhere Qualifikation im Handwerk.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">der Bachelor</p>
+                        <p class="text-gray-600">Der Bachelor ist der erste akademische Abschluss im Studium.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">der Master</p>
+                        <p class="text-gray-600">Nach dem Bachelor kann man einen Master-Abschluss machen.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Dialogbeispiel: Gespräch über Bildungswege</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Herr Schmidt:</strong> Guten Tag, Frau Li. Sie interessieren sich für das deutsche Bildungssystem?</p>
+                    <p class="mb-2"><strong>Frau Li:</strong> Ja, ich möchte verstehen, welche Möglichkeiten es für meine Landsleute gibt, die nach Deutschland kommen möchten.</p>
+                    <p class="mb-2"><strong>Herr Schmidt:</strong> Das deutsche Bildungssystem ist recht komplex. Nach der Grundschule gibt es verschiedene weiterführende Schulen: Hauptschule, Realschule und Gymnasium.</p>
+                    <p class="mb-2"><strong>Frau Li:</strong> Und wie entscheidet man, welche Schule ein Kind besuchen soll?</p>
+                    <p class="mb-2"><strong>Herr Schmidt:</strong> Das hängt von den Leistungen und Empfehlungen der Grundschullehrer ab. Aber das System ist durchlässig, man kann später noch wechseln oder weitere Abschlüsse machen.</p>
+                    <p class="mb-2"><strong>Frau Li:</strong> Und nach der Schule? In China gehen die meisten Schüler zur Universität.</p>
+                    <p class="mb-2"><strong>Herr Schmidt:</strong> In Deutschland ist das anders. Viele junge Menschen machen eine Berufsausbildung im dualen System. Das bedeutet, sie arbeiten in einem Betrieb und besuchen gleichzeitig die Berufsschule.</p>
+                    <p class="mb-2"><strong>Frau Li:</strong> Das klingt sehr praxisorientiert. Wie lange dauert so eine Ausbildung?</p>
+                    <p class="mb-2"><strong>Herr Schmidt:</strong> In der Regel zwei bis dreieinhalb Jahre, je nach Beruf. Danach hat man gute Chancen auf dem Arbeitsmarkt und kann sich weiterbilden, zum Beispiel zum Meister oder Techniker.</p>
+                    <p class="mb-2"><strong>Frau Li:</strong> Und wenn jemand studieren möchte?</p>
+                    <p class="mb-2"><strong>Herr Schmidt:</strong> Dafür braucht man in der Regel das Abitur oder die Fachhochschulreife. Man kann an Universitäten oder Fachhochschulen studieren. Die Studiengänge sind nach dem Bachelor-Master-System organisiert.</p>
+                    <p class="mb-2"><strong>Frau Li:</strong> Gibt es Möglichkeiten für Menschen, die im Ausland einen Abschluss gemacht haben?</p>
+                    <p class="mb-2"><strong>Herr Schmidt:</strong> Ja, ausländische Abschlüsse können anerkannt werden. Es gibt verschiedene Stellen, die für die Anerkennung zuständig sind, je nach Beruf und Bundesland. Außerdem gibt es Anpassungsqualifizierungen, wenn der Abschluss nur teilweise anerkannt wird.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Sprechübung: Das Bildungssystem erklären</h3>
+                <p class="mb-4">Erklären Sie das deutsche Bildungssystem oder vergleichen Sie es mit dem Bildungssystem in Ihrem Heimatland.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Beschreiben Sie die verschiedenen Schulformen und Bildungswege</li>
+                        <li>Erklären Sie die verschiedenen Abschlüsse und was man damit machen kann</li>
+                        <li>Vergleichen Sie das System mit dem in Ihrem Heimatland</li>
+                        <li>Diskutieren Sie Vor- und Nachteile der verschiedenen Systeme</li>
+                        <li>Verwenden Sie Fachbegriffe aus dem Bildungsbereich</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Die duale Ausbildung</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Wortschatz: Duale Ausbildung</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">der Ausbildungsbetrieb</p>
+                        <p class="text-gray-600">Im Ausbildungsbetrieb lernt man die praktischen Aspekte des Berufs.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">der Ausbilder / die Ausbilderin</p>
+                        <p class="text-gray-600">Der Ausbilder ist für die praktische Ausbildung im Betrieb verantwortlich.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">der Auszubildende / die Auszubildende (Azubi)</p>
+                        <p class="text-gray-600">Als Auszubildender lernt man einen Beruf im dualen System.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">der Ausbildungsvertrag</p>
+                        <p class="text-gray-600">Der Ausbildungsvertrag regelt die Rechte und Pflichten während der Ausbildung.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Ausbildungsvergütung</p>
+                        <p class="text-gray-600">Die Ausbildungsvergütung ist das Gehalt, das man während der Ausbildung bekommt.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Zwischenprüfung</p>
+                        <p class="text-gray-600">Die Zwischenprüfung findet in der Mitte der Ausbildung statt.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Abschlussprüfung</p>
+                        <p class="text-gray-600">Nach der Ausbildung legt man eine Abschlussprüfung ab.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Industrie- und Handelskammer (IHK)</p>
+                        <p class="text-gray-600">Die IHK ist für viele kaufmännische und technische Berufe zuständig.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">eine Ausbildung absolvieren/machen</p>
+                        <p class="text-gray-600">Ich habe eine Ausbildung als Mechatroniker absolviert.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">sich bewerben um</p>
+                        <p class="text-gray-600">Ich bewerbe mich um einen Ausbildungsplatz bei Siemens.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">einen Beruf erlernen</p>
+                        <p class="text-gray-600">In Deutschland kann man über 300 verschiedene Berufe erlernen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Prüfung bestehen/nicht bestehen</p>
+                        <p class="text-gray-600">90% der Auszubildenden bestehen die Abschlussprüfung.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">übernommen werden</p>
+                        <p class="text-gray-600">Nach der Ausbildung wurde ich von meinem Betrieb übernommen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">sich weiterbilden</p>
+                        <p class="text-gray-600">Nach einigen Jahren Berufserfahrung kann man sich zum Meister weiterbilden.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Dialogbeispiel: Gespräch über die duale Ausbildung</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Herr Wang:</strong> Frau Müller, könnten Sie mir bitte genauer erklären, wie die duale Ausbildung in Deutschland funktioniert?</p>
+                    <p class="mb-2"><strong>Frau Müller:</strong> Natürlich, Herr Wang. Die duale Ausbildung verbindet praktisches Lernen im Betrieb mit theoretischem Unterricht in der Berufsschule.</p>
+                    <p class="mb-2"><strong>Herr Wang:</strong> Wie ist das zeitlich aufgeteilt?</p>
+                    <p class="mb-2"><strong>Frau Müller:</strong> Das ist unterschiedlich. Oft ist man drei oder vier Tage pro Woche im Betrieb und ein oder zwei Tage in der Berufsschule. Es gibt auch Blockunterricht, bei dem man mehrere Wochen am Stück in der Berufsschule ist.</p>
+                    <p class="mb-2"><strong>Herr Wang:</strong> Und wie bewirbt man sich für eine Ausbildung?</p>
+                    <p class="mb-2"><strong>Frau Müller:</strong> Man bewirbt sich direkt bei den Unternehmen, die Ausbildungsplätze anbieten. Dafür braucht man in der Regel einen Schulabschluss, ein Anschreiben, einen Lebenslauf und Zeugnisse.</p>
+                    <p class="mb-2"><strong>Herr Wang:</strong> Wie lange dauert eine Ausbildung?</p>
+                    <p class="mb-2"><strong>Frau Müller:</strong> Die meisten Ausbildungen dauern drei Jahre, manche auch zweieinhalb oder dreieinhalb Jahre. Bei guten Leistungen kann man die Ausbildung manchmal verkürzen.</p>
+                    <p class="mb-2"><strong>Herr Wang:</strong> Bekommt man während der Ausbildung schon Geld?</p>
+                    <p class="mb-2"><strong>Frau Müller:</strong> Ja, man erhält eine Ausbildungsvergütung. Die Höhe hängt vom Beruf, der Branche und dem Ausbildungsjahr ab. Sie steigt in der Regel mit jedem Ausbildungsjahr.</p>
+                    <p class="mb-2"><strong>Herr Wang:</strong> Und was passiert nach der Ausbildung?</p>
+                    <p class="mb-2"><strong>Frau Müller:</strong> Nach erfolgreicher Abschlussprüfung hat man einen anerkannten Berufsabschluss. Viele Auszubildende werden von ihrem Ausbildungsbetrieb übernommen. Man kann auch in anderen Unternehmen arbeiten oder sich weiterbilden, zum Beispiel zum Meister oder Techniker.</p>
+                    <p class="mb-2"><strong>Herr Wang:</strong> Das klingt sehr strukturiert und praxisorientiert. In China ist die Berufsbildung oft weniger angesehen als ein Studium.</p>
+                    <p class="mb-2"><strong>Frau Müller:</strong> In Deutschland genießt die duale Ausbildung ein hohes Ansehen. Fachkräfte mit einer abgeschlossenen Berufsausbildung sind auf dem Arbeitsmarkt sehr gefragt und haben gute Karrierechancen.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Sprechübung: Über Ausbildungsberufe informieren</h3>
+                <p class="mb-4">Informieren Sie sich über einen Ausbildungsberuf und stellen Sie ihn vor.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Wählen Sie einen Ausbildungsberuf (z.B. Mechatroniker, Kauffrau für Büromanagement, Fachinformatiker)</li>
+                        <li>Recherchieren Sie Informationen zu diesem Beruf</li>
+                        <li>Beschreiben Sie die Tätigkeiten und Aufgaben in diesem Beruf</li>
+                        <li>Erklären Sie die Ausbildungsdauer und -inhalte</li>
+                        <li>Nennen Sie die Voraussetzungen für die Ausbildung</li>
+                        <li>Beschreiben Sie die Karrieremöglichkeiten nach der Ausbildung</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Studium in Deutschland</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Wortschatz: Hochschulbildung</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Hochschule</p>
+                        <p class="text-gray-600">In Deutschland gibt es verschiedene Arten von Hochschulen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">der Studiengang</p>
+                        <p class="text-gray-600">An deutschen Hochschulen gibt es zahlreiche Studiengänge.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">das Semester</p>
+                        <p class="text-gray-600">Das akademische Jahr ist in Semester aufgeteilt.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Vorlesung</p>
+                        <p class="text-gray-600">In Vorlesungen trägt der Professor vor einer großen Gruppe von Studierenden vor.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">das Seminar</p>
+                        <p class="text-gray-600">In Seminaren diskutieren Studierende in kleineren Gruppen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Prüfung</p>
+                        <p class="text-gray-600">Am Ende des Semesters legen die Studierenden Prüfungen ab.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Abschlussarbeit</p>
+                        <p class="text-gray-600">Für den Abschluss schreibt man eine Bachelor- oder Masterarbeit.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">der Numerus Clausus (NC)</p>
+                        <p class="text-gray-600">Für manche Studiengänge gibt es einen Numerus Clausus als Zulassungsbeschränkung.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">sich für ein Studium bewerben</p>
+                        <p class="text-gray-600">Ich habe mich für ein Informatikstudium an der TU Berlin beworben.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">ein Studium aufnehmen/beginnen</p>
+                        <p class="text-gray-600">Im Oktober werde ich mein Studium aufnehmen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">einen Kurs belegen</p>
+                        <p class="text-gray-600">In diesem Semester belege ich vier Kurse.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Credit Points / Leistungspunkte sammeln</p>
+                        <p class="text-gray-600">Für meinen Abschluss muss ich 180 Credit Points sammeln.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">ein Praktikum absolvieren</p>
+                        <p class="text-gray-600">Während meines Studiums habe ich ein Praktikum bei BMW absolviert.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">einen Abschluss erwerben</p>
+                        <p class="text-gray-600">Nach drei Jahren habe ich meinen Bachelor-Abschluss erworben.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Dialogbeispiel: Gespräch über das Studium in Deutschland</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Mei:</strong> Hallo Professor Weber, ich interessiere mich für ein Studium in Deutschland. Könnten Sie mir mehr darüber erzählen?</p>
+                    <p class="mb-2"><strong>Professor Weber:</strong> Gerne, Frau Mei. Was möchten Sie denn studieren?</p>
+                    <p class="mb-2"><strong>Mei:</strong> Ich interessiere mich für Wirtschaftsingenieurwesen. Wie ist das Studium in Deutschland organisiert?</p>
+                    <p class="mb-2"><strong>Professor Weber:</strong> In Deutschland folgen wir dem Bologna-System mit Bachelor- und Master-Abschlüssen. Ein Bachelor dauert in der Regel sechs Semester, also drei Jahre, und ein Master vier Semester, also zwei Jahre.</p>
+                    <p class="mb-2"><strong>Mei:</strong> Und wie bewerbe ich mich für einen Studienplatz?</p>
+                    <p class="mb-2"><strong>Professor Weber:</strong> Das hängt vom Studiengang ab. Für internationale Studierende ist oft uni-assist die zentrale Bewerbungsstelle. Sie müssen Ihre Zeugnisse einreichen, die auf Gleichwertigkeit geprüft werden. Außerdem brauchen Sie Deutschkenntnisse, meist auf B2- oder C1-Niveau.</p>
+                    <p class="mb-2"><strong>Mei:</strong> Gibt es Studiengebühren?</p>
+                    <p class="mb-2"><strong>Professor Weber:</strong> An staatlichen Hochschulen gibt es in den meisten Bundesländern keine Studiengebühren, nur einen Semesterbeitrag von etwa 100 bis 300 Euro. Darin ist oft auch ein Semesterticket für den öffentlichen Nahverkehr enthalten.</p>
+                    <p class="mb-2"><strong>Mei:</strong> Das klingt sehr günstig. Wie ist das Studium aufgebaut?</p>
+                    <p class="mb-2"><strong>Professor Weber:</strong> Es gibt verschiedene Lehrveranstaltungen: Vorlesungen, Seminare, Übungen und Praktika. Am Ende jedes Semesters legen Sie Prüfungen ab und sammeln Credit Points. Für einen Bachelor-Abschluss brauchen Sie 180 ECTS-Punkte.</p>
+                    <p class="mb-2"><strong>Mei:</strong> Und wie sind die Berufsaussichten nach dem Studium?</p>
+                    <p class="mb-2"><strong>Professor Weber:</strong> Mit einem deutschen Hochschulabschluss haben Sie gute Chancen auf dem Arbeitsmarkt. Besonders in technischen und naturwissenschaftlichen Fächern werden Fachkräfte gesucht. Als internationale Absolventin können Sie nach dem Studium bis zu 18 Monate in Deutschland bleiben, um eine Arbeit zu suchen.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Sprechübung: Über Studienmöglichkeiten informieren</h3>
+                <p class="mb-4">Informieren Sie sich über einen Studiengang und stellen Sie ihn vor.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Wählen Sie einen Studiengang (z.B. Maschinenbau, Betriebswirtschaftslehre, Informatik)</li>
+                        <li>Recherchieren Sie Informationen zu diesem Studiengang</li>
+                        <li>Beschreiben Sie die Studieninhalte und den Aufbau des Studiums</li>
+                        <li>Erklären Sie die Zulassungsvoraussetzungen</li>
+                        <li>Nennen Sie mögliche Hochschulen, die diesen Studiengang anbieten</li>
+                        <li>Beschreiben Sie die Berufsaussichten nach dem Studium</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Berufliche Integration</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Wortschatz: Berufliche Integration</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Anerkennung ausländischer Abschlüsse</p>
+                        <p class="text-gray-600">Die Anerkennung ausländischer Abschlüsse ist oft ein wichtiger Schritt für die berufliche Integration.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Anpassungsqualifizierung</p>
+                        <p class="text-gray-600">Eine Anpassungsqualifizierung kann helfen, fehlende Kenntnisse zu erwerben.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Nachqualifizierung</p>
+                        <p class="text-gray-600">Durch eine Nachqualifizierung kann man einen deutschen Berufsabschluss erwerben.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Arbeitserlaubnis</p>
+                        <p class="text-gray-600">Für eine Beschäftigung in Deutschland benötigt man eine Arbeitserlaubnis.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Fachkräfteeinwanderung</p>
+                        <p class="text-gray-600">Das Fachkräfteeinwanderungsgesetz erleichtert qualifizierten Fachkräften den Zugang zum deutschen Arbeitsmarkt.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Berufsberatung</p>
+                        <p class="text-gray-600">Die Berufsberatung der Agentur für Arbeit unterstützt bei der beruflichen Orientierung.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Weiterbildung</p>
+                        <p class="text-gray-600">Durch Weiterbildungen kann man seine beruflichen Chancen verbessern.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">die Umschulung</p>
+                        <p class="text-gray-600">Eine Umschulung ermöglicht den Wechsel in einen anderen Beruf.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">einen Abschluss anerkennen lassen</p>
+                        <p class="text-gray-600">Ich möchte meinen chinesischen Hochschulabschluss in Deutschland anerkennen lassen.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">sich beruflich integrieren</p>
+                        <p class="text-gray-600">Mit guten Deutschkenntnissen kann man sich leichter beruflich integrieren.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">eine Stelle finden</p>
+                        <p class="text-gray-600">Nach meiner Ausbildung habe ich schnell eine Stelle gefunden.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">sich weiterqualifizieren</p>
+                        <p class="text-gray-600">Ich möchte mich im Bereich Projektmanagement weiterqualifizieren.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">berufliche Perspektiven entwickeln</p>
+                        <p class="text-gray-600">Die Beratung hat mir geholfen, neue berufliche Perspektiven zu entwickeln.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Berufserfahrung sammeln</p>
+                        <p class="text-gray-600">Durch Praktika kann man wertvolle Berufserfahrung sammeln.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Dialogbeispiel: Beratungsgespräch zur beruflichen Integration</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Beraterin:</strong> Guten Tag, Herr Zhang. Sie haben einen Termin zur Beratung über Ihre beruflichen Möglichkeiten in Deutschland.</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Ja, das stimmt. Ich bin vor sechs Monaten nach Deutschland gekommen und möchte hier in meinem Beruf arbeiten. In China war ich Elektroingenieur.</p>
+                    <p class="mb-2"><strong>Beraterin:</strong> Haben Sie bereits Schritte unternommen, um Ihren Abschluss anerkennen zu lassen?</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Ja, ich habe einen Antrag bei der Zentralstelle für ausländisches Bildungswesen gestellt. Vor zwei Wochen habe ich die Antwort bekommen, dass mein Abschluss teilweise anerkannt wird.</p>
+                    <p class="mb-2"><strong>Beraterin:</strong> Das ist schon einmal gut. Bei einer teilweisen Anerkennung müssen Sie in der Regel eine Anpassungsqualifizierung machen, um die fehlenden Kenntnisse zu erwerben.</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Was bedeutet das genau?</p>
+                    <p class="mb-2"><strong>Beraterin:</strong> Sie müssen bestimmte Module oder Kurse absolvieren, die in Ihrem Studium in China nicht oder nicht in ausreichendem Umfang enthalten waren. Im Bescheid steht, welche das sind.</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Ja, es geht um einige spezielle Bereiche der Elektrotechnik und um rechtliche Grundlagen in Deutschland.</p>
+                    <p class="mb-2"><strong>Beraterin:</strong> Dafür gibt es spezielle Anpassungsqualifizierungen. Ich kann Ihnen Anbieter nennen, die solche Kurse durchführen. Wie sieht es mit Ihren Deutschkenntnissen aus?</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Ich habe das B2-Niveau erreicht und nehme weiter an Deutschkursen teil.</p>
+                    <p class="mb-2"><strong>Beraterin:</strong> Das ist sehr gut. Für Ingenieure ist oft B2 oder C1 erforderlich. Haben Sie schon Berufserfahrung in Deutschland sammeln können?</p>
+                    <p class="mb-2"><strong>Herr Zhang:</strong> Nein, noch nicht. Ich weiß nicht, wie ich ohne anerkannten Abschluss eine Stelle finden kann.</p>
+                    <p class="mb-2"><strong>Beraterin:</strong> Es gibt verschiedene Möglichkeiten. Sie könnten zum Beispiel ein Praktikum machen oder eine Stelle annehmen, die unter Ihrer Qualifikation liegt, um Erfahrungen zu sammeln und Kontakte zu knüpfen. Parallel dazu können Sie die Anpassungsqualifizierung absolvieren.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Sprechübung: Über berufliche Integration diskutieren</h3>
+                <p class="mb-4">Diskutieren Sie über Herausforderungen und Chancen der beruflichen Integration in Deutschland.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Diskussionsfragen:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Welche Herausforderungen gibt es bei der beruflichen Integration in Deutschland?</li>
+                        <li>Welche Unterstützungsmöglichkeiten gibt es für internationale Fachkräfte?</li>
+                        <li>Wie wichtig sind Sprachkenntnisse für die berufliche Integration?</li>
+                        <li>Welche Rolle spielen kulturelle Unterschiede im Arbeitsleben?</li>
+                        <li>Welche Strategien können helfen, um erfolgreich im deutschen Arbeitsmarkt Fuß zu fassen?</li>
+                        <li>Wie kann man seine interkulturellen Kompetenzen als Vorteil nutzen?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Grammatik im Fokus</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Passiv mit Modalverben</h3>
+                <p class="mb-4">Das Passiv mit Modalverben wird oft verwendet, um Anforderungen, Möglichkeiten oder Notwendigkeiten auszudrücken, besonders in formellen Kontexten wie Bildung und Beruf.</p>
+                
+                <div class="grid grid-cols-1 gap-4 mb-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">müssen + Passiv</p>
+                        <p class="text-gray-600">Für die Anerkennung müssen bestimmte Unterlagen eingereicht werden.</p>
+                        <p class="text-gray-600">(= Jemand muss bestimmte Unterlagen einreichen.)</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">können + Passiv</p>
+                        <p class="text-gray-600">Die Ausbildung kann in verschiedenen Betrieben absolviert werden.</p>
+                        <p class="text-gray-600">(= Man kann die Ausbildung in verschiedenen Betrieben absolvieren.)</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">sollen + Passiv</p>
+                        <p class="text-gray-600">Die Bewerbung soll bis zum 15. Mai eingereicht werden.</p>
+                        <p class="text-gray-600">(= Man soll die Bewerbung bis zum 15. Mai einreichen.)</p>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-4 rounded-md">
+                    <p class="font-medium mb-2">Bildung des Passivs mit Modalverben:</p>
+                    <p>Modalverb + Partizip II + werden (im Infinitiv)</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Die Prüfung muss bestanden werden.</li>
+                        <li>Der Antrag kann online gestellt werden.</li>
+                        <li>Die Fristen sollten eingehalten werden.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-red-600 mb-4">Indirekte Rede</h3>
+                <p class="mb-4">Die indirekte Rede wird verwendet, um die Aussagen oder Fragen anderer Personen wiederzugeben. Sie wird oft mit dem Konjunktiv I gebildet.</p>
+                
+                <div class="grid grid-cols-1 gap-4 mb-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Aussagesätze in der indirekten Rede</p>
+                        <p class="text-gray-600">Direkte Rede: Der Professor sagt: "Die Prüfung findet am Montag statt."</p>
+                        <p class="text-gray-600">Indirekte Rede: Der Professor sagt, dass die Prüfung am Montag stattfinde.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Fragesätze in der indirekten Rede</p>
+                        <p class="text-gray-600">Direkte Rede: Die Studentin fragt: "Wann beginnt das Semester?"</p>
+                        <p class="text-gray-600">Indirekte Rede: Die Studentin fragt, wann das Semester beginne.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-4 rounded-md">
+                    <p class="font-medium mb-2">Bildung des Konjunktiv I:</p>
+                    <ul class="list-disc pl-5">
+                        <li>sein: ich sei, du seist, er/sie/es sei, wir seien, ihr seiet, sie seien</li>
+                        <li>haben: ich habe, du habest, er/sie/es habe, wir haben, ihr habet, sie haben</li>
+                        <li>werden: ich werde, du werdest, er/sie/es werde, wir werden, ihr werdet, sie werden</li>
+                        <li>Regelmäßige Verben: Stamm + e, est, e, en, et, en (z.B. machen: ich mache, du machest, ...)</li>
+                    </ul>
+                    <p class="mt-2">Wenn der Konjunktiv I mit dem Indikativ identisch ist (1. Person Singular und Plural, 3. Person Plural), wird oft der Konjunktiv II verwendet.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Kulturelles Wissen: Bildung und Arbeit in Deutschland</h2>
+            
+            <div class="mb-8">
+                <p class="mb-4">Das deutsche Bildungs- und Arbeitssystem hat einige kulturelle Besonderheiten, die für internationale Fachkräfte und Studierende wichtig sind:</p>
+                
+                <ul class="list-disc pl-5 space-y-2 mb-4">
+                    <li><strong>Wertschätzung der beruflichen Bildung:</strong> In Deutschland genießt die berufliche Bildung ein hohes Ansehen. Anders als in vielen anderen Ländern, wo ein Hochschulstudium als einziger Weg zum Erfolg gilt, werden Facharbeiter mit einer abgeschlossenen Berufsausbildung sehr geschätzt und gut bezahlt.</li>
+                    <li><strong>Lebenslanges Lernen:</strong> In Deutschland wird großer Wert auf kontinuierliche Weiterbildung gelegt. Es gibt zahlreiche Möglichkeiten, sich beruflich weiterzuentwickeln, auch nach einer abgeschlossenen Ausbildung oder einem Studium.</li>
+                    <li><strong>Formalität und Hierarchie:</strong> Im deutschen Bildungs- und Arbeitsleben herrscht oft eine gewisse Formalität. Titel wie "Doktor" oder "Professor" werden häufig verwendet, und die Anrede mit "Sie" ist in formellen Kontexten üblich.</li>
+                    <li><strong>Pünktlichkeit und Zuverlässigkeit:</strong> Diese Eigenschaften werden im deutschen Bildungs- und Arbeitsleben sehr geschätzt. Zu spät zu kommen oder Fristen nicht einzuhalten, kann als Zeichen mangelnden Respekts oder fehlender Professionalität angesehen werden.</li>
+                    <li><strong>Direktheit in der Kommunikation:</strong> Deutsche kommunizieren oft direkt und sachlich. Kritik wird offen angesprochen und ist nicht persönlich gemeint. Dies kann für Menschen aus Kulturen mit indirekteren Kommunikationsstilen ungewohnt sein.</li>
+                    <li><strong>Work-Life-Balance:</strong> In Deutschland wird die Balance zwischen Arbeit und Privatleben respektiert. Die Arbeitszeiten sind oft geregelt, und Überstunden sind nicht die Regel. Der Urlaub wird ernst genommen und sollte auch genommen werden.</li>
+                </ul>
+                
+                <p>Für internationale Fachkräfte und Studierende ist es wichtig, diese kulturellen Aspekte zu verstehen und sich darauf einzustellen. Gleichzeitig bringen sie ihre eigenen kulturellen Perspektiven und Erfahrungen mit, die eine Bereicherung für das deutsche Bildungs- und Arbeitsleben sein können.</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Hausaufgaben und Übungen</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-red-600 mb-3">Sprechaufgabe: Bildungssysteme vergleichen</h3>
+                    <p class="mb-2">Nehmen Sie eine Audiodatei (3-4 Minuten) auf, in der Sie das deutsche Bildungssystem mit dem Bildungssystem in Ihrem Heimatland vergleichen. Verwenden Sie dabei:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Fachbegriffe aus dem Bildungsbereich</li>
+                        <li>Passivkonstruktionen mit Modalverben</li>
+                        <li>Vergleichsstrukturen (im Gegensatz zu, anders als, während, etc.)</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-red-600 mb-3">Schreibaufgabe: Berufliche Integration</h3>
+                    <p class="mb-2">Schreiben Sie einen Text (250-300 Wörter) über die Herausforderungen und Chancen der beruflichen Integration in Deutschland. Gehen Sie dabei auf folgende Punkte ein:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Anerkennung ausländischer Abschlüsse</li>
+                        <li>Sprachliche Herausforderungen</li>
+                        <li>Kulturelle Unterschiede im Arbeitsleben</li>
+                        <li>Unterstützungsmöglichkeiten und Ressourcen</li>
+                        <li>Erfolgsstrategien für die berufliche Integration</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-red-600 mb-3">Dialogübung: Beratungsgespräch</h3>
+                    <p>Schreiben Sie einen Dialog zwischen einem Berater und einer Person, die ihre beruflichen Möglichkeiten in Deutschland erkunden möchte. Verwenden Sie dabei die indirekte Rede, um Informationen wiederzugeben.</p>
+                </div>
+                
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium">Tipp für die Aussprache:</p>
+                    <p>Üben Sie besonders die Aussprache von Fachbegriffen aus dem Bildungs- und Berufsbereich. Achten Sie auf die korrekte Betonung von zusammengesetzten Wörtern wie "Ausbildungsvergütung" oder "Anpassungsqualifizierung".</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-12 py-8 border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-500">© 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Über uns</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Kontakt</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-600">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

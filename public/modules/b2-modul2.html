@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2 Modul 2: Kultur und Geschichte</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau B2</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 2: Kultur und Geschichte</h1>
+            <p class="text-xl text-gray-600">Vertiefen Sie Ihre Kenntnisse über deutsche Kultur und Geschichte</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Über kulturelle Unterschiede und Gemeinsamkeiten zu diskutieren</li>
+                    <li>Wichtige historische Ereignisse in Deutschland zu beschreiben</li>
+                    <li>Literatur, Kunst und Musik zu analysieren und zu interpretieren</li>
+                    <li>Grammatik: Konjunktiv I, erweiterte Partizipialkonstruktionen, Funktionsverbgefüge</li>
+                    <li>Kulturelle Referenzen in Gesprächen zu verstehen und zu verwenden</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Über kulturelle Unterschiede und Gemeinsamkeiten diskutieren</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Kultur</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Tradition</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Werte</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Bräuche</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Mentalität</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Identität</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Erbe</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Vielfalt</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Austausch</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Integration</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">In meiner Kultur ist es üblich, dass ...</p>
+                        <p class="text-gray-600">In meiner Kultur ist es üblich, dass man die Schuhe auszieht, wenn man ein Haus betritt.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Im Vergleich zu ... ist in Deutschland ...</p>
+                        <p class="text-gray-600">Im Vergleich zu China ist in Deutschland die Direktheit in Gesprächen stärker ausgeprägt.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Eine Gemeinsamkeit zwischen ... und ... ist ...</p>
+                        <p class="text-gray-600">Eine Gemeinsamkeit zwischen der deutschen und der chinesischen Kultur ist die Wertschätzung von Bildung.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ein wesentlicher Unterschied besteht darin, dass ...</p>
+                        <p class="text-gray-600">Ein wesentlicher Unterschied besteht darin, dass in Deutschland Individualität stärker betont wird.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Aus meiner Erfahrung ...</p>
+                        <p class="text-gray-600">Aus meiner Erfahrung sind Deutsche sehr umweltbewusst.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich habe beobachtet, dass ...</p>
+                        <p class="text-gray-600">Ich habe beobachtet, dass Pünktlichkeit in Deutschland sehr wichtig ist.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Konjunktiv I</h3>
+                <p class="mb-4">Der Konjunktiv I wird hauptsächlich in der indirekten Rede verwendet, besonders in formellen Texten.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Verb</th>
+                                <th class="py-2 px-4 border-b">Konjunktiv I</th>
+                                <th class="py-2 px-4 border-b">Beispiel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">sein</td>
+                                <td class="py-2 px-4 border-b">sei</td>
+                                <td class="py-2 px-4 border-b">Er sagt, er sei aus Berlin.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">haben</td>
+                                <td class="py-2 px-4 border-b">habe</td>
+                                <td class="py-2 px-4 border-b">Sie behauptet, sie habe keine Zeit.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">kommen</td>
+                                <td class="py-2 px-4 border-b">komme</td>
+                                <td class="py-2 px-4 border-b">Er sagt, er komme später.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Professor:</strong> Heute sprechen wir über kulturelle Unterschiede und Gemeinsamkeiten. Frau Li, können Sie uns etwas über Ihre Erfahrungen mit der deutschen Kultur erzählen?</p>
+                    <p class="mb-2"><strong>Frau Li:</strong> Natürlich. Aus meiner Erfahrung sind Deutsche sehr direkt in ihrer Kommunikation. Im Vergleich zu China, wo indirekte Kommunikation oft bevorzugt wird, ist in Deutschland Klarheit und Direktheit wichtiger. Ein wesentlicher Unterschied besteht darin, dass in Deutschland Kritik oft direkt angesprochen wird, während in China Harmonie und das "Gesicht wahren" eine größere Rolle spielen.</p>
+                    <p class="mb-2"><strong>Professor:</strong> Interessant. Herr Schmidt, wie sehen Sie das?</p>
+                    <p class="mb-2"><strong>Herr Schmidt:</strong> Ich stimme Frau Li zu. Ich habe in China gearbeitet und beobachtet, dass die Kommunikation dort oft subtiler ist. Man muss zwischen den Zeilen lesen. In Deutschland sagen wir oft direkt, was wir denken. Allerdings gibt es auch Gemeinsamkeiten. Eine Gemeinsamkeit zwischen der deutschen und der chinesischen Kultur ist die Wertschätzung von Bildung und beruflichem Erfolg.</p>
+                    <p class="mb-2"><strong>Frau Li:</strong> Das stimmt. In beiden Kulturen ist Bildung sehr wichtig. In meiner Kultur ist es üblich, dass Eltern viel in die Bildung ihrer Kinder investieren. Ich habe gehört, dass dies in Deutschland ähnlich sei, wenn auch vielleicht weniger intensiv.</p>
+                    <p class="mb-2"><strong>Professor:</strong> Gibt es weitere kulturelle Aspekte, die Sie bemerkt haben?</p>
+                    <p class="mb-2"><strong>Frau Li:</strong> Ja, ich habe beobachtet, dass Pünktlichkeit in Deutschland sehr wichtig ist. In China kann die Zeitwahrnehmung flexibler sein. Außerdem ist mir aufgefallen, dass in Deutschland Umweltschutz und Nachhaltigkeit im Alltag eine große Rolle spielen, zum Beispiel bei der Mülltrennung.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Kulturelle Unterschiede</h3>
+                <p class="mb-4">Diskutieren Sie über kulturelle Unterschiede und Gemeinsamkeiten zwischen Deutschland und Ihrem Heimatland.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Notieren Sie mindestens drei kulturelle Unterschiede und drei Gemeinsamkeiten</li>
+                        <li>Beschreiben Sie konkrete Beispiele aus Ihrem Alltag</li>
+                        <li>Verwenden Sie den Konjunktiv I, um Aussagen anderer wiederzugeben</li>
+                        <li>Nutzen Sie die gelernten Ausdrücke</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Wichtige historische Ereignisse in Deutschland beschreiben</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Geschichte</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Zweite Weltkrieg</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Nachkriegszeit</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Teilung Deutschlands</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Berliner Mauer</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Wiedervereinigung</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Wirtschaftswunder</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Europäische Union</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Reformation</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Industrialisierung</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ein wichtiges Ereignis in der deutschen Geschichte ist ...</p>
+                        <p class="text-gray-600">Ein wichtiges Ereignis in der deutschen Geschichte ist der Fall der Berliner Mauer im Jahr 1989.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">... hatte weitreichende Folgen für ...</p>
+                        <p class="text-gray-600">Die Wiedervereinigung hatte weitreichende Folgen für die deutsche Gesellschaft und Wirtschaft.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Dies führte zu ...</p>
+                        <p class="text-gray-600">Dies führte zu tiefgreifenden Veränderungen in Ostdeutschland.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Im Zeitraum von ... bis ...</p>
+                        <p class="text-gray-600">Im Zeitraum von 1949 bis 1989 war Deutschland in zwei Staaten geteilt.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Aus historischer Perspektive ...</p>
+                        <p class="text-gray-600">Aus historischer Perspektive war die friedliche Revolution in der DDR ein bemerkenswertes Ereignis.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Bedeutung dieses Ereignisses liegt darin, dass ...</p>
+                        <p class="text-gray-600">Die Bedeutung dieses Ereignisses liegt darin, dass es den Weg für ein vereintes Europa ebnete.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Erweiterte Partizipialkonstruktionen</h3>
+                <p class="mb-4">Erweiterte Partizipialkonstruktionen werden oft in formellen Texten und Vorträgen verwendet, um komplexe Sachverhalte präzise auszudrücken.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Nebensatz</th>
+                                <th class="py-2 px-4 border-b">Partizipialkonstruktion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Die Mauer, die Berlin teilte, fiel 1989.</td>
+                                <td class="py-2 px-4 border-b">Die Berlin teilende Mauer fiel 1989.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Die Menschen, die auf die Straße gingen, forderten Freiheit.</td>
+                                <td class="py-2 px-4 border-b">Die auf die Straße gehenden Menschen forderten Freiheit.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Deutschland, das nach dem Krieg geteilt wurde, wurde 1990 wiedervereinigt.</td>
+                                <td class="py-2 px-4 border-b">Das nach dem Krieg geteilte Deutschland wurde 1990 wiedervereinigt.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Historisches Ereignis</h3>
+                <p class="mb-4">Beschreiben Sie ein wichtiges historisches Ereignis in Deutschland.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Wählen Sie ein historisches Ereignis (z.B. Mauerfall, Wiedervereinigung, Gründung der BRD)</li>
+                        <li>Recherchieren Sie wichtige Fakten und Daten</li>
+                        <li>Beschreiben Sie den historischen Kontext, den Verlauf und die Folgen</li>
+                        <li>Verwenden Sie erweiterte Partizipialkonstruktionen und die gelernten Ausdrücke</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Literatur, Kunst und Musik analysieren und interpretieren</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Kunst und Kultur</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Literatur</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kunst</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Musik</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Theater</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Film</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Epoche</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Stil</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Werk</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Interpretation</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Das Werk zeichnet sich durch ... aus.</p>
+                        <p class="text-gray-600">Das Werk zeichnet sich durch seine komplexe Struktur und tiefgründige Symbolik aus.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Der Künstler/Autor/Komponist stellt ... dar.</p>
+                        <p class="text-gray-600">Der Autor stellt die Konflikte der Nachkriegsgesellschaft dar.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ein zentrales Thema ist ...</p>
+                        <p class="text-gray-600">Ein zentrales Thema ist die Suche nach Identität in einer sich wandelnden Welt.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Meiner Interpretation nach ...</p>
+                        <p class="text-gray-600">Meiner Interpretation nach symbolisiert die Hauptfigur den Konflikt zwischen Tradition und Moderne.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Im Kontext der Zeit/Epoche ...</p>
+                        <p class="text-gray-600">Im Kontext der Nachkriegszeit reflektiert das Werk die Auseinandersetzung mit der Vergangenheit.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Besonders beeindruckend finde ich ...</p>
+                        <p class="text-gray-600">Besonders beeindruckend finde ich die sprachliche Präzision und emotionale Tiefe des Werks.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Funktionsverbgefüge</h3>
+                <p class="mb-4">Funktionsverbgefüge bestehen aus einem bedeutungsarmen Verb und einem Nomen und werden oft in formellen Kontexten verwendet.</p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Einfaches Verb</th>
+                                <th class="py-2 px-4 border-b">Funktionsverbgefüge</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">beginnen</td>
+                                <td class="py-2 px-4 border-b">den Anfang nehmen</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">helfen</td>
+                                <td class="py-2 px-4 border-b">Hilfe leisten</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">entscheiden</td>
+                                <td class="py-2 px-4 border-b">eine Entscheidung treffen</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">danken</td>
+                                <td class="py-2 px-4 border-b">Dank aussprechen</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Professor:</strong> Heute sprechen wir über Bertolt Brechts "Leben des Galilei". Frau Zhang, wie interpretieren Sie dieses Werk?</p>
+                    <p class="mb-2"><strong>Frau Zhang:</strong> Das Werk zeichnet sich durch seine komplexe Darstellung des Konflikts zwischen Wissenschaft und Autorität aus. Brecht stellt die moralischen Dilemmata eines Wissenschaftlers dar, der zwischen persönlicher Sicherheit und wissenschaftlicher Wahrheit entscheiden muss. Ein zentrales Thema ist die Verantwortung des Intellektuellen gegenüber der Gesellschaft.</p>
+                    <p class="mb-2"><strong>Professor:</strong> Sehr gut. Und wie würden Sie das Werk im historischen Kontext betrachten?</p>
+                    <p class="mb-2"><strong>Frau Zhang:</strong> Im Kontext der Zeit, in der Brecht das Stück schrieb, kann man eine Parallele zur Situation in Nazi-Deutschland ziehen. Meiner Interpretation nach thematisiert Brecht die Frage, ob Wissenschaftler Widerstand leisten sollten, wenn ihre Erkenntnisse von autoritären Regimen unterdrückt werden. Die während des Zweiten Weltkriegs entstandene Fassung spiegelt Brechts Auseinandersetzung mit der Verantwortung von Intellektuellen wider.</p>
+                    <p class="mb-2"><strong>Professor:</strong> Herr Müller, möchten Sie etwas ergänzen?</p>
+                    <p class="mb-2"><strong>Herr Müller:</strong> Ja, ich möchte Dank für diese Interpretation aussprechen. Ich würde noch hinzufügen, dass Brecht auch die Beziehung zwischen Wissenschaft und Gesellschaft kritisch beleuchtet. Besonders beeindruckend finde ich, wie er die Figur des Galilei nutzt, um zu zeigen, dass wissenschaftlicher Fortschritt nicht automatisch zu gesellschaftlichem Fortschritt führt. Das Stück nimmt seinen Anfang mit Galileis Entdeckungen, aber es trifft letztlich eine Aussage über die moralische Verantwortung, die mit Wissen einhergeht.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Kulturelle Analyse</h3>
+                <p class="mb-4">Analysieren und interpretieren Sie ein deutsches Kunstwerk, einen literarischen Text oder ein Musikstück.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Wählen Sie ein deutsches Kunstwerk, einen Text oder ein Musikstück</li>
+                        <li>Recherchieren Sie den historischen und kulturellen Kontext</li>
+                        <li>Analysieren Sie zentrale Themen, Stil und Bedeutung</li>
+                        <li>Formulieren Sie Ihre eigene Interpretation</li>
+                        <li>Verwenden Sie Funktionsverbgefüge und die gelernten Ausdrücke</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Zusammenfassung und Übungen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wichtiger Wortschatz</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kultur</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Geschichte</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kunst</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Literatur</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Interpretation</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Tradition</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Hausaufgaben</h3>
+                <div class="bg-blue-50 p-4 rounded-md border border-blue-200">
+                    <p class="font-medium mb-2">Für die nächste Stunde:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Schreiben Sie einen Essay (300-350 Wörter) über kulturelle Unterschiede und Gemeinsamkeiten zwischen Deutschland und Ihrem Heimatland</li>
+                        <li>Bereiten Sie eine kurze Präsentation (5 Minuten) über ein wichtiges historisches Ereignis in Deutschland vor</li>
+                        <li>Analysieren Sie ein deutsches Kunstwerk oder einen literarischen Text Ihrer Wahl</li>
+                        <li>Üben Sie den Konjunktiv I, erweiterte Partizipialkonstruktionen und Funktionsverbgefüge</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Deutsch Lernen</h3>
+                    <p class="text-gray-300">Umfassende Lernmaterialien für chinesische Studenten zur Vorbereitung auf das deutsche Ausbildungssystem.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-white">Startseite</a></li>
+                        <li><a href="../curriculum.html" class="text-gray-300 hover:text-white">Lehrplan</a></li>
+                        <li><a href="../interview.html" class="text-gray-300 hover:text-white">Interview-Fragen</a></li>
+                        <li><a href="../mock-interviews.html" class="text-gray-300 hover:text-white">Mock-Interviews</a></li>
+                        <li><a href="../blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+                    <p class="text-gray-300">Bei Fragen oder Anregungen kontaktieren Sie uns bitte.</p>
+                    <p class="text-gray-300 mt-2">Email: info@deutschlernen.com</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300">&copy; 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

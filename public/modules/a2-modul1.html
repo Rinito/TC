@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2 Modul 1: Wohnen und Leben</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="../index.html" class="text-xl font-bold text-blue-600">Deutsch Lernen</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="../index.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Startseite
+                        </a>
+                        <a href="../curriculum.html" class="border-blue-500 text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Lehrplan
+                        </a>
+                        <a href="../interview.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Interview-Fragen
+                        </a>
+                        <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Mock-Interviews
+                        </a>
+                        <a href="../blog.html" class="border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <div class="relative inline-block text-left">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <span class="sr-only">Menü öffnen</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="../index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Startseite
+                </a>
+                <a href="../curriculum.html" class="bg-blue-50 border-blue-500 text-blue-600 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Lehrplan
+                </a>
+                <a href="../interview.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Interview-Fragen
+                </a>
+                <a href="../mock-interviews.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Mock-Interviews
+                </a>
+                <a href="../blog.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Blog
+                </a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-blue-600 text-white">
+                                DE
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-md text-sm font-medium bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                中文
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <a href="../curriculum.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                Zurück zum Lehrplan
+            </a>
+        </div>
+
+        <div class="text-center mb-12">
+            <span class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">Niveau A2</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Modul 1: Wohnen und Leben</h1>
+            <p class="text-xl text-gray-600">Über Wohnung, Zuhause und Umgebung sprechen</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Lernziele</h2>
+            <div class="space-y-4">
+                <p>In diesem Modul lernen Sie:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Wohnungen und Häuser zu beschreiben</li>
+                    <li>Über Einrichtung und Möbel zu sprechen</li>
+                    <li>Nach dem Weg zu fragen und Wegbeschreibungen zu geben</li>
+                    <li>Grammatik: Dativ, Präpositionen, Imperativ</li>
+                    <li>Über Ihre Wohnumgebung zu sprechen</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Wohnungen und Häuser beschreiben</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Räume und Wohnungstypen</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Wohnzimmer</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Küche</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Schlafzimmer</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Badezimmer</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Flur</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Balkon</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Wohnung</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Haus</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Apartment</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Ich wohne in einer Wohnung/einem Haus.</p>
+                        <p class="text-gray-600">Ich wohne in einer Dreizimmerwohnung.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Meine Wohnung hat ... Zimmer.</p>
+                        <p class="text-gray-600">Meine Wohnung hat drei Zimmer.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Wohnung ist ... Quadratmeter groß.</p>
+                        <p class="text-gray-600">Die Wohnung ist 75 Quadratmeter groß.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Die Miete beträgt ... Euro.</p>
+                        <p class="text-gray-600">Die Miete beträgt 850 Euro.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Im ... Stock/Erdgeschoss.</p>
+                        <p class="text-gray-600">Ich wohne im dritten Stock.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Mit/Ohne Balkon/Garten.</p>
+                        <p class="text-gray-600">Die Wohnung hat einen Balkon.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Markus:</strong> Hallo Lin! Wie gefällt dir deine neue Wohnung?</p>
+                    <p class="mb-2"><strong>Lin:</strong> Hallo Markus! Sie gefällt mir sehr gut. Sie hat zwei Zimmer, eine Küche und ein Badezimmer.</p>
+                    <p class="mb-2"><strong>Markus:</strong> Wie groß ist die Wohnung?</p>
+                    <p class="mb-2"><strong>Lin:</strong> Sie ist 60 Quadratmeter groß. Das ist perfekt für mich.</p>
+                    <p class="mb-2"><strong>Markus:</strong> In welchem Stock wohnst du?</p>
+                    <p class="mb-2"><strong>Lin:</strong> Ich wohne im zweiten Stock. Die Wohnung hat auch einen kleinen Balkon.</p>
+                    <p class="mb-2"><strong>Markus:</strong> Das klingt toll! Und wie viel Miete zahlst du?</p>
+                    <p class="mb-2"><strong>Lin:</strong> Ich zahle 700 Euro warm. Das ist okay für die Lage.</p>
+                    <p class="mb-2"><strong>Markus:</strong> Ja, das ist ein guter Preis. Wann kann ich dich besuchen?</p>
+                    <p class="mb-2"><strong>Lin:</strong> Gerne am Wochenende! Ich gebe dir dann meine Adresse.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Meine Wohnung</h3>
+                <p class="mb-4">Beschreiben Sie Ihre Wohnung oder Ihr Haus.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Notieren Sie wichtige Informationen: Größe, Zimmer, Stockwerk, Miete</li>
+                        <li>Beschreiben Sie die Räume in Ihrer Wohnung</li>
+                        <li>Sprechen Sie über Vor- und Nachteile Ihrer Wohnung</li>
+                        <li>Verwenden Sie die gelernten Ausdrücke</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Einrichtung und Möbel</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wortschatz: Möbel und Einrichtungsgegenstände</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Tisch</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Stuhl</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Sofa</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Bett</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Schrank</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Regal</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Teppich</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Lampe</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">der Fernseher</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Dativ und Präpositionen</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Präposition</th>
+                                <th class="py-2 px-4 border-b">Beispiel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">in + Dativ (Ort)</td>
+                                <td class="py-2 px-4 border-b">Der Tisch steht in <strong>dem</strong> Wohnzimmer. (im Wohnzimmer)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">auf + Dativ (Ort)</td>
+                                <td class="py-2 px-4 border-b">Die Lampe steht auf <strong>dem</strong> Tisch.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">unter + Dativ (Ort)</td>
+                                <td class="py-2 px-4 border-b">Der Teppich liegt unter <strong>dem</strong> Tisch.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">neben + Dativ (Ort)</td>
+                                <td class="py-2 px-4 border-b">Das Sofa steht neben <strong>dem</strong> Fenster.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">zwischen + Dativ (Ort)</td>
+                                <td class="py-2 px-4 border-b">Der Tisch steht zwischen <strong>dem</strong> Sofa und <strong>dem</strong> Sessel.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4">
+                    <p class="mb-2"><strong>Dativ Artikel:</strong></p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>der → dem (maskulin)</li>
+                        <li>die → der (feminin)</li>
+                        <li>das → dem (neutral)</li>
+                        <li>die → den + n (Plural)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Wo stehen die Möbel?</h3>
+                <p class="mb-4">Beschreiben Sie, wo die Möbel in Ihrem Zimmer stehen.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Zeichnen Sie einen einfachen Plan Ihres Zimmers</li>
+                        <li>Beschreiben Sie die Position der Möbel mit Präpositionen</li>
+                        <li>Achten Sie auf die korrekte Verwendung des Dativs</li>
+                        <li>Verwenden Sie mindestens 5 verschiedene Präpositionen</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Sprechfokus: Nach dem Weg fragen und Wegbeschreibungen geben</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Nützliche Ausdrücke</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Entschuldigung, wie komme ich zum/zur ...?</p>
+                        <p class="text-gray-600">Entschuldigung, wie komme ich zum Bahnhof?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Wo ist der/die/das ...?</p>
+                        <p class="text-gray-600">Wo ist die Post?</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Gehen Sie geradeaus.</p>
+                        <p class="text-gray-600">Gehen Sie 200 Meter geradeaus.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Biegen Sie rechts/links ab.</p>
+                        <p class="text-gray-600">An der Ampel biegen Sie rechts ab.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Nehmen Sie die erste/zweite Straße rechts/links.</p>
+                        <p class="text-gray-600">Nehmen Sie die zweite Straße links.</p>
+                    </div>
+                    <div class="border rounded-md p-4">
+                        <p class="font-medium">Es ist nicht weit/Es ist zu Fuß erreichbar.</p>
+                        <p class="text-gray-600">Es ist nicht weit, etwa 10 Minuten zu Fuß.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Grammatik: Imperativ</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b">Person</th>
+                                <th class="py-2 px-4 border-b">gehen</th>
+                                <th class="py-2 px-4 border-b">nehmen</th>
+                                <th class="py-2 px-4 border-b">biegen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">du</td>
+                                <td class="py-2 px-4 border-b">Geh!</td>
+                                <td class="py-2 px-4 border-b">Nimm!</td>
+                                <td class="py-2 px-4 border-b">Bieg ab!</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">ihr</td>
+                                <td class="py-2 px-4 border-b">Geht!</td>
+                                <td class="py-2 px-4 border-b">Nehmt!</td>
+                                <td class="py-2 px-4 border-b">Biegt ab!</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Sie (höflich)</td>
+                                <td class="py-2 px-4 border-b">Gehen Sie!</td>
+                                <td class="py-2 px-4 border-b">Nehmen Sie!</td>
+                                <td class="py-2 px-4 border-b">Biegen Sie ab!</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Dialogbeispiel</h3>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <p class="mb-2"><strong>Tourist:</strong> Entschuldigung, wie komme ich zum Hauptbahnhof?</p>
+                    <p class="mb-2"><strong>Jing:</strong> Gehen Sie hier geradeaus bis zur Ampel. Dann biegen Sie rechts ab in die Bahnhofstraße.</p>
+                    <p class="mb-2"><strong>Tourist:</strong> Und wie weit ist es?</p>
+                    <p class="mb-2"><strong>Jing:</strong> Es ist nicht weit. Gehen Sie etwa 500 Meter die Bahnhofstraße entlang. Der Bahnhof ist dann auf der linken Seite.</p>
+                    <p class="mb-2"><strong>Tourist:</strong> Gibt es in der Nähe auch eine Touristeninformation?</p>
+                    <p class="mb-2"><strong>Jing:</strong> Ja, die Touristeninformation ist im Bahnhofsgebäude. Gehen Sie durch den Haupteingang und dann sehen Sie sie auf der rechten Seite.</p>
+                    <p class="mb-2"><strong>Tourist:</strong> Vielen Dank für Ihre Hilfe!</p>
+                    <p class="mb-2"><strong>Jing:</strong> Gern geschehen. Einen schönen Tag noch!</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Sprechübung: Wegbeschreibung</h3>
+                <p class="mb-4">Üben Sie, den Weg zu beschreiben.</p>
+                <div class="bg-yellow-50 p-4 rounded-md border border-yellow-200">
+                    <p class="font-medium mb-2">Übungsanleitung:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Wählen Sie einen Startpunkt und ein Ziel in Ihrer Stadt</li>
+                        <li>Beschreiben Sie den Weg mit den gelernten Ausdrücken</li>
+                        <li>Verwenden Sie den Imperativ</li>
+                        <li>Achten Sie auf Präpositionen und den Dativ</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Zusammenfassung und Übungen</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Wichtiger Wortschatz</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Wohnung, -en</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Zimmer, -</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Miete, -n</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">das Möbel, -</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Straße, -n</p>
+                    </div>
+                    <div class="border rounded-md p-3">
+                        <p class="font-medium">die Kreuzung, -en</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">Hausaufgaben</h3>
+                <div class="bg-blue-50 p-4 rounded-md border border-blue-200">
+                    <p class="font-medium mb-2">Für die nächste Stunde:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Schreiben Sie einen Text über Ihre Wohnung (8-10 Sätze)</li>
+                        <li>Zeichnen Sie einen Plan Ihrer Wohnung und beschriften Sie die Räume</li>
+                        <li>Beschreiben Sie den Weg von Ihrer Wohnung zur nächsten U-Bahn-Station</li>
+                        <li>Lernen Sie die Möbel und Präpositionen mit dem Dativ</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Deutsch Lernen</h3>
+                    <p class="text-gray-300">Umfassende Lernmaterialien für chinesische Studenten zur Vorbereitung auf das deutsche Ausbildungssystem.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-white">Startseite</a></li>
+                        <li><a href="../curriculum.html" class="text-gray-300 hover:text-white">Lehrplan</a></li>
+                        <li><a href="../interview.html" class="text-gray-300 hover:text-white">Interview-Fragen</a></li>
+                        <li><a href="../mock-interviews.html" class="text-gray-300 hover:text-white">Mock-Interviews</a></li>
+                        <li><a href="../blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontakt</h3>
+                    <p class="text-gray-300">Bei Fragen oder Anregungen kontaktieren Sie uns bitte.</p>
+                    <p class="text-gray-300 mt-2">Email: info@deutschlernen.com</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p class="text-gray-300">&copy; 2025 Deutsch Lernen. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
