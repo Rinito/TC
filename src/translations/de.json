@@ -1,0 +1,54 @@
+{
+  "header": {
+    "title": "Deutsch Lernen für chinesische Studenten",
+    "navigation": {
+      "home": "Startseite",
+      "curriculum": "Lehrplan",
+      "interview": "Interview-Fragen",
+      "mock_interviews": "Mock-Interviews",
+      "blog": "Blog"
+    },
+    "language_switcher": {
+      "de": "DE",
+      "zh": "中文"
+    }
+  },
+  "index_page": {
+    "hero_title": "Deutsch lernen für chinesische Studenten",
+    "hero_subtitle": "Umfassende Lernmaterialien für alle Sprachniveaus mit Fokus auf Sprechfähigkeiten",
+    "cta_button": "Zum Lehrplan",
+    "features_title": "Warum mit uns Deutsch lernen?",
+    "features": {
+      "feature1_title": "Umfassender Lehrplan",
+      "feature1_description": "Strukturierte Lernmaterialien von A1 bis B2 Niveau",
+      "feature2_title": "Fokus auf Sprechen",
+      "feature2_description": "Praktische Übungen zur Verbesserung der mündlichen Kommunikation",
+      "feature3_title": "Zweisprachige Unterstützung",
+      "feature3_description": "Alle Inhalte in Deutsch und Chinesisch verfügbar",
+      "feature4_title": "Interviewvorbereitung",
+      "feature4_description": "Spezielle Materialien zur Vorbereitung auf Vorstellungsgespräche"
+    },
+    "about_title": "Über uns",
+    "about_text": "Wir bieten umfassende Lernmaterialien für chinesische Studenten, die Deutsch lernen möchten. Unser Fokus liegt auf der Entwicklung praktischer Sprechfähigkeiten, die für den Alltag und das Berufsleben in Deutschland wichtig sind.",
+    "levels_title": "Sprachniveaus",
+    "levels": {
+      "a1_title": "A1 - Anfänger",
+      "a1_description": "Grundlegende Ausdrücke und einfache Sätze verstehen und verwenden",
+      "a2_title": "A2 - Grundlegende Kenntnisse",
+      "a2_description": "Sich in einfachen, routinemäßigen Situationen verständigen",
+      "b1_title": "B1 - Fortgeschrittene Sprachverwendung",
+      "b1_description": "Sich einfach und zusammenhängend über vertraute Themen äußern",
+      "b2_title": "B2 - Selbständige Sprachverwendung",
+      "b2_description": "Sich klar und detailliert über eine Vielzahl von Themen äußern"
+    }
+  },
+  "footer": {
+    "title": "Deutsch Lernen",
+    "description": "Umfassende Lernmaterialien für chinesische Studenten zur Vorbereitung auf das deutsche Ausbildungssystem.",
+    "navigation_title": "Navigation",
+    "contact_title": "Kontakt",
+    "contact_text": "Bei Fragen oder Anregungen kontaktieren Sie uns bitte.",
+    "email": "Email: info@deutschlernen.com",
+    "copyright": "© 2025 Deutsch Lernen. Alle Rechte vorbehalten."
+  }
+}
